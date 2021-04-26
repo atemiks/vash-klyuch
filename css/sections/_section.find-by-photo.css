@@ -1,0 +1,24 @@
+.section-find-by-photo {
+    margin: 0;
+    padding: 45px 0;
+}
+
+.find-by-photo-message-title {
+    margin: 0 0 22px;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+@media (min-width: 768px) {
+    .section-find-by-photo {
+        margin: 0;
+        padding: 60px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-find-by-photo {
+        margin: 0;
+        padding: 70px 0;
+    }
+}

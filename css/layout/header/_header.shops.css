@@ -1,0 +1,33 @@
+.header-shops-dropdown {
+    width: 430px;
+}
+
+.header-shops-dropdown .header-contact-block {
+    margin: 0;
+    padding: 0;
+    color: rgba(51, 51, 51, .8);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+}
+
+.header-shops-dropdown .header-contact-block a[href^="tel:"] {
+    font-size: inherit;
+}
+
+.header-shops-dropdown .header-contact-block .header-contact-list {
+    margin-bottom: -20px;
+}
+
+.header-shops-dropdown .header-contact-block .header-contact-list .header-contact-item {
+    margin-bottom: 15px;
+}
+
+.header-shops-dropdown .header-contact-block .header-contact-thumbnail {
+    flex: 0 0 22px;
+    width: 22px;
+    max-width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    line-height: 22px;
+}

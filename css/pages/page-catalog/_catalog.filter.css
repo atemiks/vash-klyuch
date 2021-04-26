@@ -1,0 +1,354 @@
+.filter-wrapper {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.filter-wrapper.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.filter-wrapper .filter-inner {
+    position: relative;
+    z-index: 9;
+    overflow-y: auto;
+    max-width: 280px;
+    max-height: 100%;
+    margin: 0 0 0 auto;
+    padding: 0 15px;
+    background-color: #fff;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.filter-header {
+    position: relative;
+    margin: 0 -15px 30px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: #ffda3f;
+}
+
+.filter-header .filter-close {
+    opacity: 1;
+    cursor: pointer;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: currentColor;
+    font-size: 10px;
+    line-height: 42px;
+    text-shadow: none;
+    text-align: center;
+}
+
+.filter-group {
+    margin-bottom: 10px;
+}
+
+.filter-group-header {
+    color: rgba(51, 51, 51, .9);
+    font-size: 17px;
+}
+
+.filter-group-title,
+.filter-group-toggle {
+    margin: 0;
+    padding: 15px 0;
+    color: inherit;
+}
+
+.filter-group-toggle {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: none;
+    text-align: left;
+}
+
+.filter-group-toggle::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 55px;
+    color: rgba(51, 51, 51, .5);
+    font-family: 'icomoon';
+    font-size: 60%;
+    line-height: 55px;
+    content: '\e903';
+}
+
+.filter-group-toggle:hover::after {
+    color: rgba(51, 51, 51, 1);
+}
+
+
+.filter-group-toggle.hide::after {
+    transform: rotate(180deg);
+}
+
+
+/* filter categories */
+.filter-categories-list {
+    margin: 0 0 10px;
+    padding: 0 0 12px;
+    border-bottom: 1px solid rgba(51, 51, 51, .05);
+}
+
+.filter-category-checkox .custom-control-thumbnail {
+    flex: 0 0 30px;
+    width: 30px;
+    max-width: 30px;
+    height: 25px;
+    margin-right: 10px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.filter-category-checkox .custom-control-media {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* filter range */
+.filter-range-slider-block {
+    min-height: 6px;
+    margin: 15px 0;
+}
+
+.filter-range-fields {
+    margin-bottom: 28px;
+}
+
+.filter-range-field {
+    width: 100%;
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-width: 1px;
+    font-size: 15px;
+    letter-spacing: -0.4px;
+    text-align: center;
+}
+
+.filter-range-slider {
+    height: 6px;
+    margin: 0 8px;
+    border: 1px solid #f0f0f0;
+}
+
+.filter-range-slider .ui-slider-range {
+    height: 100%;
+    background: #ffda3f;
+}
+
+.filter-range-slider .ui-slider-handle {
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(164, 164, 164, 0.25);
+}
+
+.filter-range-slider .ui-slider-handle:nth-of-type(1) {
+    transform: translate(0, -50%)
+}
+
+.filter-range-slider .ui-slider-handle:nth-of-type(2) {
+    transform: translate(0, -50%)
+}
+
+.filter-range-slider .ui-slider-handle:focus {
+    outline: none;
+}
+
+
+/* filter parameters */
+.filter-parameters-block {
+    margin: 0 0 22px;
+}
+
+.filter-parameters-list {
+    margin: 0 0 -15px;
+}
+
+.filter-parameters-list .filter-parameter-item {
+    margin-bottom: 15px;
+}
+
+.filter-parameter-label {
+    margin: 5px 10px 5px 0;
+}
+
+.filter-parameter-control {
+    width: 90px;
+}
+
+.filter-sheme-thumbnail {
+    cursor: zoom-in;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin: 0 0 38px;
+    color: currentColor;
+    text-decoration: none;
+}
+
+.filter-sheme-thumbnail::after {
+    position: absolute;
+    right: 0;
+    bottom: -18px;
+    font-family: 'icomoon';
+    font-size: 16px;
+    content: '\e90d';
+}
+
+.filter-sheme-thumbnail:hover {
+    color: #ffda3f;
+    text-decoration: none;
+}
+
+
+.filter-sheme-thumbnail .filter-sheme-media {
+    height: inherit;
+}
+
+
+/* filter variants */
+.filter-variants-list {
+    margin: 0;
+}
+
+.filter-variants-list .filter-variant-item:not(:last-child) {
+    margin: 0 0 14px;
+}
+
+.filter-variants-list .filter-variant-secondary-item {
+    display: none;
+}
+
+.filter-variants-list .filter-variant-checkox {
+    color: rgba(51, 51, 51, .8);
+    font-size: 15px;
+    letter-spacing: normal;
+}
+
+.filter-variants-controls {
+    margin: 25px 0 -5px;
+}
+
+/* filter selected */
+.filter-selected-block {
+    margin: 0 0 25px;
+    font-size: 15px;
+    line-height: normal;
+}
+
+.filter-selected-group {
+    margin-bottom: 20px;
+}
+
+.filter-selected-title {
+    margin: 0 0 8px;
+    color: rgba(51, 51, 51, .9);
+    font-size: 17px;
+}
+
+.filter-selected-list {
+    margin: 0;
+}
+
+.filter-selected-list .filter-selected-item {
+    margin: 0 0 15px;
+}
+
+.filter-selected-button {
+    position: relative;
+}
+
+.filter-selected-button::after {
+    margin: 0 0 0 15px;
+    vertical-align: baseline;
+    color: rgba(51, 51, 51, .6);
+    font-family: 'icomoon';
+    font-size: 10px;
+    content: '\e90a';
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1200px) {
+    .filter-wrapper {
+        display: block;
+        position: relative;
+        overflow: visible;
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+    }
+
+    .filter-wrapper .filter-inner {
+        overflow: visible;
+        margin: 0;
+        padding: 0;
+    }
+
+    .filter-options-block,
+    .filter-selected-block {
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(164, 164, 164, 0.25);
+    }
+
+    .filter-options-block {
+        padding: 7px 25px 30px;
+    }
+
+    .filter-selected-block {
+        padding: 22px 25px 28px;
+        border: 1px solid #ffda3f;
+    }
+
+
+    .filter-categories-list .filter-category-checkox {
+        font-size: 15px;
+    }
+
+    .filter-categories-list .filter-category-checkox .custom-control-input {
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .filter-categories-list .filter-category-checkox .custom-control-content {
+        padding-left: 0;
+    }
+
+    .filter-categories-list .filter-category-checkox .custom-control-content::before {
+        display: none;
+    }
+
+    
+}

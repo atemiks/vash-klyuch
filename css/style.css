@@ -1,0 +1,67 @@
+@import '_fonts.css';
+@import '_core.css';
+@import '_typography.css';
+
+
+/* components */
+@import 'components/_badge.css';
+@import 'components/_breadcrumb.css';
+@import 'components/_pagination.css';
+@import 'components/_forms.css';
+@import 'components/_buttons.css';
+@import 'components/_select2.css';
+@import 'components/_swiper.css';
+@import 'components/_dropdown.css';
+@import 'components/_offcanvas.css';
+@import 'components/_megamenu.css';
+@import 'components/_modal.css';
+@import 'components/_modal.photo.css';
+@import 'components/_modal.cart.css';
+
+
+/* cards */
+@import 'components/cards/_card.banner.css';
+@import 'components/cards/_card.product.css';
+
+/* header */
+@import 'layout/header/_header.css';
+@import 'layout/header/_header.statusbar.css';
+@import 'layout/header/_header.toggle.css';
+@import 'layout/header/_header.logo.css';
+@import 'layout/header/_header.contact.css';
+@import 'layout/header/_header.account.css';
+@import 'layout/header/_header.nav.css';
+@import 'layout/header/_header.search.css';
+@import 'layout/header/_header.shops.css';
+@import 'layout/header/_header.cart.css';
+
+/* sections */
+@import 'sections/_section.hero.css';
+@import 'sections/_section.categories.css';
+@import 'sections/_section.products.css';
+@import 'sections/_section.services.css';
+@import 'sections/_section.brands.css';
+@import 'sections/_section.video.css';
+@import 'sections/_section.steps.css';
+@import 'sections/_section.find-by-photo.css';
+@import 'sections/_section.contact.css';
+
+
+/* page home */
+@import 'pages/page-home/_home.brands.css';
+@import 'pages/page-home/_home.video.css';
+
+
+/* page catalog */
+@import 'pages/page-catalog/_catalog.css';
+@import 'pages/page-catalog/_catalog.filter.css';
+@import 'pages/page-catalog/_catalog.banner.css';
+@import 'pages/page-catalog/_catalog.controls.css';
+@import 'pages/page-catalog/_catalog.grid.css';
+@import 'pages/page-catalog/_catalog.tags.css';
+
+/* footer */
+@import 'layout/footer/_footer.css';
+@import 'layout/footer/_footer.contact.css';
+@import 'layout/footer/_footer.nav.css';
+@import 'layout/footer/_footer.copyright.css';

@@ -1,0 +1,151 @@
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-label {
+    margin: 0 0 10px;
+}
+
+.form-control {
+    height: 45px;
+    width: 100%;
+    padding: 0 15px;
+    border: 2px solid rgba(36, 36, 37, 0.1);
+    border-radius: 0;
+    background: #fff;
+    transition: border-color 300ms ease;
+}
+
+.form-control:focus {
+    border-color: #ffda3f;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    resize: none;
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.custom-control {
+    cursor: pointer;
+    position: relative;
+    min-height: auto;
+    padding: 0;
+    font-size: 16px;
+    line-height: normal;
+}
+
+
+/* custom checkbox */
+.custom-control.custom-checkbox .custom-control-content {
+    display: block;
+    padding: 0 0 0 25px;
+}
+
+.custom-control.custom-checkbox .custom-control-content::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffda3f;
+    font-family: 'icomoon';
+    font-size: 0;
+    line-height: 16px;
+    text-align: center;
+    transition: background-color 300ms ease, font-size 300ms ease;
+    content: '';
+}
+
+.custom-control.custom-checkbox .custom-control-input:checked + .custom-control-content::before {
+    background-color: #ffda3f;
+    font-size: 10px;
+    content: '\e909';
+}
+
+
+/* custom number */
+.custom-control.custom-number {
+    position: relative;
+}
+
+.custom-control.custom-number .custom-control-input {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 42px;
+    margin: 0;
+    padding: 0 25px 0 5px;
+    border: 1px solid #d1d1d1;
+    color: rgba(51, 51, 51, .9);
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: -0.4px;
+}
+
+.custom-control.custom-number .custom-control-input:focus {
+    outline: none;
+    border-color: #ffda3f;
+}
+
+.custom-control.custom-number .custom-control-button {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: #F2F2F2;
+    color: rgba(51, 51, 51, .37);
+    line-height: 20px;
+    text-align: center;
+}
+
+.custom-control.custom-number .custom-control-plus {
+    position: absolute;
+    z-index: 9;
+    top: 1px;
+    right: 1px;
+}
+
+.custom-control.custom-number .custom-control-minus {
+    position: absolute;
+    z-index: 9;
+    right: 1px;
+    bottom: 1px;
+}
+
+/* custom number alt */
+.custom-control.custom-number-alt .custom-control-input {
+    text-align: left;
+}
+
+.custom-control.custom-number-alt .custom-control-button {
+    right: 10px;
+    background: none;
+}
+
+.custom-control.custom-number-alt .custom-control-plus::after,
+.custom-control.custom-number-alt .custom-control-minus::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+}
+
+.custom-control.custom-number-alt .custom-control-plus::after {
+    bottom: 2px;
+    border: 5px solid transparent; 
+    border-bottom: 5px solid currentColor;
+}
+
+.custom-control.custom-number-alt .custom-control-minus::after {
+    top: 2px;
+    border: 5px solid transparent; 
+    border-top: 5px solid currentColor;
+}

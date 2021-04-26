@@ -1,0 +1,16 @@
+.section-catalog {
+    margin: 35px 0;
+    padding: 0;
+}
+
+.catalog-back-btn {
+    font-size: 15px;
+    line-height: normal;
+}
+
+.catalog-back-btn i {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    font-size: 60%;
+    vertical-align: middle;
+}

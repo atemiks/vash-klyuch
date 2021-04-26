@@ -1,0 +1,135 @@
+h1,
+.title-h1 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+h2,
+.title-h2 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+h3,
+.title-h3 {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+h4,
+.title-h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h5,
+.title-h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h6,
+.title-h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+a {
+    color: #0072f9;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+a:hover {
+    color: #0072f9;
+    text-decoration: underline;
+}
+
+
+.display-header {
+    margin-bottom: 28px;
+}
+
+.display-header .display-title {
+    margin: 0;
+}
+
+
+.section-header {
+    margin-bottom: 28px;
+}
+
+.section-header .section-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
+}
+
+.section-cta i {
+    position: relative;
+    right: 0;
+    font-size: 60%;
+    vertical-align: baseline;
+    transition: right 300ms ease;
+}
+
+.section-cta:hover {
+    text-decoration: none;
+}
+
+.section-cta:hover i {
+    right: -3px;
+}
+
+.section-gray {
+    background: url('../images/bg/bg-gray-cover.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.text-muted {
+    opacity: 0.7;
+    color: currentColor !important;
+}
+
+@media (min-width: 768px) {
+    .section-header {
+        margin-bottom: 35px;
+    }
+
+    .section-header .section-title {
+        font-size: 30px;
+        line-height: normal;
+    }
+}
+
+@media (min-width: 1200px) {
+    h5,
+    .title-h5 {
+        font-size: 18px;
+        letter-spacing: -0.4px;
+    }
+
+    h6,
+    .title-h6 {
+        letter-spacing: -0.4px;
+    }
+
+
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+    .section-header .section-title {
+        font-size: 40px;
+        line-height: normal;
+    }
+}
