@@ -10,6 +10,7 @@
 @import 'components/_forms.css';
 @import 'components/_buttons.css';
 @import 'components/_select2.css';
+@import 'components/_nav.css';
 @import 'components/_swiper.css';
 @import 'components/_dropdown.css';
 @import 'components/_offcanvas.css';
@@ -58,7 +59,17 @@
 @import 'pages/page-catalog/_catalog.banner.css';
 @import 'pages/page-catalog/_catalog.controls.css';
 @import 'pages/page-catalog/_catalog.grid.css';
+@import 'pages/page-catalog/_catalog.service.css';
 @import 'pages/page-catalog/_catalog.tags.css';
+
+
+/* page product */
+@import 'pages/page-product/_product.gallery.css';
+@import 'pages/page-product/_product.attributes.css';
+@import 'pages/page-product/_product.colors.css';
+@import 'pages/page-product/_product.price.css';
+@import 'pages/page-product/_product.scheme.css';
+
 
 /* footer */
 @import 'layout/footer/_footer.css';

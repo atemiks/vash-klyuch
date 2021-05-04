@@ -1,18 +1,17 @@
 $(function () {
     if($('.filter-wrapper').length) {
-        console.log('found');
         let filterToggle = $('.filter-toggle'),
             filterContainer = $('.filter-wrapper'),
             filterBg = filterContainer.find('.filter-bg');
 
         function showFilter() {
-            console.log('show filter');
+            filterToggle.addClass('show');
             filterContainer.addClass('show');
             filterBg.addClass('show');
         }
 
         function closeFilter() {
-            console.log('close filter');
+            filterToggle.removeClass('show');
             filterContainer.removeClass('show');
             filterBg.removeClass('show');
         }

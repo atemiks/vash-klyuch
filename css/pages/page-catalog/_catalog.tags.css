@@ -5,3 +5,7 @@
 .catalog-tags-list .catalog-tag-item {
     margin-bottom: 10px;
 }
+
+.catalog-tags-list .catalog-tag-link {
+    padding: 7px 20px;
+}

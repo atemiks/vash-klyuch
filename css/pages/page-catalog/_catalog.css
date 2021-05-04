@@ -1,16 +1,24 @@
 .section-catalog {
-    margin: 35px 0;
+    margin: 15px 0 30px;
     padding: 0;
 }
 
 .catalog-back-btn {
     font-size: 15px;
-    line-height: normal;
+    line-height: 18px;
 }
 
 .catalog-back-btn i {
     display: inline-block;
     margin: 0 5px 0 0;
     font-size: 60%;
+    line-height: inherit;
     vertical-align: middle;
+}
+
+@media (min-width: 1200px) {
+    .section-catalog {
+        margin: 35px 0 170px;
+        padding: 0;
+    }
 }

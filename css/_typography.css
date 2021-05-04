@@ -1,6 +1,6 @@
 h1,
 .title-h1 {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 300;
     line-height: normal;
 }
@@ -53,7 +53,7 @@ a:hover {
 
 
 .display-header {
-    margin-bottom: 28px;
+    margin-bottom: 18px;
 }
 
 .display-header .display-title {
@@ -112,6 +112,32 @@ a:hover {
 }
 
 @media (min-width: 1200px) {
+    h1,
+    .title-h1 {
+        font-size: 40px;
+    }
+
+    h2,
+    .title-h2 {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    h3,
+    .title-h3 {
+        font-size: 25px;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    h4,
+    .title-h4 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
     h5,
     .title-h5 {
         font-size: 18px;
@@ -123,6 +149,10 @@ a:hover {
         letter-spacing: -0.4px;
     }
 
+
+    .display-header {
+        margin-bottom: 28px;
+    }
 
     .section-header {
         margin-bottom: 50px;

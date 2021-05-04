@@ -40,6 +40,7 @@
     display: block;
     padding: 0 15px;
     border: none;
+    border-radius: 0;
 }
 
 .modal-header {

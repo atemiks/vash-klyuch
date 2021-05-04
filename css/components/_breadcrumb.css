@@ -1,5 +1,5 @@
 .section-breadcrumb {
-    margin: 20px 0;
+    margin: 13px 0;
     padding: 0;
 }
 
@@ -18,10 +18,11 @@
 .breadcrumb-item + .breadcrumb-item::before {
     position: relative;
     top: 50%;
+    padding-right: 5px;
     transform: translateY(-50%);
     color: inherit;
     font-family: 'icomoon';
-    font-size: 60%;
+    font-size: 40%;
     content: '\e901';
 }
 
@@ -36,7 +37,17 @@
 }
 
 @media (min-width: 1200px) {
+    .section-breadcrumb {
+        margin: 20px 0;
+        padding: 0;
+    }
+
     .breadcrumb {
         font-size: 15px;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        font-size: 60%;
+        padding-right: 8px;
     }
 }

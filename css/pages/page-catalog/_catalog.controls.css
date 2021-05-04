@@ -1,5 +1,5 @@
 .catalog-controls-block {
-    margin: 0 0 20px;
+    margin: 0 0 30px;
     color: rgba(51, 51, 51, .9);
     font-size: 15px;
     line-height: normal;
@@ -8,6 +8,29 @@
 .catalog-controls-block .catalog-control-label {
     margin: 5px 10px 5px 0;
 }
+
+
+.catalog-filter-toggle {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.catalog-filter-toggle::after {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-bottom: 0;
+    border-left: 4px solid transparent;
+    vertical-align: inherit;
+    content: '';
+}
+
+.catalog-filter-toggle.show::after {
+    transform: rotate(180deg);
+}
+
 
 .catalog-sort-block .catalog-sort-button {
     cursor: pointer;
@@ -64,4 +87,10 @@
 .catalog-layout-block .catalog-layout-link.active {
     color: #ffda3f;
     fill: #ffda3f;
+}
+
+@media (min-width: 1200px) {
+    .catalog-controls-block {
+        margin: 0 0 20px;
+    }
 }

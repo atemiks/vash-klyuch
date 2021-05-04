@@ -7,6 +7,8 @@
 	
 	<link rel="stylesheet" href="vendor/bootstrap-4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/swiper-4.5.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="vendor/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="vendor/fancybox-master/dist/jquery.fancybox.min.css">
 
@@ -797,365 +799,289 @@
     </header>
 
     <main class="main-wrapper flex-grow-1">
-        <section class="section-hero">
-            <div class="swiper-cover">
-                <div class="swiper-hero swiper-container">
-                    <div class="swiper-wrapper row flex-nowrap no-gutters">
-                        <div class="swiper-slide col-12" >
-                            <div class="hero-block d-flex flex-column justify-content-center ">
-                                <figure class="hero-banner-figure">
-                                    <picture>
-                                        <source srcset="uploads/hero/slide-hero-1.jpg" media="(min-width:768px)" >
-                                        <img loading="lazy" src="uploads/hero/slide-hero-mobile-1.jpg" alt="" class="hero-banner-media">
-                                    </picture>
-                                </figure>
+        <section class="section-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="breadcrumb-navigation" aria-label="breadcrumb">
+                            <ol class="breadcrumb list-unstyled">
+                                <li class="breadcrumb-item">
+                                    <a href="home.html">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="catalog.html">Замки</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Замок врезной MUL-T-LOCK DEAD</li>
+                            </ol>
+                        </nav>
+                    </div>
 
-                                <div class="container">
-                                    <div class="form-row">
-                                        <div class="hero-typography-container col-9 col-sm-6 col-md-8 col-lg-6">
-                                            <div class="hero-title">Изготовление замков</div>
-                                            <div class="hero-subtitle">Наша мастерская делает все виды ключей для замков</div>
-                                            <a href="#link" class="hero-cta btn">Узнать подробнее</a>
+                    <div class="col-auto d-none d-xl-block">
+                        <a href="catalog.html" class="catalog-back-btn btn-link" >
+                            <i class="icon-angle-left" ></i>Вернуться назад
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-product">
+            <div class="container">
+                <div class="product-header row justify-content-between">
+                    <div class="product-heading-container col">
+                        <h1 class="product-title">Замок врезной MUL-T-LOCK DEAD</h1>
+                    </div>
+
+                    <div class="product-code-container col-auto align-self-center">
+                        <div class="product-code-block">Код товара: <span class="product-code">35491</span></div>
+                    </div>
+                </div>
+
+                <section class="section-product-main">
+                    <div class="row">
+                        <div class="product-gallery-container col-xl-5">
+                            <div class="product-gallery-wrapper form-row">
+                                <div class="product-media-container col-xl order-xl-1">
+                                    <div class="product-gallery-block">
+                                        <div class="swiper-product-gallery swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="uploads/product/product-main-1.jpg" class="product-gallery">
+                                                        <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
+                                                    </a>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <a href="uploads/product/product-main-1.jpg" class="product-gallery">
+                                                        <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
+                                                    </a>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <a href="uploads/product/product-main-1.jpg" class="product-gallery">
+                                                        <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
+                                                    </a>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <a href="uploads/product/product-main-1.jpg" class="product-gallery">
+                                                        <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
+                                                    </a>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <a href="uploads/product/product-main-1.jpg" class="product-gallery">
+                                                        <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-thumnbails-container col-xl-auto order-xl-0">
+                                    <div class="product-thumnbails-block">
+                                        <div class="swiper-product-thumnbails swiper-container">
+                                            <div class="swiper-wrapper flex-xl-column">
+                                                <div class="swiper-slide">
+                                                    <div class="product-thumnbail">
+                                                        <img loading="lazy" src="uploads/product/product-thumb-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
+                                                    </div>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="product-thumnbail">
+                                                        <img loading="lazy" src="uploads/product/product-thumb-2.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
+                                                    </div>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="product-thumnbail">
+                                                        <img loading="lazy" src="uploads/product/product-thumb-3.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
+                                                    </div>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="product-thumnbail">
+                                                        <img loading="lazy" src="uploads/product/product-thumb-4.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
+                                                    </div>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="product-thumnbail">
+                                                        <img loading="lazy" src="uploads/product/product-thumb-3.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide col-12" >
-                            <div class="hero-block d-flex flex-column justify-content-center">
-                                <figure class="hero-banner-figure">
-                                    <picture>
-                                        <source srcset="uploads/hero/slide-hero-2.jpg" media="(min-width:768px)" >
-                                        <img loading="lazy" src="uploads/hero/slide-hero-mobile-2.jpg" alt="" class="hero-banner-media">
-                                    </picture>
-                                </figure>
+                        <div class="product-summary-container col-xl-4">
+                            <div class="product-summary-block">
+                                <div class="product-summary-title">Характеристики</div>
 
-                                <div class="container">
-                                    <div class="form-row">
-                                        <div class="hero-typography-container col-9 col-sm-6 col-md-8 col-lg-6">
-                                            <div class="hero-title">Изготовление ключей</div>
-                                            <div class="hero-subtitle">Наша мастерская делает все виды ключей для замков</div>
-                                            <a href="#link" class="hero-cta btn">Узнать подробнее</a>
-                                        </div>
+                                <div class="product-attributes-block">
+                                    <ul class="product-attributes-list list-unstyled">
+                                        <li class="product-attribute-item d-flex justify-content-between">
+                                            <span class="product-attribute-name">Назначение</span>
+                                            <span class="product-attribute-value">Для входных дверей</span>
+                                        </li>
+
+                                        <li class="product-attribute-item d-flex justify-content-between">
+                                            <span class="product-attribute-name">Тип замка</span>
+                                            <span class="product-attribute-value">Врезной</span>
+                                        </li>
+
+                                        <li class="product-attribute-item d-flex justify-content-between">
+                                            <span class="product-attribute-name">Тип механизма </span>
+                                            <span class="product-attribute-value">Цилиндровый</span>
+                                        </li>
+
+                                        <li class="product-attribute-item d-flex justify-content-between">
+                                            <span class="product-attribute-name">Толщина полотна двери</span>
+                                            <span class="product-attribute-value">40-50 мм</span>
+                                        </li>
+
+                                        <li class="product-attribute-item d-flex justify-content-between">
+                                            <span class="product-attribute-name">Вылет ригелей</span>
+                                            <span class="product-attribute-value">25,4 мм</span>
+                                        </li>
+
+                                        
+                                        <li class="product-attribute-item product-attribute-secondary-item">
+                                            <span class="product-attribute-name">Бренд</span>
+                                            <span class="product-attribute-value">MULT-T-LOCK DEAD</span>
+                                        </li>
+
+                                        <li class="product-attribute-item product-attribute-secondary-item">
+                                            <span class="product-attribute-name">Количество ключей</span>
+                                            <span class="product-attribute-value">5 штук</span>
+                                        </li>
+
+                                        <li class="product-attribute-item product-attribute-secondary-item">
+                                            <span class="product-attribute-name">Материал</span>
+                                            <span class="product-attribute-value">Цилиндровый</span>
+                                        </li>
+
+                                        <li class="product-attribute-item product-attribute-secondary-item">
+                                            <span class="product-attribute-name">Межцентровое расстояние отверстий</span>
+                                            <span class="product-attribute-value">40-50 мм</span>
+                                        </li>
+
+                                        <li class="product-attribute-item product-attribute-secondary-item">
+                                            <span class="product-attribute-name">Принцип запирания</span>
+                                            <span class="product-attribute-value">сувальдный</span>
+                                        </li>
+
+                                        <li class="product-attribute-item product-attribute-secondary-item">
+                                            <span class="product-attribute-name">Тип запирания</span>
+                                            <span class="product-attribute-value">сувальдный</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="product-attributes-controls">
+                                        <button type="button" class="product-attribute-control" data-expended="false" >Смотреть все характеристики</button>
+                                        <button type="button" class="product-attribute-control" data-expended="true" >Свернуть все характеристики</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide col-12" >
-                            <div class="hero-block d-flex flex-column justify-content-center">
-                                <figure class="hero-banner-figure">
-                                    <picture>
-                                        <source srcset="uploads/hero/slide-hero-3.jpg" media="(min-width:768px)" >
-                                        <img loading="lazy" src="uploads/hero/slide-hero-mobile-1.jpg" alt="" class="hero-banner-media">
-                                    </picture>
-                                </figure>
+                        <div class="product-order-container col-xl-3">
+                            <div class="product-colors-block">
+                                <ul class="product-colors-list d-flex flex-wrap list-unstyled">
+                                    <li class="product-color-item">
+                                        <a href="product.html" class="product-color active">
+                                            <img src="uploads/colors/color-item-1.png" alt="Золотой" class="product-color-media">
+                                        </a>
+                                    </li>
 
-                                <div class="container">
-                                    <div class="form-row">
-                                        <div class="hero-typography-container col-9 col-sm-6 col-md-8 col-lg-6">
-                                            <div class="hero-title">Изготовление ключей</div>
-                                            <div class="hero-subtitle">Наша мастерская делает все виды ключей для замков</div>
-                                            <a href="#link" class="hero-cta btn">Узнать подробнее</a>
-                                        </div>
-                                    </div>
+                                    <li class="product-color-item">
+                                        <a href="product.html" class="product-color">
+                                            <img src="uploads/colors/color-item-2.png" alt="Бежевый" class="product-color-media">
+                                        </a>
+                                    </li>
+
+                                    <li class="product-color-item">
+                                        <a href="product.html" class="product-color">
+                                            <img src="uploads/colors/color-item-3.png" alt="Серый" class="product-color-media">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="product-order-block row">
+                                <div class="product-price-block col-auto col-xl-12">
+                                    <div class="product-price">16 750 <span>руб/шт</span></div>
+                                </div>
+
+                                <div class="product-trade-block col-auto col-xl-12">
+                                    <button type="button" class="product-buy btn btn-lg" >Предзаказать</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <button type="button" class="swiper-hero-button-prev swiper-button-prev swiper-button-xl"></button>
-                    <button type="button" class="swiper-hero-button-next swiper-button-next swiper-button-xl"></button>
-                    <div class="swiper-hero-pagination swiper-pagination d-none d-md-block"></div>
-                </div>
-            </div>
-        </section>
+                <section class="section-product-details">
+                    <ul class="product-nav-tabs nav nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="product-sheme-tab" data-toggle="tab" href="#product-sheme-pane" role="tab" aria-controls="product-sheme-pane" aria-selected="true">Схема и инструкция</a>
+                        </li>
 
-        <section class="section-categories section-gray">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-title">Категории товаров</div>
-                </div>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="product-description-tab" data-toggle="tab" href="#product-description-pane" role="tab" aria-controls="product-description-pane" aria-selected="false">О товаре</a>
+                        </li>
 
-                <div class="categories-grid row">
-                    <div class="category-item col-6 col-md-4">
-                        <a href="catalog-locks.html" class="card-category">
-                            <figure class="card-category-thumbnail">
-                                <img src="images/categories/category-zamki.jpg" alt="Замки" class="card-category-media">
-                                <figcaption class="card-category-title">Замки</figcaption>
-                            </figure>
-                        </a>
-                    </div>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="product-specifications-tab" data-toggle="tab" href="#product-specifications-pane" role="tab" aria-controls="product-specifications-pane" aria-selected="false">Характеристики</a>
+                        </li>
 
-                    <div class="category-item col-6 col-md-4">
-                        <a href="catalog.html" class="card-category">
-                            <figure class="card-category-thumbnail">
-                                <img src="images/categories/category-petli.jpg" alt="Петли" class="card-category-media">
-                                <figcaption class="card-category-title">Петли</figcaption>
-                            </figure>
-                        </a>
-                    </div>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="product-reviews-tab" data-toggle="tab" href="#product-reviews-pane" role="tab" aria-controls="product-reviews-pane" aria-selected="false">Отзывы</a>
+                        </li>
 
-                    <div class="category-item col-6 col-md-4">
-                        <a href="catalog.html" class="card-category">
-                            <figure class="card-category-thumbnail">
-                                <img src="images/categories/category-furnitura.jpg" alt="Фурнитура" class="card-category-media">
-                                <figcaption class="card-category-title">Фурнитура</figcaption>
-                            </figure>
-                        </a>
-                    </div>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="product-online-tab" data-toggle="tab" href="#product-online-pane" role="tab" aria-controls="product-online-pane" aria-selected="false">Смотреть онлайн</a>
+                        </li>
+                    </ul>
 
-                    <div class="category-item col-6 col-md-4">
-                        <a href="catalog.html" class="card-category">
-                            <figure class="card-category-thumbnail">
-                                <img src="images/categories/category-tsilindry.jpg" alt="Цилиндры" class="card-category-media">
-                                <figcaption class="card-category-title">Цилиндры</figcaption>
-                            </figure>
-                        </a>
-                    </div>
+                    <div class="product-tab-content tab-content">
+                        <div class="tab-pane fade show active" id="product-sheme-pane" role="tabpanel" aria-labelledby="product-sheme-tab">
+                            <div class="product-scheme-block">
+                                <div class="row">
+                                    <div class="product-scheme-media-container col-xl-9">
+                                        <figure class="product-scheme-figure">
+                                            <a href="uploads/schemes/product-scheme-large.jpg" data-fancybox="product-sheme-gallery" class="product-scheme-link">
+                                                <img src="uploads/schemes/product-scheme.jpg" alt="Схема продукта" class="product-scheme-media">
+                                            </a>
+                                        </figure>
+                                    </div>
 
-                    <div class="category-item col-6 col-md-4">
-                        <a href="catalog.html" class="card-category">
-                            <figure class="card-category-thumbnail">
-                                <img src="images/categories/category-ruchki.jpg" alt="Ручки" class="card-category-media">
-                                <figcaption class="card-category-title">Ручки</figcaption>
-                            </figure>
-                        </a>
-                    </div>
+                                    <div class="product-scheme-actions-container col-xl-3">
+                                        <ul class="product-scheme-actions-list list-unstyled">
+                                            <li class="product-scheme-action-item">
+                                                <a href="#link" class="btn btn-outline btn-danger" target="_blank" >Скачать инструкцию</a>
+                                            </li>
 
-                    <div class="category-item col-6 col-md-4">
-                        <a href="catalog.html" class="card-category">
-                            <figure class="card-category-thumbnail">
-                                <img src="images/categories/category-dovodchiki.jpg" alt="Доводчики" class="card-category-media">
-                                <figcaption class="card-category-title">Доводчики</figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-brands section-home-brands">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-title">Бренды</div>
-                </div>
-
-                <div class="swiper-cover">
-                    <div class="swiper-brands swiper-container">
-                        <div class="swiper-wrapper row flex-md-nowrap">
-                            <div class="swiper-slide col-4 col-md-3 col-xl-2">
-                                <a href="catalog.html" class="card-brand">
-                                    <figure class="card-brand-thumbnail">
-                                        <img src="uploads/brands/brand-ABLOY.png" alt="ABLOY" class="card-brand-media">
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide col-4 col-md-3 col-xl-2">
-                                <a href="catalog.html" class="card-brand">
-                                    <figure class="card-brand-thumbnail">
-                                        <img src="uploads/brands/brand-KALE.png" alt="KALE" class="card-brand-media">
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide col-4 col-md-3 col-xl-2">
-                                <a href="catalog.html" class="card-brand">
-                                    <figure class="card-brand-thumbnail">
-                                        <img src="uploads/brands/brand-CISA.png" alt="CISA" class="card-brand-media">
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide col-4 col-md-3 col-xl-2">
-                                <a href="catalog.html" class="card-brand">
-                                    <figure class="card-brand-thumbnail">
-                                        <img src="uploads/brands/brand-Border.png" alt="Border" class="card-brand-media">
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide col-4 col-md-3 col-xl-2">
-                                <a href="catalog.html" class="card-brand">
-                                    <figure class="card-brand-thumbnail">
-                                        <img src="uploads/brands/brand-MOTTURA.png" alt="MOTTURA" class="card-brand-media">
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide col-4 col-md-3 col-xl-2">
-                                <a href="catalog.html" class="card-brand">
-                                    <figure class="card-brand-thumbnail">
-                                        <img src="uploads/brands/brand-APECS.png" alt="APECS" class="card-brand-media">
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide col-4 col-md-3 col-xl-2">
-                                <a href="catalog.html" class="card-brand">
-                                    <figure class="card-brand-thumbnail">
-                                        <img src="uploads/brands/brand-Border.png" alt="Border" class="card-brand-media">
-                                    </figure>
-                                </a>
+                                            <li class="product-scheme-action-item">
+                                                <a href="#link" class="btn btn-outline btn-danger" target="_blank" >Скачать схему</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <button type="button" class="swiper-brands-button-prev swiper-button-prev d-none d-md-block"></button>
-                        <button type="button" class="swiper-brands-button-next swiper-button-next d-none d-md-block"></button>
+                        <div class="tab-pane fade" id="product-description-pane" role="tabpanel" aria-labelledby="product-description-tab">.2..</div>
+                        <div class="tab-pane fade" id="product-specifications-pane" role="tabpanel" aria-labelledby="product-specifications-tab">.3..</div>
+                        <div class="tab-pane fade" id="product-reviews-pane" role="tabpanel" aria-labelledby="product-reviews-tab">.4..</div>
+                        <div class="tab-pane fade" id="product-online-pane" role="tabpanel" aria-labelledby="product-online-tab">.5..</div>
                     </div>
-                </div>
-
-                <div class="section-cta text-center">
-                    <a href="brands.html" class="section-cta">Показать еще <i class="icon-angle-right" ></i></a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-services section-gray">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-title">Услуги</div>
-                </div>
-
-                <div class="services-grid row">
-                    <div class="service-item col-6 col-md-4">
-                        <a href="catalog.html" class="card-category card-category-sm">
-                            <figure class="card-category-thumbnail">
-                                <img src="images/services/service-izgotovleniye-klyuchey.jpg" alt="Изготовление ключей" class="card-category-media">
-                                <figcaption class="card-category-title">Изготовление ключей</figcaption>
-                            </figure>
-                        </a>    
-                    </div>
-
-                    <div class="service-item col-6 col-md-4">
-                        <a href="catalog.html" class="card-category card-category-sm">
-                            <figure class="card-category-thumbnail">
-                                <img src="images/services/service-master-sistemy.jpg" alt="Мастер системы" class="card-category-media">
-                                <figcaption class="card-category-title">Мастер системы</figcaption>
-                            </figure>
-                        </a>    
-                    </div>
-
-                    <div class="service-item col-12 col-md-4">
-                        <a href="catalog.html" class="card-category card-category-sm card-category-wide">
-                            <figure class="card-category-thumbnail">
-                                <img src="images/services/service-zamena-tsilindrov.jpg" alt="Замена цилиндров" class="card-category-media">
-                                <figcaption class="card-category-title">Замена цилиндров</figcaption>
-                            </figure>
-                        </a>    
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-video section-home-video">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-title">Полезные видео</div>
-                </div>
-
-                <div class="video-grid row">
-                    <div class="video-item col-6 col-md-4">
-                        <a data-fancybox href="https://www.youtube.com/watch?v=Cw2PEd7a3Bc&amp;autoplay=1&amp;rel=0" class="card-video" >
-                            <figure class="card-video-thumbnail">
-                                <img src="uploads/videos/video-preview-1.jpg" class="card-video-media" alt="Замена личинки замка">
-                            </figure>
-
-                            <figcaption class="card-video-title" >Замена личинки замка</figcaption>
-                        </a>
-                    </div>
-
-                    <div class="video-item col-6 col-md-4">
-                        <a data-fancybox href="https://www.youtube.com/watch?v=Cw2PEd7a3Bc&amp;autoplay=1&amp;rel=0" class="card-video" >
-                            <figure class="card-video-thumbnail">
-                                <img src="uploads/videos/video-preview-2.jpg" class="card-video-media" alt="Установка петель на межкомнатную дверь">
-                            </figure>
-
-                            <figcaption class="card-video-title" >Установка петель на межкомнатную дверь</figcaption>
-                        </a>
-                    </div>
-
-                    <div class="video-item col-6 col-md-4">
-                        <a data-fancybox href="https://www.youtube.com/watch?v=Cw2PEd7a3Bc&amp;autoplay=1&amp;rel=0" class="card-video" >
-                            <figure class="card-video-thumbnail">
-                                <img src="uploads/videos/video-preview-3.jpg" class="card-video-media" alt="Установка дверной ручки и замка">
-                            </figure>
-
-                            <figcaption class="card-video-title" >Установка дверной ручки и замка</figcaption>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="section-cta text-center">
-                    <a href="video.html" class="section-cta">Показать еще <i class="icon-angle-right" ></i></a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-find-by-photo section-gray">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-title">Подбор <span class="d-none d-md-inline" >нового</span> замка по фото</div>
-                </div>
-
-                <div class="find-by-photo-message text-center d-md-none">
-                    <div class="find-by-photo-message-title">Отправьте фотографию старого замка <br> и мы подберем вам нужный!</div>
-                    <button type="button" class="btn" data-toggle="modal" data-target="#modalPhotoUploadRoot" >Загрузить фото</button>
-                </div>
-
-                <div class="steps-grid row d-none d-md-flex">
-                    <div class="step-item col-12 col-md-4 d-flex">
-                        <div class="card-step">
-                            <div class="card-step-thumbnail">
-                                <img src="images/camera.svg" width="65" height="65" alt="Сфотографируйте замок" class="card-step-media">
-                            </div>
-
-                            <div class="card-step-content">
-                                <div class="card-step-title">Сфотографируйте замок</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="step-item col-12 col-md-4 d-flex">
-                        <div class="card-step">
-                            <div class="card-step-thumbnail">
-                                <img src="images/telegram.svg" width="65" height="65" alt="Загрузить фото" class="card-step-media">
-                            </div>
-
-                            <div class="card-step-content">
-                                <button type="button" class="btn" data-toggle="modal" data-target="#modalPhotoUploadRoot" >Загрузить фото</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="step-item col-12 col-md-4 d-flex">
-                        <div class="card-step">
-                            <div class="card-step-thumbnail">
-                                <img src="images/clock.svg" width="65" height="65" alt="Ответим вам в ближайшее время" class="card-step-media">
-                            </div>
-
-                            <div class="card-step-content">
-                                <div class="card-step-title">Мы ответим вам в ближайшее время</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-contact">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-title">Мы ждем вас в нашем <br class="d-md-none" > магазине в Москве!</div>
-                </div>
-            </div>
-
-            <div class="contact-map-wrapper">
-                <div id="map">
-                    <img src="uploads/contact/map.jpg" alt="">
-                </div>
+                </section>
             </div>
         </section>
     </main>
@@ -1822,6 +1748,68 @@
         </div>
     </div>
 
+    <div class="modal fade" id="modalAddToCart" tabindex="-1" aria-labelledby="modalAddToCartLabel" aria-hidden="true">
+        <div class="modal-dialog d-flex d-md-block flex-column">
+            <div class="modal-content d-block flex-grow-1">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title" id="modalAddToCartLabel">Добавление в корзину</h4>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="icon-angle-left d-md-none" ></i>
+                        <i aria-hidden="true" class="icon-close d-none d-md-block" ></i>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="card-modal-order form-row">
+                        <div class="card-modal-order-thumbnail-container col-3 col-md-2">
+                            <a href="product.html" class="card-modal-order-thumbnail">
+                                <img src="uploads/products/product-item-1.jpg" alt="Цилиндр (личинка для замка) FUARO 100 ZA CP (60мм /30x30)" class="card-modal-order-media">
+                            </a>
+                        </div>
+
+                        <div class="card-modal-order-title-container col-9 col-md-10">
+                            <div class="card-modal-order-title">
+                                <a href="product.html">Цилиндр (личинка для замка) FUARO 100 ZA CP (60мм /30x30)</a>
+                            </div>
+                        </div>
+
+                        <div class="card-modal-order-content-container col-md-10 offset-md-2">
+                            <div class="form-row">
+                                <div class="col-auto">
+                                    <div class="card-modal-order-quantity-block">
+                                        <div class="card-modal-order-subtitle">Дополнительный ключ</div>
+                                        
+                                        <div class="card-modal-order-quantity-control custom-control custom-number">
+                                            <input class="custom-control-input" type="text" value="1" maxlength="5">
+                                            <button type="button" class="custom-control-button custom-control-plus">
+                                                <i class="icon-plus"></i>
+                                            </button>
+                                            <button type="button" class="custom-control-button custom-control-minus">
+                                                <i class="icon-minus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto">
+                                    <div class="card-modal-order-price-block">
+                                        <div class="card-modal-order-subtitle">Стоимость товара</div>
+                                        <div class="card-modal-order-price">3 450 <span><span class="rur">руб</span><span class="d-none d-md-inline" >/шт</span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn" ><i class="icon-cart" ></i>Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<script src="vendor/jquery-3.6.0/jquery-3.6.0.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
 	<script src="vendor/bootstrap-4.6.0/js/dist/util.js"></script>
@@ -1829,6 +1817,8 @@
 	<script src="vendor/bootstrap-4.6.0/js/dist/dropdown.js"></script>
 	<script src="vendor/bootstrap-4.6.0/js/dist/modal.js"></script>
     <script src="vendor/swiper-4.5.3/dist/js/swiper.min.js" ></script>
+    <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="vendor/jquery-ui-touch-punch-master/jquery.ui.touch-punch.min.js"></script>
     <script src="vendor/select2/dist/js/select2.min.js" ></script>
     <script src="vendor/Inputmask-5.x/dist/jquery.inputmask.min.js"></script>
     <script src="vendor/fancybox-master/dist/jquery.fancybox.min.js"></script>
@@ -1839,9 +1829,9 @@
     <script src="js/offcanvas.js"></script>
     <script src="js/search.js"></script>
     <script src="js/megamenu.js"></script>
-    <script src="js/sliders.js"></script>
     <script src="js/forms.js"></script>
     <script src="js/filter.js"></script>
+    <script src="js/filter_range.js"></script>
     <script src="js/nested_modals.js"></script>
 </body>
 </html>

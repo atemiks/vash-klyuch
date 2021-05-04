@@ -1,16 +1,16 @@
 .catalog-grid {
-    margin-bottom: -30px;
+    margin-bottom: 10px;
 }
 
 .catalog-grid .catalog-item {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 
 .catalog-show-more-button {
     cursor: pointer;
     width: 100%;
-    margin: 0;
+    margin: 12px 0 0;
     padding: 0;
     border: none;
     border-radius: 0;
@@ -30,4 +30,14 @@
     margin-right: 15px;
     fill: #ffda3f;
     vertical-align: middle;
+}
+
+@media (min-width: 1200px) {
+    .catalog-grid {
+        margin-bottom: 5px;
+    }
+
+    .catalog-grid .catalog-item {
+        margin-bottom: 30px;
+    }
 }
