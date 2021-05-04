@@ -1,2 +1,4 @@
+inclide:
+- css
 exclude:
 - vendor
