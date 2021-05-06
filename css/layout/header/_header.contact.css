@@ -7,9 +7,20 @@
 }
 
 
-.header-contact-block {
+.header-contact-list {
+    margin: 0;
     font-size: 16px;
     line-height: 22px;
+}
+
+.header-contact-list .header-contact-item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+
+.header-contact-block {
+    font-size: inherit;
+    line-height: inherit;
 }
 
 .header-contact-block a {
@@ -19,15 +30,6 @@
 .header-contact-block a[href^="tel:"] {
     font-size: 19px;
     font-weight: 500;
-}
-
-
-.header-contact-block .header-contact-list {
-    margin: 0 0 -5px;
-}
-
-.header-contact-block .header-contact-list .header-contact-item {
-    margin-bottom: 5px;
 }
 
 .header-contact-block .header-contact-thumbnail {

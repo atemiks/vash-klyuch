@@ -160,7 +160,6 @@
 /* product rating block */
 .card-product-rating-block {
     margin: 0 0 12px;
-    font-size: 10px;
 }
 
 .card-product-rating-block .card-product-rating {
@@ -184,6 +183,13 @@
 .card-product-order-block  .card-product-buy {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.card-product-order-block  .card-product-buy .card-product-buy-media {
+    max-width: 16px;
+    max-height: 16px;
+    margin-right: 2px;
+    transform: translateY(-15%);
 }
 /* product order block end */
 
@@ -238,6 +244,62 @@
 }
 
 
+@media (min-width: 576px) {
+    .card-product {
+        font-size: 12px;
+    }
+
+
+    /* product typography block */
+    .card-product .card-product-title {
+        height: 32px;
+        font-size: inherit;
+    }
+    /* product typography block end */
+}
+
+@media (min-width: 768px) {
+    .card-product {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+
+    /* product typography block */
+    .card-product .card-product-title {
+        height: 38px;
+        font-size: inherit;
+        line-height: 1.375;
+    }
+    /* product typography block end */
+
+
+    /* product order block */
+    .card-product-order-block  .card-product-buy .card-product-buy-media {
+        max-width: 18px;
+        max-height: 18px;
+        margin-right: 5px;
+        transform: translateY(-15%);
+    }
+    /* product order block end */
+
+
+    /* product price block */
+    .card-product-price-block .card-product-price {
+        font-size: 18px;
+    }
+
+    .card-product-price-block .card-product-price span,
+    .card-product-price-block .card-product-old-price {
+        font-size: 14px;
+    }
+
+    .card-product-price-block .card-product-old-price span {
+        font-size: 10px;
+    }
+    /* product price block */
+}
+
 @media (min-width: 1200px) {
     .card-product {
         padding: 40px 20px 0;
@@ -250,8 +312,7 @@
     }
 
 
-
-    /* product labels */
+    /* product labels block */
     .card-product-labels {
         top: 18px;
         left: 15px;
@@ -261,10 +322,10 @@
         padding: 5px 15px;
         font-size: 12px;
     }
+    /* product labels block end */
 
 
-
-    /* product actions */
+    /* product actions block */
     .card-product-actions {
         top: 10px;
         right: 10px;
@@ -281,14 +342,15 @@
         max-width: 20px;
         max-height: 20px;
     }
+    /* product actions block end */
 
 
-
-    /* product media */
+    /* product media block */
     .card-product .card-product-thumbnail {
         margin: 0 0 20px;
         padding: 0 0 95%;
     }
+    /* product media block end */
 
 
 

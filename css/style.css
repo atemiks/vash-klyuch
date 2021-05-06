@@ -22,7 +22,9 @@
 
 /* cards */
 @import 'components/cards/_card.banner.css';
+@import 'components/cards/_card.brand.css';
 @import 'components/cards/_card.product.css';
+@import 'components/cards/_card.video.css';
 
 /* header */
 @import 'layout/header/_header.css';

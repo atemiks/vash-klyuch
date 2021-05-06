@@ -137,17 +137,11 @@
 
 
 
-.offcanvas-contact-list .offcanvas-contact-item {
-    margin: 7px 0;
-}
-
-
-
 .offcanvas-contact-block a {
     color: inherit;
 }
 
-.offcanvas-contact-block a[href^="tel:"]:not(.btn) {
+.offcanvas-contact-block a[href^="tel:"] {
     font-weight: 500;
 }
 
@@ -168,4 +162,23 @@
 .offcanvas-contact-block .offcanvas-contact-metro-media {
     color: #e54444;
     fill: #e54444;
+}
+
+
+.offcanvas-callback-block {
+    color: rgba(53, 205, 0, .9);
+}
+
+.offcanvas-callback-block a[href^="tel:"] {
+    font-weight: inherit;
+}
+
+.offcanvas-callback-block .offcanvas-contact-media {
+    color: rgba(53, 205, 0, .9);
+    fill: rgba(53, 205, 0, .9);
+}
+
+
+.offcanvas-contact-list .offcanvas-contact-item {
+    margin: 7px 0;
 }

@@ -23,6 +23,7 @@
 }
 
 .hero-block .hero-banner-figure .hero-banner-media {
+    pointer-events: none;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;

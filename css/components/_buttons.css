@@ -1,7 +1,7 @@
 .btn {
     cursor: pointer;
     margin: 0;
-    padding: 9px 15px;
+    padding: 10px 15px;
     border: 1px solid #ffda3f;
     border-radius: 0;
     background-color: #ffda3f;
@@ -87,7 +87,7 @@
 
 
 .btn-sm {
-    padding: 7px ​15px;
+    padding: 7px 15px;
     font-size: 15px;
 }
 
@@ -97,6 +97,9 @@
 
 
 .btn-group-vertical {
+    -webkit-display: flex;
+    -ms-display: flex;
+    display: flex;
     width: 100%;
     margin-bottom: -20px;
 }

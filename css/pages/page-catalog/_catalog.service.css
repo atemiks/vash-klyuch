@@ -1,20 +1,22 @@
 .card-catalog-service {
     position: relative;
     width: 100%;
-    border: 10px solid #ffda3f;
+    border: 3px solid #ffda3f;
     background-color: #fff;
-    color: rgba(51, 51, 51, .8);
-    font-size: 14px;
-    line-height: 20px;
+    box-shadow: 0 0 3px rgba(164, 164, 164, 0.25);
+    color: rgba(51, 51, 51, .9);
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.4px;
 }
 
 .card-catalog-service-content {
-    padding: 20px 15px 15px;
+    padding: 15px 10px 15px;
 }
 
 .card-catalog-service-thumbnail {
     position: relative;
-    padding: 0 0 102.5%;
+    padding: 0 0 91.5%;
 }
 
 .card-catalog-service-thumbnail .card-catalog-service-media {
@@ -31,17 +33,48 @@
 
 .card-catalog-service-title,
 .card-catalog-service-description {
-    margin: 0 0 18px;
+    margin: 0 0 12px;
 }
 
 .card-catalog-service-title {
     color: rgba(51, 51, 51, .9);
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 18px;
 }
 
 .card-catalog-service-cta {
     padding-left: 5px;
     padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+    .card-catalog-service {
+        border-width: 10px;
+        color: rgba(51, 51, 51, .8);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+
+    .card-catalog-service-content {
+        padding: 20px 15px 15px;
+    }
+
+
+    .card-catalog-service-thumbnail {
+        padding: 0 0 102.5%;
+    }
+
+    .card-catalog-service-title,
+    .card-catalog-service-description {
+        margin: 0 0 18px;
+    }
+
+    .card-catalog-service-title {
+        color: rgba(51, 51, 51, .9);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+    }
 }

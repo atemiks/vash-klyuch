@@ -93,6 +93,7 @@
 .filter-group-toggle {
     margin: 0;
     padding: 20px 0;
+    /* padding: 15px 0; */
     color: inherit;
 }
 
@@ -130,21 +131,6 @@
 
 
 /* filter inner group */
-.filter-group .filter-group {
-    
-    border: none;
-    font-size: 14px;
-}
-
-.filter-group .filter-group .filter-group-header {
-    margin: 0 0 10px;
-}
-
-.filter-group .filter-group .filter-group-title,
-.filter-group .filter-group .filter-group-toggle {
-    padding: 5px 0;
-}
-
 .filter-group .filter-group select,
 .filter-group .filter-group .select2-container {
     width: 130px !important;
@@ -154,15 +140,16 @@
 
 /* filter categories */
 .filter-categories-list {
-    margin: -5px 0 15px;
+    margin: -10px 0 -5px;
     padding: 0;
 }
 
 .filter-category-checkbox.custom-control {
     margin: 0;
     padding-top: 8px;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
     font-size: 13px;
+    line-height: 1.5;
 }
 
 .filter-category-checkbox.custom-control .custom-control-content::before {
@@ -174,9 +161,9 @@
     flex: 0 0 30px;
     width: 30px;
     max-width: 30px;
-    height: 25px;
+    height: 24px;
     margin-right: 10px;
-    line-height: 25px;
+    line-height: 24px;
     text-align: center;
 }
 
@@ -193,7 +180,7 @@
 
 
 /* filter range */
-.filter-range-fields {
+.filter-range-fields-block {
     width: 205px;
     margin: 0 0 24px;
 }
@@ -209,7 +196,7 @@
     text-align: center;
 }
 
-.filter-range-slider-wrapper {
+.filter-range-slider-block {
     min-height: 6px;
     width: 205px;
     margin: 15px 0;
@@ -284,23 +271,35 @@
 /* filter parameters end */
 
 
-/* filter sheme */
-.filter-sheme-figure {
-    height: 90px;
-    margin: 0 0 20px;
+/* filter scheme */
+.filter-scheme-figure {
+    margin: 0;
 }
 
-.filter-sheme-thumbnail {
-    cursor: zoom-in;
+.filter-scheme-thumbnail {
     display: block;
     position: relative;
     width: 100%;
-    height: inherit;
+    height: 90px;
+    margin: 20px 0;
     color: currentColor;
     text-decoration: none;
 }
 
-.filter-sheme-thumbnail::after {
+.filter-scheme-thumbnail .filter-scheme-media {
+    height: inherit;
+}
+
+.filter-scheme-thumbnail:hover {
+    color: #ffda3f;
+    text-decoration: none;
+}
+
+.filter-scheme-thumbnail[data-fancybox] {
+     cursor: zoom-in;
+}
+
+.filter-scheme-thumbnail[data-fancybox]::after {
     position: absolute;
     bottom: 0;
     font-family: 'icomoon';
@@ -308,21 +307,23 @@
     content: '\e90d';
 }
 
-.filter-sheme-thumbnail:hover {
-    color: #ffda3f;
-    text-decoration: none;
-}
 
-
-.filter-sheme-thumbnail .filter-sheme-media {
-    height: inherit;
+.filter-scheme-thumbnail-vertical {
+    height: 215px;
+    margin: 15px 0;
 }
-/* filter sheme end */
+/* filter scheme end */
 
 
 /* filter variants */
+.filter-variants-title {
+    margin: 5px 0 15px;
+    color: rgba(51, 51, 51, .9);
+    font-size: 14px;
+}
+
 .filter-variants-list {
-    margin: -7px 0;
+    margin: -8px 0;
 }
 
 .filter-variants-list .filter-variant-secondary-item {
@@ -331,10 +332,11 @@
 
 .filter-variant-checkbox.custom-control {
     margin: 0;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: rgba(51, 51, 51, .8);
     font-size: 13px;
+    line-height: 1.5;
     letter-spacing: normal;
 }
 
@@ -355,6 +357,12 @@
 }
 
 
+.filter-variants-block .filter-variants-select,
+.filter-variants-block .select2-container {
+    width: 130px !important;
+}
+
+
 .filter-variants-controls {
     margin: 20px 0 0;
 }
@@ -367,7 +375,7 @@
 
 /* filter selected options */
 .filter-selected-block {
-    margin: 0 0 5px;
+    margin: 0;
     padding: 0 0 20px;
     border-bottom: 1px solid #F5F5F5;
     font-size: 13px;
@@ -486,25 +494,18 @@
     /* filter group end */
 
 
-    /* filter inner group */
-    .filter-group .filter-group {
-        margin: 5px 0 30px;
-        font-size: 15px;
-    }
-    /* filter inner group */
-
-
     /* filter categories */
     .filter-categories-group {
         border-bottom: 1px solid rgba(51, 51, 51, .05);
     }
 
     .filter-categories-list  {
-        margin: -5px 0 20px;
+        margin: -15px 0 20px;
     }
 
     .filter-category-checkbox.custom-control {
         font-size: 15px;
+        line-height: 24px;
     }
 
     .filter-category-checkbox.custom-control .custom-control-input {
@@ -523,23 +524,25 @@
 
 
     /* filter range */
-    .filter-range-fields {
+    .filter-range-fields-block {
         width: 100%;
-        margin: 0 0 28px;
+        margin: 8px 0 30px;
     }
 
     .filter-range-field {
-        height: 45px;
+        height: 40px;
         font-size: 15px;
     }
 
-    .filter-range-slider-wrapper {
+    .filter-range-slider-block {
         width: 100%;
+        margin: 10px 0;
     }
 
     .filter-range-slider {
         height: 6px;
     }
+    
 
     .filter-range-slider .ui-slider-handle {
         width: 18px;
@@ -563,17 +566,30 @@
     /* filter parameters end */
 
 
-    /* filter sheme */
-    .filter-sheme-figure {
+    /* filter scheme */
+    .filter-scheme-thumbnail {
         height: 100px;
-        margin: 0 0 30px;
+        margin: 30px 0;
     }
-    /* filter sheme end */
+
+    .filter-scheme-thumbnail-vertical {
+        height: 238px;
+        margin: 15px 0;
+    }
+    /* filter scheme end */
 
 
     /* filter variants */
-    .filter-variant-checkbox.custom-control {
+    .filter-variants-title {
+        margin: 10px 0;
         font-size: 15px;
+    }
+
+    .filter-variant-checkbox.custom-control {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 15px;
+        line-height: 24px;
     }
 
     .filter-variant-checkbox.custom-control .custom-control-input,
@@ -597,7 +613,6 @@
         margin: 0 0 25px;
         padding: 25px;
         border: 1px solid #ffda3f;
-        border: none;
         font-size: 15px;
     }
 

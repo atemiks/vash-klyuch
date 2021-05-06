@@ -1,5 +1,5 @@
 .section-contact {
-    margin: 65px 0 0;
+    margin: 25px 0 0;
     padding: 0;
 }
 
@@ -18,6 +18,12 @@
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
+}
+
+@media (min-width: 768px) {
+    .section-contact {
+        margin: 65px 0 0;
+    }
 }
 
 @media (min-width: 1200px) {
