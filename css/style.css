@@ -15,9 +15,6 @@
 @import 'components/_dropdown.css';
 @import 'components/_offcanvas.css';
 @import 'components/_megamenu.css';
-@import 'components/_modal.css';
-@import 'components/_modal.photo.css';
-@import 'components/_modal.cart.css';
 
 
 /* cards */
@@ -25,6 +22,7 @@
 @import 'components/cards/_card.brand.css';
 @import 'components/cards/_card.product.css';
 @import 'components/cards/_card.video.css';
+@import 'components/cards/_card.review.css';
 
 /* header */
 @import 'layout/header/_header.css';
@@ -66,11 +64,19 @@
 
 
 /* page product */
+@import 'pages/page-product/_product.css';
 @import 'pages/page-product/_product.gallery.css';
-@import 'pages/page-product/_product.attributes.css';
+@import 'pages/page-product/_product.actions.css';
+@import 'pages/page-product/_product.code.css';
+@import 'pages/page-product/_product.trade.css';
 @import 'pages/page-product/_product.colors.css';
 @import 'pages/page-product/_product.price.css';
+@import 'pages/page-product/_product.summary.css';
+@import 'pages/page-product/_product.specifications.css';
 @import 'pages/page-product/_product.scheme.css';
+@import 'pages/page-product/_product.description.css';
+@import 'pages/page-product/_product.reviews.css';
+@import 'pages/page-product/_product.online.css';
 
 
 /* footer */
@@ -78,3 +84,10 @@
 @import 'layout/footer/_footer.contact.css';
 @import 'layout/footer/_footer.nav.css';
 @import 'layout/footer/_footer.copyright.css';
+
+
+/* modals */
+@import 'components/_modal.css';
+@import 'components/_modal.photo.css';
+@import 'components/_modal.cart.css';
+@import 'components/_modal.review.css';

@@ -3,10 +3,19 @@
 }
 
 .form-label {
+    display: block;
     margin: 0 0 5px;
     color: rgba(51, 51, 51, .6);
     font-size: 12px;
     letter-spacing: -0.4px;
+}
+
+.form-label-lg {
+    margin: 0 0 15px;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: normal;
+    color: rgba(51, 51, 51, 1);
 }
 
 .form-control {
@@ -36,8 +45,9 @@ textarea.form-control {
     cursor: pointer;
     position: relative;
     min-height: auto;
+    margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 13px;
     line-height: normal;
 }
 
@@ -67,6 +77,63 @@ textarea.form-control {
     background-color: #ffda3f;
     font-size: 10px;
     content: '\e909';
+}
+
+
+/* custom radio */
+.custom-control.custom-radio {
+    color: rgba(51, 51, 51, .6);
+    line-height: 20px;
+    letter-spacing: normal;
+}
+
+.custom-control.custom-radio:hover {
+    color: rgba(51, 51, 51, .9);
+}
+
+.custom-control.custom-radio .custom-control-content {
+    display: block;
+    padding: 0 0 0 25px;
+    transition: color 300ms ease;
+}
+
+.custom-control.custom-radio .custom-control-content::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #e7e7e7;
+    border-radius: 50%;
+    background: #fff;
+    content: '';
+}
+
+.custom-control.custom-radio .custom-control-content::after {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffda3f;
+    content: '';
+}
+
+.custom-control.custom-radio .custom-control-input:checked + .custom-control-content {
+    color: rgba(51, 51, 51, .9);
+}
+
+.custom-control.custom-radio .custom-control-input:checked + .custom-control-content::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.form-radio-group > .custom-control.custom-radio:not(:last-child) {
+    margin-bottom: 12px;
 }
 
 
@@ -154,6 +221,39 @@ textarea.form-control {
     border-top: 5px solid currentColor;
 }
 
+
+/* custom rating */
+.custom-control.custom-rating {
+    cursor: pointer;
+    color: rgba(51, 51, 51, .9);
+    font-size: 14px;
+    letter-spacing: -0.6px;
+    text-align: center;
+}
+
+.custom-control.custom-rating .custom-control-media {
+    display: block;
+    margin: 0 auto 10px;
+    color: #ffda3f;
+    fill: #ffda3f;
+}
+
+.custom-control.custom-rating .custom-control-label::before,
+.custom-control.custom-rating .custom-control-label::after {
+    display: none;
+}
+
+.custom-control.custom-rating .custom-control-input:checked + .custom-control-label ~ .custom-control-label .custom-control-media {
+    color: rgba(51, 51, 51, .2);
+    fill: rgba(51, 51, 51, .2);
+}
+
+
+/* form message */
+.form-messgage-block {
+    line-height: 18px;
+}
+
 @media (min-width: 768px) {
     .form-group {
         margin-bottom: 30px;
@@ -165,7 +265,58 @@ textarea.form-control {
         font-size: 16px;
     }
 
+    .form-label-lg {
+        font-size: 18px;
+    }
+
     .form-control {
         height: 45px;
+    }
+
+    .form-control-sm {
+        height: 42px;
+    }
+
+
+    .custom-control {
+        font-size: 16px;
+    }
+
+
+    /* custom radio */
+    .custom-control.custom-radio {
+        line-height: 20px;
+    }
+
+    .custom-control.custom-radio .custom-control-content {
+        padding: 0 0 0 32px;
+    }
+
+    .custom-control.custom-radio .custom-control-content::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .custom-control.custom-radio .custom-control-content::after {
+        width: 12px;
+        height: 12px;
+    }
+
+    .form-radio-group > .custom-control.custom-radio:not(:last-child) {
+        margin-bottom: 18px;
+    }
+
+
+    /* form message */
+    .form-messgage-block {
+        font-size: 18px;
+        line-height: normal;
+    }
+}
+
+@media (min-width: 1200px) {
+    .form-label-lg {
+        margin: 0 0 20px;
+        font-size: 20px;
     }
 }

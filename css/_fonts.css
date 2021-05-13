@@ -85,19 +85,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-angle-left:before {
-  content: "\e900";
-}
-.icon-angle-right:before {
-  content: "\e901";
-}
-.icon-angle-up:before {
-  content: "\e902";
-}
-.icon-angle-down:before {
-  content: "\e903";
-}
-
 .icon-angle-left-xl:before {
   content: "\e904";
 }
@@ -110,15 +97,32 @@
 .icon-angle-down-xl:before {
   content: "\e907";
 }
-.icon-play:before {
-  content: "\e908";
+.icon-angle-left:before {
+  content: "\e900";
 }
-
+.icon-angle-right:before {
+  content: "\e901";
+}
+.icon-angle-up:before {
+  content: "\e902";
+}
+.icon-angle-down:before {
+  content: "\e903";
+}
+.icon-long-arrow-left:before {
+  content: "\e915";
+}
+.icon-long-arrow-right:before {
+  content: "\e916";
+}
+.icon-search:before {
+  content: "\e90d";
+}
 .icon-check:before {
   content: "\e909";
 }
 .icon-close:before {
-content: "\e90a";
+  content: "\e90a";
 }
 .icon-plus:before {
   content: "\e90b";
@@ -126,12 +130,8 @@ content: "\e90a";
 .icon-minus:before {
   content: "\e90c";
 }
-.icon-search:before {
-  content: "\e90d";
-}
-
-.icon-trash:before {
-  content: "\e90e";
+.icon-play:before {
+  content: "\e908";
 }
 .icon-clock:before {
   content: "\e90f";
@@ -141,15 +141,6 @@ content: "\e90a";
 }
 .icon-star-solid:before {
   content: "\e911";
-}
-.icon-view-grid:before {
-  content: "\e912";
-}
-.icon-view-list:before {
-  content: "\e913";
-}
-.icon-cart:before {
-  content: "\e914";
 }
 
 .rur {

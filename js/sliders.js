@@ -58,8 +58,41 @@ $(function () {
         });
     }
 
-    function destroyBrandsSwiper() {
-        return destroySlider('.swiper-brands');
+    function initRelatedSwiper() {
+        $('.swiper-related-products').each(function (_, container) {
+            let jContainer = $(container),
+                slides = jContainer.find('.swiper-slide');
+
+            new Swiper(jContainer, {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                loop: slides.length > 2 ? true : false,
+                breakpointsInverse: true,
+                breakpoints: {
+                    576: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3,
+                        loop: slides.length > 3 ? true : false,
+                    },
+
+                    992: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4,
+                        loop: slides.length > 4 ? true : false,
+                    },
+                },
+
+                navigation: {
+                    nextEl: jContainer.find('.swiper-related-products-button-next'),
+                    prevEl: jContainer.find('.swiper-related-products-button-prev'),
+                },
+
+                pagination: {
+                    el: ".swiper-related-products-pagination",
+                    type: "fraction",
+                },
+            });
+        });
     }
 
     //  destroy slider
@@ -71,8 +104,15 @@ $(function () {
         })
     }
 
+    function destroyBrandsSwiper() {
+        return destroySlider('.swiper-brands');
+    }
+
+    
+
 
     initHeroSwiper();
+    initRelatedSwiper();
     
     if(!windowSizeHelper.isPhone()) {
         initBrandsSwiper();

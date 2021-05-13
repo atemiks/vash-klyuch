@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 	<link rel="stylesheet" href="vendor/bootstrap-4.6.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/swiper-4.5.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="vendor/swiper-5.4.5/package/css/swiper.min.css">
     <link rel="stylesheet" href="vendor/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="vendor/fancybox-master/dist/jquery.fancybox.min.css">
 
@@ -395,7 +395,7 @@
                                                 <use xlink:href="images/icons/sprite.svg#icon-compare"></use>
                                             </svg>
 
-                                            <span class="badge">2</span>
+                                            <span class="header-account-badge">2</span>
                                         </div>
 
                                         <div class="header-account-value">Сравнение</div>
@@ -409,7 +409,7 @@
                                                 <use xlink:href="images/icons/sprite.svg#icon-shopping-cart"></use>
                                             </svg>
 
-                                            <span class="badge">2</span>
+                                            <span class="header-account-badge">2</span>
                                         </div>
 
                                         <div class="header-account-value">Корзина</div>
@@ -420,14 +420,14 @@
                                             <li class="header-cart-item">
                                                 <div class="card-header-order form-row">
                                                     <div class="card-header-order-thumbnail-container col-auto">
-                                                        <a href="#link" class="card-header-order-thumbnail">
+                                                        <a href="product.html" class="card-header-order-thumbnail">
                                                             <img src="uploads/products/product-item-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="card-header-order-media">
                                                         </a>
                                                     </div>
 
                                                     <div class="card-header-order-content-container col">
                                                         <div class="card-header-order-title">
-                                                            <a href="#link">Замок врезной MUL-T-LOCK DEAD</a>
+                                                            <a href="product.html">Замок врезной MUL-T-LOCK DEAD</a>
                                                         </div>
 
                                                         <div class="card-header-order-price text-nowrap">12 954 <span><span class="rur">руб</span>/шт</span></div>
@@ -444,14 +444,14 @@
                                             <li class="header-cart-item">
                                                 <div class="card-header-order form-row">
                                                     <div class="card-header-order-thumbnail-container col-auto">
-                                                        <a href="#link" class="card-header-order-thumbnail">
+                                                        <a href="product.html" class="card-header-order-thumbnail">
                                                             <img src="uploads/products/product-item-2.jpg" alt="Цилиндр Adria 2018 60 (30х30)" class="card-header-order-media">
                                                         </a>
                                                     </div>
 
                                                     <div class="card-header-order-content-container col">
                                                         <div class="card-header-order-title">
-                                                            <a href="#link">Цилиндр Adria 2018 60 (30х30)</a>
+                                                            <a href="product.html">Цилиндр Adria 2018 60 (30х30)</a>
                                                         </div>
 
                                                         <div class="card-header-order-price text-nowrap">12 954 <span><span class="rur">руб</span>/шт</span></div>
@@ -477,7 +477,7 @@
 
                                                 <div class="col-auto">
                                                     <a href="cart.html" class="btn" >
-                                                        <svg width="18" height="18">
+                                                        <svg class="btn-media" width="18" height="18">
                                                             <use xlink:href="images/icons/sprite.svg#icon-shopping-cart"></use>
                                                         </svg>
                                                         В корзину
@@ -839,7 +839,7 @@
 
     <main class="main-wrapper flex-grow-1">
         <section class="section-hero">
-            <div class="swiper-cover">
+            <div class="swiper-hero-cover swiper-cover">
                 <div class="swiper-hero swiper-container">
                     <div class="swiper-wrapper row flex-nowrap no-gutters">
                         <div class="swiper-slide col-12" >
@@ -906,8 +906,18 @@
                         </div>
                     </div>
 
-                    <button type="button" class="swiper-hero-button-prev swiper-button-prev swiper-button-xl"></button>
-                    <button type="button" class="swiper-hero-button-next swiper-button-next swiper-button-xl"></button>
+                    <button type="button" class="swiper-hero-button-prev swiper-button-prev swiper-button-xl d-flex align-items-center justify-content-center">
+                        <svg class="swiper-button-media" width="45" height="45" >
+                            <use xlink:href="images/icons/sprite.svg#icon-angle-left-xl" ></use>
+                        </svg>
+                    </button>
+
+                    <button type="button" class="swiper-hero-button-next swiper-button-next swiper-button-xl d-flex align-items-center justify-content-center">
+                        <svg class="swiper-button-media" width="45" height="45" >
+                            <use xlink:href="images/icons/sprite.svg#icon-angle-right-xl" ></use>
+                        </svg>
+                    </button>
+
                     <div class="swiper-hero-pagination swiper-pagination d-none d-md-block"></div>
                 </div>
             </div>
@@ -916,7 +926,7 @@
         <section class="section-categories section-gray">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-title">Категории товаров</div>
+                    <h2 class="section-title title-h1 text-center">Категории товаров</h2>
                 </div>
 
                 <div class="categories-grid row">
@@ -980,10 +990,10 @@
         <section class="section-brands section-home-brands">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-title">Бренды</div>
+                    <h2 class="section-title title-h2 text-center">Бренды</h2>
                 </div>
 
-                <div class="swiper-cover">
+                <div class="swiper-brands-cover swiper-cover">
                     <div class="swiper-brands swiper-container">
                         <div class="swiper-wrapper row flex-md-nowrap">
                             <div class="swiper-slide col-4 col-md-3 col-xl-2">
@@ -1071,8 +1081,17 @@
                             </div>
                         </div>
 
-                        <button type="button" class="swiper-brands-button-prev swiper-button-prev d-none d-md-block"></button>
-                        <button type="button" class="swiper-brands-button-next swiper-button-next d-none d-md-block"></button>
+                        <button type="button" class="swiper-brands-button-prev swiper-button-prev d-none d-md-flex align-items-center justify-content-center">
+                            <svg class="swiper-button-media" width="16" height="16" >
+                                <use xlink:href="images/icons/sprite.svg#icon-angle-left" ></use>
+                            </svg>
+                        </button>
+
+                        <button type="button" class="swiper-brands-button-next swiper-button-next d-none d-md-flex align-items-center justify-content-center">
+                            <svg class="swiper-button-media" width="16" height="16" >
+                                <use xlink:href="images/icons/sprite.svg#icon-angle-right" ></use>
+                            </svg>
+                        </button>
                     </div>
                 </div>
 
@@ -1085,7 +1104,7 @@
         <section class="section-find-by-photo section-gray">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-title">Подбор <span class="d-none d-md-inline" >нового</span> замка по фото</div>
+                    <h2 class="section-title title-h1 text-center">Подбор <span class="d-none d-md-inline" >нового</span> замка по фото</h2>
                 </div>
 
                 <div class="find-by-photo-message-block text-center d-md-none">
@@ -1141,7 +1160,7 @@
         <section class="section-services">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-title">Услуги</div>
+                    <h2 class="section-title title-h1 text-center">Услуги</h2>
                 </div>
 
                 <div class="services-grid row">
@@ -1178,7 +1197,7 @@
         <section class="section-video section-home-video section-gray">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-title">Полезные видео</div>
+                    <h2 class="section-title title-h1 text-center">Полезные видео</h2>
                 </div>
 
                 <div class="video-grid row">
@@ -1228,7 +1247,7 @@
         <section class="section-contact">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-title">Мы ждем вас в нашем <br class="d-md-none" > магазине в Москве!</div>
+                    <h2 class="section-title title-h2 text-center">Мы ждем вас в нашем <br class="d-md-none" > магазине в Москве!</h2>
                 </div>
             </div>
 
@@ -1969,7 +1988,7 @@
 	<script src="vendor/bootstrap-4.6.0/js/dist/tab.js"></script>
 	<script src="vendor/bootstrap-4.6.0/js/dist/dropdown.js"></script>
 	<script src="vendor/bootstrap-4.6.0/js/dist/modal.js"></script>
-    <script src="vendor/swiper-4.5.3/dist/js/swiper.min.js" ></script>
+    <script src="vendor/swiper-5.4.5/package/js/swiper.min.js" ></script>
     <script src="vendor/select2/dist/js/select2.min.js" ></script>
     <script src="vendor/Inputmask-5.x/dist/jquery.inputmask.min.js"></script>
     <script src="vendor/fancybox-master/dist/jquery.fancybox.min.js"></script>

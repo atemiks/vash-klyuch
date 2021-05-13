@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 	<link rel="stylesheet" href="vendor/bootstrap-4.6.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/swiper-4.5.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="vendor/swiper-5.4.5/package/css/swiper.min.css">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="vendor/select2/dist/css/select2.min.css">
@@ -16,7 +16,7 @@
 
 	<title>Ваш Ключ</title>
 </head>
-<body class="page-home d-flex flex-column" >
+<body class="page-catalog d-flex flex-column" >
 	<header class="header-wrapper">
         <div class="header-statusbar-wrapper d-none d-xl-block">
             <div class="container">
@@ -397,7 +397,7 @@
                                                 <use xlink:href="images/icons/sprite.svg#icon-compare"></use>
                                             </svg>
 
-                                            <span class="badge">2</span>
+                                            <span class="header-account-badge">2</span>
                                         </div>
 
                                         <div class="header-account-value">Сравнение</div>
@@ -411,7 +411,7 @@
                                                 <use xlink:href="images/icons/sprite.svg#icon-shopping-cart"></use>
                                             </svg>
 
-                                            <span class="badge">2</span>
+                                            <span class="header-account-badge">2</span>
                                         </div>
 
                                         <div class="header-account-value">Корзина</div>
@@ -422,14 +422,14 @@
                                             <li class="header-cart-item">
                                                 <div class="card-header-order form-row">
                                                     <div class="card-header-order-thumbnail-container col-auto">
-                                                        <a href="#link" class="card-header-order-thumbnail">
+                                                        <a href="product.html" class="card-header-order-thumbnail">
                                                             <img src="uploads/products/product-item-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="card-header-order-media">
                                                         </a>
                                                     </div>
 
                                                     <div class="card-header-order-content-container col">
                                                         <div class="card-header-order-title">
-                                                            <a href="#link">Замок врезной MUL-T-LOCK DEAD</a>
+                                                            <a href="product.html">Замок врезной MUL-T-LOCK DEAD</a>
                                                         </div>
 
                                                         <div class="card-header-order-price text-nowrap">12 954 <span><span class="rur">руб</span>/шт</span></div>
@@ -446,14 +446,14 @@
                                             <li class="header-cart-item">
                                                 <div class="card-header-order form-row">
                                                     <div class="card-header-order-thumbnail-container col-auto">
-                                                        <a href="#link" class="card-header-order-thumbnail">
+                                                        <a href="product.html" class="card-header-order-thumbnail">
                                                             <img src="uploads/products/product-item-2.jpg" alt="Цилиндр Adria 2018 60 (30х30)" class="card-header-order-media">
                                                         </a>
                                                     </div>
 
                                                     <div class="card-header-order-content-container col">
                                                         <div class="card-header-order-title">
-                                                            <a href="#link">Цилиндр Adria 2018 60 (30х30)</a>
+                                                            <a href="product.html">Цилиндр Adria 2018 60 (30х30)</a>
                                                         </div>
 
                                                         <div class="card-header-order-price text-nowrap">12 954 <span><span class="rur">руб</span>/шт</span></div>
@@ -479,7 +479,7 @@
 
                                                 <div class="col-auto">
                                                     <a href="cart.html" class="btn" >
-                                                        <svg width="18" height="18">
+                                                        <svg class="btn-media" width="18" height="18">
                                                             <use xlink:href="images/icons/sprite.svg#icon-shopping-cart"></use>
                                                         </svg>
                                                         В корзину
@@ -1445,7 +1445,7 @@
                             <div class="catalog-item col-6 col-sm-4 d-flex">
                                 <div class="card-product d-flex flex-column">
                                     <figure class="card-product-thumbnail">
-                                        <a href="#link" class="card-product-thumbnail-link">
+                                        <a href="product.html" class="card-product-thumbnail-link">
                                             <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
                                         </a>
 
@@ -1456,7 +1456,7 @@
                                         </button>
                                     </figure>
 
-                                    <a href="#link" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
 
                                     <div class="card-product-brand">Производитель: CISA</div>
 
@@ -1482,10 +1482,14 @@
                                             <div class="card-product-quantity-control custom-control custom-number">
                                                 <input class="custom-control-input" type="text" value="1" maxlength="5">
                                                 <button type="button" class="custom-control-button custom-control-plus">
-                                                    <i class="icon-plus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
                                                 </button>
                                                 <button type="button" class="custom-control-button custom-control-minus">
-                                                    <i class="icon-minus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -1515,7 +1519,7 @@
                             <div class="catalog-item col-6 col-sm-4 d-flex">
                                 <div class="card-product d-flex flex-column">
                                     <figure class="card-product-thumbnail">
-                                        <a href="#link" class="card-product-thumbnail-link">
+                                        <a href="product.html" class="card-product-thumbnail-link">
                                             <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
                                         </a>
 
@@ -1526,7 +1530,7 @@
                                         </button>
                                     </figure>
 
-                                    <a href="#link" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
 
                                     <div class="card-product-brand">Производитель: CISA</div>
 
@@ -1552,10 +1556,14 @@
                                             <div class="card-product-quantity-control custom-control custom-number">
                                                 <input class="custom-control-input" type="text" value="1" maxlength="5">
                                                 <button type="button" class="custom-control-button custom-control-plus">
-                                                    <i class="icon-plus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
                                                 </button>
                                                 <button type="button" class="custom-control-button custom-control-minus">
-                                                    <i class="icon-minus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -1585,7 +1593,7 @@
                             <div class="catalog-item col-6 col-sm-4 d-flex">
                                 <div class="card-product d-flex flex-column">
                                     <figure class="card-product-thumbnail">
-                                        <a href="#link" class="card-product-thumbnail-link">
+                                        <a href="product.html" class="card-product-thumbnail-link">
                                             <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
                                         </a>
 
@@ -1596,7 +1604,7 @@
                                         </button>
                                     </figure>
 
-                                    <a href="#link" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
 
                                     <div class="card-product-brand">Производитель: CISA</div>
 
@@ -1622,10 +1630,14 @@
                                             <div class="card-product-quantity-control custom-control custom-number">
                                                 <input class="custom-control-input" type="text" value="1" maxlength="5">
                                                 <button type="button" class="custom-control-button custom-control-plus">
-                                                    <i class="icon-plus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
                                                 </button>
                                                 <button type="button" class="custom-control-button custom-control-minus">
-                                                    <i class="icon-minus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -1655,7 +1667,7 @@
                             <div class="catalog-item col-6 col-sm-4 d-flex">
                                 <div class="card-product d-flex flex-column">
                                     <figure class="card-product-thumbnail">
-                                        <a href="#link" class="card-product-thumbnail-link">
+                                        <a href="product.html" class="card-product-thumbnail-link">
                                             <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
                                         </a>
 
@@ -1666,7 +1678,7 @@
                                         </button>
                                     </figure>
 
-                                    <a href="#link" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
 
                                     <div class="card-product-brand">Производитель: CISA</div>
 
@@ -1692,10 +1704,14 @@
                                             <div class="card-product-quantity-control custom-control custom-number">
                                                 <input class="custom-control-input" type="text" value="1" maxlength="5">
                                                 <button type="button" class="custom-control-button custom-control-plus">
-                                                    <i class="icon-plus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
                                                 </button>
                                                 <button type="button" class="custom-control-button custom-control-minus">
-                                                    <i class="icon-minus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -1725,7 +1741,7 @@
                             <div class="catalog-item col-6 col-sm-4 d-flex">
                                 <div class="card-product d-flex flex-column">
                                     <figure class="card-product-thumbnail">
-                                        <a href="#link" class="card-product-thumbnail-link">
+                                        <a href="product.html" class="card-product-thumbnail-link">
                                             <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
                                         </a>
 
@@ -1736,7 +1752,7 @@
                                         </button>
                                     </figure>
 
-                                    <a href="#link" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
 
                                     <div class="card-product-brand">Производитель: CISA</div>
 
@@ -1762,10 +1778,14 @@
                                             <div class="card-product-quantity-control custom-control custom-number">
                                                 <input class="custom-control-input" type="text" value="1" maxlength="5">
                                                 <button type="button" class="custom-control-button custom-control-plus">
-                                                    <i class="icon-plus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
                                                 </button>
                                                 <button type="button" class="custom-control-button custom-control-minus">
-                                                    <i class="icon-minus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -1795,7 +1815,7 @@
                             <div class="catalog-item col-6 col-sm-4 d-flex">
                                 <div class="card-product d-flex flex-column">
                                     <figure class="card-product-thumbnail">
-                                        <a href="#link" class="card-product-thumbnail-link">
+                                        <a href="product.html" class="card-product-thumbnail-link">
                                             <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
                                         </a>
 
@@ -1806,7 +1826,7 @@
                                         </button>
                                     </figure>
 
-                                    <a href="#link" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
 
                                     <div class="card-product-brand">Производитель: CISA</div>
 
@@ -1832,10 +1852,14 @@
                                             <div class="card-product-quantity-control custom-control custom-number">
                                                 <input class="custom-control-input" type="text" value="1" maxlength="5">
                                                 <button type="button" class="custom-control-button custom-control-plus">
-                                                    <i class="icon-plus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
                                                 </button>
                                                 <button type="button" class="custom-control-button custom-control-minus">
-                                                    <i class="icon-minus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -1865,7 +1889,7 @@
                             <div class="catalog-item col-6 col-sm-4 d-flex">
                                 <div class="card-product d-flex flex-column">
                                     <figure class="card-product-thumbnail">
-                                        <a href="#link" class="card-product-thumbnail-link">
+                                        <a href="product.html" class="card-product-thumbnail-link">
                                             <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
                                         </a>
 
@@ -1876,7 +1900,7 @@
                                         </button>
                                     </figure>
 
-                                    <a href="#link" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
 
                                     <div class="card-product-brand">Производитель: CISA</div>
 
@@ -1902,10 +1926,14 @@
                                             <div class="card-product-quantity-control custom-control custom-number">
                                                 <input class="custom-control-input" type="text" value="1" maxlength="5">
                                                 <button type="button" class="custom-control-button custom-control-plus">
-                                                    <i class="icon-plus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
                                                 </button>
                                                 <button type="button" class="custom-control-button custom-control-minus">
-                                                    <i class="icon-minus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -1935,7 +1963,7 @@
                             <div class="catalog-item col-6 col-sm-4 d-flex">
                                 <div class="card-product d-flex flex-column">
                                     <figure class="card-product-thumbnail">
-                                        <a href="#link" class="card-product-thumbnail-link">
+                                        <a href="product.html" class="card-product-thumbnail-link">
                                             <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
                                         </a>
 
@@ -1946,7 +1974,7 @@
                                         </button>
                                     </figure>
 
-                                    <a href="#link" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
 
                                     <div class="card-product-brand">Производитель: CISA</div>
 
@@ -1972,10 +2000,14 @@
                                             <div class="card-product-quantity-control custom-control custom-number">
                                                 <input class="custom-control-input" type="text" value="1" maxlength="5">
                                                 <button type="button" class="custom-control-button custom-control-plus">
-                                                    <i class="icon-plus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
                                                 </button>
                                                 <button type="button" class="custom-control-button custom-control-minus">
-                                                    <i class="icon-minus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -2002,7 +2034,7 @@
                                 </div>
                             </div>
 
-                            <div class="catalog-item catalog-service-item col-6 col-md-4 d-flex">
+                            <div class="catalog-item catalog-service-item col-6 col-sm-4 d-flex">
                                 <div class="card-catalog-service d-flex flex-column">
                                     <div class="card-catalog-service-thumbnail">
                                         <img src="uploads/catalog/service-find-by-photo.jpg" alt="" class="card-catalog-service-media">
@@ -2019,7 +2051,7 @@
                             <div class="catalog-item col-6 col-sm-4 d-flex">
                                 <div class="card-product d-flex flex-column">
                                     <figure class="card-product-thumbnail">
-                                        <a href="#link" class="card-product-thumbnail-link">
+                                        <a href="product.html" class="card-product-thumbnail-link">
                                             <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
                                         </a>
 
@@ -2030,7 +2062,7 @@
                                         </button>
                                     </figure>
 
-                                    <a href="#link" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
 
                                     <div class="card-product-brand">Производитель: CISA</div>
 
@@ -2056,10 +2088,14 @@
                                             <div class="card-product-quantity-control custom-control custom-number">
                                                 <input class="custom-control-input" type="text" value="1" maxlength="5">
                                                 <button type="button" class="custom-control-button custom-control-plus">
-                                                    <i class="icon-plus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
                                                 </button>
                                                 <button type="button" class="custom-control-button custom-control-minus">
-                                                    <i class="icon-minus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -2089,7 +2125,7 @@
                             <div class="catalog-item col-6 col-sm-4 d-flex">
                                 <div class="card-product d-flex flex-column">
                                     <figure class="card-product-thumbnail">
-                                        <a href="#link" class="card-product-thumbnail-link">
+                                        <a href="product.html" class="card-product-thumbnail-link">
                                             <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
                                         </a>
 
@@ -2100,7 +2136,7 @@
                                         </button>
                                     </figure>
 
-                                    <a href="#link" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
 
                                     <div class="card-product-brand">Производитель: CISA</div>
 
@@ -2126,10 +2162,14 @@
                                             <div class="card-product-quantity-control custom-control custom-number">
                                                 <input class="custom-control-input" type="text" value="1" maxlength="5">
                                                 <button type="button" class="custom-control-button custom-control-plus">
-                                                    <i class="icon-plus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
                                                 </button>
                                                 <button type="button" class="custom-control-button custom-control-minus">
-                                                    <i class="icon-minus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -2159,7 +2199,7 @@
                             <div class="catalog-item col-6 col-sm-4 d-flex">
                                 <div class="card-product d-flex flex-column">
                                     <figure class="card-product-thumbnail">
-                                        <a href="#link" class="card-product-thumbnail-link">
+                                        <a href="product.html" class="card-product-thumbnail-link">
                                             <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
                                         </a>
 
@@ -2170,7 +2210,7 @@
                                         </button>
                                     </figure>
 
-                                    <a href="#link" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
 
                                     <div class="card-product-brand">Производитель: CISA</div>
 
@@ -2196,10 +2236,14 @@
                                             <div class="card-product-quantity-control custom-control custom-number">
                                                 <input class="custom-control-input" type="text" value="1" maxlength="5">
                                                 <button type="button" class="custom-control-button custom-control-plus">
-                                                    <i class="icon-plus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
                                                 </button>
                                                 <button type="button" class="custom-control-button custom-control-minus">
-                                                    <i class="icon-minus" ></i>
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
@@ -3053,14 +3097,14 @@
                 <div class="modal-body">
                     <div class="card-modal-order form-row">
                         <div class="card-modal-order-thumbnail-container col-3 col-md-2">
-                            <a href="#link" class="card-modal-order-thumbnail">
+                            <a href="product.html" class="card-modal-order-thumbnail">
                                 <img src="uploads/products/product-item-1.jpg" alt="Цилиндр (личинка для замка) FUARO 100 ZA CP (60мм /30x30)" class="card-modal-order-media">
                             </a>
                         </div>
 
                         <div class="card-modal-order-title-container col-9 col-md-10">
                             <div class="card-modal-order-title">
-                                <a href="#link">Цилиндр (личинка для замка) FUARO 100 ZA CP (60мм /30x30)</a>
+                                <a href="product.html">Цилиндр (личинка для замка) FUARO 100 ZA CP (60мм /30x30)</a>
                             </div>
                         </div>
 
@@ -3094,7 +3138,12 @@
                 </div>
 
                 <div class="modal-footer text-center">
-                    <button type="button" class="btn" ><i class="icon-cart" ></i>Добавить в корзину</button>
+                    <button type="button" class="btn" >
+                        <svg class="btn-media" width="18" height="18">
+                            <use xlink:href="images/icons/sprite.svg#icon-shopping-cart"></use>
+                        </svg>
+                        Добавить в корзину
+                    </button>
                 </div>
             </div>
         </div>
@@ -3106,7 +3155,7 @@
 	<script src="vendor/bootstrap-4.6.0/js/dist/tab.js"></script>
 	<script src="vendor/bootstrap-4.6.0/js/dist/dropdown.js"></script>
 	<script src="vendor/bootstrap-4.6.0/js/dist/modal.js"></script>
-    <script src="vendor/swiper-4.5.3/dist/js/swiper.min.js" ></script>
+    <script src="vendor/swiper-5.4.5/package/js/swiper.min.js" ></script>
     <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="vendor/jquery-ui-touch-punch-master/jquery.ui.touch-punch.min.js"></script>
     <script src="vendor/select2/dist/js/select2.min.js" ></script>
@@ -3119,9 +3168,11 @@
     <script src="js/offcanvas.js"></script>
     <script src="js/search.js"></script>
     <script src="js/megamenu.js"></script>
+    <script src="js/sliders.js"></script>
     <script src="js/forms.js"></script>
     <script src="js/filter.js"></script>
     <script src="js/filter_range.js"></script>
+    <script src="js/product.js"></script>
     <script src="js/nested_modals.js"></script>
 </body>
 </html>

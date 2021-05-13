@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 	<link rel="stylesheet" href="vendor/bootstrap-4.6.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/swiper-4.5.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="vendor/swiper-5.4.5/package/css/swiper.min.css">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="vendor/select2/dist/css/select2.min.css">
@@ -16,7 +16,7 @@
 
 	<title>Ваш Ключ</title>
 </head>
-<body class="page-home d-flex flex-column" >
+<body class="page-product d-flex flex-column" >
 	<header class="header-wrapper">
         <div class="header-statusbar-wrapper d-none d-xl-block">
             <div class="container">
@@ -397,7 +397,7 @@
                                                 <use xlink:href="images/icons/sprite.svg#icon-compare"></use>
                                             </svg>
 
-                                            <span class="badge">2</span>
+                                            <span class="header-account-badge">2</span>
                                         </div>
 
                                         <div class="header-account-value">Сравнение</div>
@@ -411,7 +411,7 @@
                                                 <use xlink:href="images/icons/sprite.svg#icon-shopping-cart"></use>
                                             </svg>
 
-                                            <span class="badge">2</span>
+                                            <span class="header-account-badge">2</span>
                                         </div>
 
                                         <div class="header-account-value">Корзина</div>
@@ -422,14 +422,14 @@
                                             <li class="header-cart-item">
                                                 <div class="card-header-order form-row">
                                                     <div class="card-header-order-thumbnail-container col-auto">
-                                                        <a href="#link" class="card-header-order-thumbnail">
+                                                        <a href="product.html" class="card-header-order-thumbnail">
                                                             <img src="uploads/products/product-item-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="card-header-order-media">
                                                         </a>
                                                     </div>
 
                                                     <div class="card-header-order-content-container col">
                                                         <div class="card-header-order-title">
-                                                            <a href="#link">Замок врезной MUL-T-LOCK DEAD</a>
+                                                            <a href="product.html">Замок врезной MUL-T-LOCK DEAD</a>
                                                         </div>
 
                                                         <div class="card-header-order-price text-nowrap">12 954 <span><span class="rur">руб</span>/шт</span></div>
@@ -446,14 +446,14 @@
                                             <li class="header-cart-item">
                                                 <div class="card-header-order form-row">
                                                     <div class="card-header-order-thumbnail-container col-auto">
-                                                        <a href="#link" class="card-header-order-thumbnail">
+                                                        <a href="product.html" class="card-header-order-thumbnail">
                                                             <img src="uploads/products/product-item-2.jpg" alt="Цилиндр Adria 2018 60 (30х30)" class="card-header-order-media">
                                                         </a>
                                                     </div>
 
                                                     <div class="card-header-order-content-container col">
                                                         <div class="card-header-order-title">
-                                                            <a href="#link">Цилиндр Adria 2018 60 (30х30)</a>
+                                                            <a href="product.html">Цилиндр Adria 2018 60 (30х30)</a>
                                                         </div>
 
                                                         <div class="card-header-order-price text-nowrap">12 954 <span><span class="rur">руб</span>/шт</span></div>
@@ -479,7 +479,7 @@
 
                                                 <div class="col-auto">
                                                     <a href="cart.html" class="btn" >
-                                                        <svg width="18" height="18">
+                                                        <svg class="btn-media" width="18" height="18">
                                                             <use xlink:href="images/icons/sprite.svg#icon-shopping-cart"></use>
                                                         </svg>
                                                         В корзину
@@ -873,86 +873,122 @@
                         <h1 class="product-title">Замок врезной MUL-T-LOCK DEAD</h1>
                     </div>
 
-                    <div class="product-code-container col-auto align-self-center">
+                    <div class="product-code-container col-auto align-self-end d-none d-xl-block">
                         <div class="product-code-block">Код товара: <span class="product-code">35491</span></div>
                     </div>
                 </div>
 
                 <section class="section-product-main">
                     <div class="row">
-                        <div class="product-gallery-container col-xl-5">
+                        <div class="product-gallery-container col-12 col-md-7 col-lg-5 order-0">
                             <div class="product-gallery-wrapper form-row">
-                                <div class="product-media-container col-xl order-xl-1">
+                                <div class="product-media-container col-12 col-md-10 order-md-1">
                                     <div class="product-gallery-block">
-                                        <div class="swiper-product-gallery swiper-container">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <a href="uploads/product/product-main-1.jpg" class="product-gallery">
-                                                        <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
-                                                    </a>
-                                                </div>
+                                        <div class="swiper-product-gallery-cover swiper-cover">
+                                            <div class="swiper-product-gallery swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <a href="uploads/product/product-main-1.jpg" class="product-gallery">
+                                                            <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
+                                                        </a>
+                                                    </div>
 
-                                                <div class="swiper-slide">
-                                                    <a href="uploads/product/product-main-1.jpg" class="product-gallery">
-                                                        <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
-                                                    </a>
-                                                </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="uploads/product/product-main-1.jpg" class="product-gallery">
+                                                            <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
+                                                        </a>
+                                                    </div>
 
-                                                <div class="swiper-slide">
-                                                    <a href="uploads/product/product-main-1.jpg" class="product-gallery">
-                                                        <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
-                                                    </a>
-                                                </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="uploads/product/product-main-1.jpg" class="product-gallery">
+                                                            <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
+                                                        </a>
+                                                    </div>
 
-                                                <div class="swiper-slide">
-                                                    <a href="uploads/product/product-main-1.jpg" class="product-gallery">
-                                                        <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
-                                                    </a>
-                                                </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="uploads/product/product-main-1.jpg" class="product-gallery">
+                                                            <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
+                                                        </a>
+                                                    </div>
 
-                                                <div class="swiper-slide">
-                                                    <a href="uploads/product/product-main-1.jpg" class="product-gallery">
-                                                        <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
-                                                    </a>
+                                                    <div class="swiper-slide">
+                                                        <a href="uploads/product/product-main-1.jpg" class="product-gallery">
+                                                            <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <a href="uploads/product/product-main-1.jpg" class="product-gallery">
+                                                            <img loading="lazy" src="uploads/product/product-main-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-gallery-media">
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
+                                        </div>
+
+                                        <div class="product-actions d-flex flex-column align-items-end">
+                                            <button type="button" class="product-action product-action-compare" >
+                                                <svg width="20" height="20">
+                                                    <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
+                                                </svg>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                                 
-                                <div class="product-thumnbails-container col-xl-auto order-xl-0">
+                                <div class="product-thumnbails-container col-12 col-md-2 order-md-0">
                                     <div class="product-thumnbails-block">
-                                        <div class="swiper-product-thumnbails swiper-container">
-                                            <div class="swiper-wrapper flex-xl-column">
-                                                <div class="swiper-slide">
-                                                    <div class="product-thumnbail">
-                                                        <img loading="lazy" src="uploads/product/product-thumb-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
+                                        <div class="swiper-product-thumbnails-cover swiper-cover">
+                                            <div class="swiper-product-thumbnails swiper-container">
+                                                <div class="swiper-wrapper flex-md-column">
+                                                    <div class="swiper-slide">
+                                                        <div class="product-thumnbail">
+                                                            <img loading="lazy" src="uploads/product/product-thumb-1.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="product-thumnbail">
+                                                            <img loading="lazy" src="uploads/product/product-thumb-2.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="product-thumnbail">
+                                                            <img loading="lazy" src="uploads/product/product-thumb-3.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="product-thumnbail">
+                                                            <img loading="lazy" src="uploads/product/product-thumb-4.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="product-thumnbail">
+                                                            <img loading="lazy" src="uploads/product/product-thumb-2.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="product-thumnbail">
+                                                            <img loading="lazy" src="uploads/product/product-thumb-3.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
+                                                        </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="swiper-slide">
-                                                    <div class="product-thumnbail">
-                                                        <img loading="lazy" src="uploads/product/product-thumb-2.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
-                                                    </div>
-                                                </div>
+                                                <button type="button" class="swiper-product-thumbnails-button-prev swiper-button-prev d-none d-md-flex align-items-center justify-content-center">
+                                                    <svg class="swiper-button-media" width="16" height="16" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-angle-up" ></use>
+                                                    </svg>
+                                                </button>
 
-                                                <div class="swiper-slide">
-                                                    <div class="product-thumnbail">
-                                                        <img loading="lazy" src="uploads/product/product-thumb-3.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
-                                                    </div>
-                                                </div>
-
-                                                <div class="swiper-slide">
-                                                    <div class="product-thumnbail">
-                                                        <img loading="lazy" src="uploads/product/product-thumb-4.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
-                                                    </div>
-                                                </div>
-
-                                                <div class="swiper-slide">
-                                                    <div class="product-thumnbail">
-                                                        <img loading="lazy" src="uploads/product/product-thumb-3.jpg" alt="Замок врезной MUL-T-LOCK DEAD" class="product-thumnbail-media">
-                                                    </div>
-                                                </div>
+                                                <button type="button" class="swiper-product-thumbnails-button-next swiper-button-next d-none d-md-flex align-items-center justify-content-center">
+                                                    <svg class="swiper-button-media" width="16" height="16" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-angle-down" ></use>
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -960,107 +996,133 @@
                             </div>
                         </div>
 
-                        <div class="product-summary-container col-xl-4">
+                        <div class="product-summary-container col-12 col-lg-4 order-2 order-lg-1">
                             <div class="product-summary-block">
-                                <div class="product-summary-title">Характеристики</div>
+                                <h4 class="product-summary-title">Характеристики</h4>
 
-                                <div class="product-attributes-block">
-                                    <ul class="product-attributes-list list-unstyled">
-                                        <li class="product-attribute-item d-flex justify-content-between">
-                                            <span class="product-attribute-name">Назначение</span>
-                                            <span class="product-attribute-value">Для входных дверей</span>
+                                <div class="product-specifications-block">
+                                    <ul class="product-specifications-list product-specifications-sm-list list-unstyled">
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Назначение</span>
+                                                <span class="product-specification-value">Для входных дверей</span>
+                                            </div>
                                         </li>
 
-                                        <li class="product-attribute-item d-flex justify-content-between">
-                                            <span class="product-attribute-name">Тип замка</span>
-                                            <span class="product-attribute-value">Врезной</span>
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Тип замка</span>
+                                                <span class="product-specification-value">Врезной</span>
+                                            </div>
                                         </li>
 
-                                        <li class="product-attribute-item d-flex justify-content-between">
-                                            <span class="product-attribute-name">Тип механизма </span>
-                                            <span class="product-attribute-value">Цилиндровый</span>
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Тип механизма </span>
+                                                <span class="product-specification-value">Цилиндровый</span>
+                                            </div>
                                         </li>
 
-                                        <li class="product-attribute-item d-flex justify-content-between">
-                                            <span class="product-attribute-name">Толщина полотна двери</span>
-                                            <span class="product-attribute-value">40-50 мм</span>
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Толщина полотна двери</span>
+                                                <span class="product-specification-value">40-50 мм</span>
+                                            </div>
                                         </li>
 
-                                        <li class="product-attribute-item d-flex justify-content-between">
-                                            <span class="product-attribute-name">Вылет ригелей</span>
-                                            <span class="product-attribute-value">25,4 мм</span>
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Вылет ригелей</span>
+                                                <span class="product-specification-value">25,4 мм</span>
+                                            </div>
                                         </li>
 
                                         
-                                        <li class="product-attribute-item product-attribute-secondary-item">
-                                            <span class="product-attribute-name">Бренд</span>
-                                            <span class="product-attribute-value">MULT-T-LOCK DEAD</span>
+                                        <li class="product-specification-item product-specification-secondary-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Бренд</span>
+                                                <span class="product-specification-value">MULT-T-LOCK DEAD</span>
+                                            </div>
                                         </li>
 
-                                        <li class="product-attribute-item product-attribute-secondary-item">
-                                            <span class="product-attribute-name">Количество ключей</span>
-                                            <span class="product-attribute-value">5 штук</span>
+                                        <li class="product-specification-item product-specification-secondary-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Количество ключей</span>
+                                                <span class="product-specification-value">5 штук</span>
+                                            </div>
                                         </li>
 
-                                        <li class="product-attribute-item product-attribute-secondary-item">
-                                            <span class="product-attribute-name">Материал</span>
-                                            <span class="product-attribute-value">Цилиндровый</span>
+                                        <li class="product-specification-item product-specification-secondary-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Материал</span>
+                                                <span class="product-specification-value">Цилиндровый</span>
+                                            </div>
                                         </li>
 
-                                        <li class="product-attribute-item product-attribute-secondary-item">
-                                            <span class="product-attribute-name">Межцентровое расстояние отверстий</span>
-                                            <span class="product-attribute-value">40-50 мм</span>
+                                        <li class="product-specification-item product-specification-secondary-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Межцентровое расстояние отверстий</span>
+                                                <span class="product-specification-value">40-50 мм</span>
+                                            </div>
                                         </li>
 
-                                        <li class="product-attribute-item product-attribute-secondary-item">
-                                            <span class="product-attribute-name">Принцип запирания</span>
-                                            <span class="product-attribute-value">сувальдный</span>
+                                        <li class="product-specification-item product-specification-secondary-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Принцип запирания</span>
+                                                <span class="product-specification-value">сувальдный</span>
+                                            </div>
                                         </li>
 
-                                        <li class="product-attribute-item product-attribute-secondary-item">
-                                            <span class="product-attribute-name">Тип запирания</span>
-                                            <span class="product-attribute-value">сувальдный</span>
+                                        <li class="product-specification-item product-specification-secondary-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Тип запирания</span>
+                                                <span class="product-specification-value">сувальдный</span>
+                                            </div>
                                         </li>
                                     </ul>
 
-                                    <div class="product-attributes-controls">
-                                        <button type="button" class="product-attribute-control" data-expended="false" >Смотреть все характеристики</button>
-                                        <button type="button" class="product-attribute-control" data-expended="true" >Свернуть все характеристики</button>
+                                    <div class="product-specifications-controls">
+                                        <button type="button" class="product-specification-toggle btn-link" data-expended="false" >Смотреть все характеристики</button>
+                                        <button type="button" class="product-specification-toggle btn-link d-none" data-expended="true" >Свернуть все характеристики</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="product-order-container col-xl-3">
-                            <div class="product-colors-block">
-                                <ul class="product-colors-list d-flex flex-wrap list-unstyled">
-                                    <li class="product-color-item">
-                                        <a href="#link" class="product-color active">
-                                            <img src="uploads/colors/color-item-1.png" alt="Золотой" class="product-color-media">
-                                        </a>
-                                    </li>
+                        <div class="product-trade-container col-12 col-md-5 col-lg-3 order-1 order-lg-2">
+                            <div class="product-trade-block">
+                                <div class="product-colors-block form-row align-items-center">
+                                    <div class="product-colors-title col-auto">Цвет:</div>
 
-                                    <li class="product-color-item">
-                                        <a href="#link" class="product-color">
-                                            <img src="uploads/colors/color-item-2.png" alt="Бежевый" class="product-color-media">
-                                        </a>
-                                    </li>
+                                    <ul class="product-colors-list d-flex flex-wrap list-unstyled col">
+                                        <li class="product-color-item">
+                                            <a href="product.html" class="product-color active">
+                                                <img src="uploads/colors/color-item-1.png" alt="Золотой" class="product-color-media">
+                                            </a>
+                                        </li>
 
-                                    <li class="product-color-item">
-                                        <a href="#link" class="product-color">
-                                            <img src="uploads/colors/color-item-3.png" alt="Серый" class="product-color-media">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <li class="product-color-item">
+                                            <a href="product.html" class="product-color">
+                                                <img src="uploads/colors/color-item-2.png" alt="Бежевый" class="product-color-media">
+                                            </a>
+                                        </li>
 
-                            <div class="product-order-block row">
-                                <div class="product-price-block col-auto col-xl-12">
-                                    <div class="product-price">16 750 <span>руб/шт</span></div>
+                                        <li class="product-color-item">
+                                            <a href="product.html" class="product-color">
+                                                <img src="uploads/colors/color-item-3.png" alt="Серый" class="product-color-media">
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
 
-                                <div class="product-trade-block col-auto col-xl-12">
-                                    <button type="button" class="product-buy btn btn-lg" >Предзаказать</button>
+                                <div class="product-order-block row align-items-center">
+                                    <div class="product-price-block col-auto col-md-12">
+                                        <div class="product-price">16 750 <span>руб/шт</span></div>
+                                    </div>
+
+                                    <div class="product-buy-block col-auto col-md-12">
+                                        <button type="button" class="product-buy btn btn-lg" >Предзаказать</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1068,48 +1130,60 @@
                 </section>
 
                 <section class="section-product-details">
-                    <ul class="product-nav-tabs nav nav-tabs" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="product-scheme-tab" data-toggle="tab" href="#product-scheme-pane" role="tab" aria-controls="product-scheme-pane" aria-selected="true">Схема и инструкция</a>
-                        </li>
+                    <nav class="product-nav-tabs-navigation nav-tabs-navigation">
+                        <ul class="product-nav-tabs nav nav-tabs d-inline-flex flex-nowrap" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="product-scheme-tab" data-toggle="tab" href="#product-scheme-pane" role="tab" aria-controls="product-scheme-pane" aria-selected="true">Схема и инструкция</a>
+                            </li>
 
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="product-description-tab" data-toggle="tab" href="#product-description-pane" role="tab" aria-controls="product-description-pane" aria-selected="false">О товаре</a>
-                        </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="product-description-tab" data-toggle="tab" href="#product-description-pane" role="tab" aria-controls="product-description-pane" aria-selected="false">О товаре</a>
+                            </li>
 
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="product-specifications-tab" data-toggle="tab" href="#product-specifications-pane" role="tab" aria-controls="product-specifications-pane" aria-selected="false">Характеристики</a>
-                        </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="product-specifications-tab" data-toggle="tab" href="#product-specifications-pane" role="tab" aria-controls="product-specifications-pane" aria-selected="false">Характеристики</a>
+                            </li>
 
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="product-reviews-tab" data-toggle="tab" href="#product-reviews-pane" role="tab" aria-controls="product-reviews-pane" aria-selected="false">Отзывы</a>
-                        </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="product-reviews-tab" data-toggle="tab" href="#product-reviews-pane" role="tab" aria-controls="product-reviews-pane" aria-selected="false">Отзывы</a>
+                            </li>
 
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="product-online-tab" data-toggle="tab" href="#product-online-pane" role="tab" aria-controls="product-online-pane" aria-selected="false">Смотреть онлайн</a>
-                        </li>
-                    </ul>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="product-online-tab" data-toggle="tab" href="#product-online-pane" role="tab" aria-controls="product-online-pane" aria-selected="false">Смотреть онлайн</a>
+                            </li>
+                        </ul>
+                    </nav>
 
                     <div class="product-tab-content tab-content">
                         <div class="tab-pane fade show active" id="product-scheme-pane" role="tabpanel" aria-labelledby="product-scheme-tab">
                             <div class="product-scheme-block">
                                 <div class="row">
-                                    <div class="product-scheme-media-container col-xl-9">
+                                    <div class="product-scheme-media-container col-md-8 col-xl-9">
                                         <figure class="product-scheme-figure">
-                                            <a href="uploads/schemes/product-scheme-large.jpg" data-fancybox="product-scheme-gallery" class="product-scheme-link">
+                                            <a href="uploads/schemes/product-scheme-large.jpg" data-fancybox="product-scheme-gallery" class="product-scheme-thumbnail">
                                                 <img src="uploads/schemes/product-scheme.jpg" alt="Схема продукта" class="product-scheme-media">
                                             </a>
                                         </figure>
                                     </div>
 
-                                    <div class="product-scheme-actions-container col-xl-3">
-                                        <ul class="product-scheme-actions-list list-unstyled">
-                                            <li class="product-scheme-action-item">
-                                                <a href="#link" class="btn btn-outline btn-danger" target="_blank" >Скачать инструкцию</a>
+                                    <div class="product-scheme-actions-container col-md-4 col-xl-3">
+                                        <ul class="product-scheme-actions-list list-unstyled form-row">
+                                            <li class="product-scheme-action-item col-auto">
+                                                <a href="#link" class="btn btn-outline btn-danger" target="_blank" >
+                                                    <svg class="btn-media" width="18" height="18" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-file-pdf" ></use>
+                                                    </svg>
+                                                    Скачать инструкцию
+                                                </a>
                                             </li>
 
-                                            <li class="product-scheme-action-item">
-                                                <a href="#link" class="btn btn-outline btn-danger" target="_blank" >Скачать схему</a>
+                                            <li class="product-scheme-action-item col-auto">
+                                                <a href="#link" class="btn btn-outline btn-danger" target="_blank" >
+                                                    <svg class="btn-media" width="18" height="18" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-file-pdf" ></use>
+                                                    </svg>
+                                                    Скачать схему
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1117,12 +1191,806 @@
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" id="product-description-pane" role="tabpanel" aria-labelledby="product-description-tab">.2..</div>
-                        <div class="tab-pane fade" id="product-specifications-pane" role="tabpanel" aria-labelledby="product-specifications-tab">.3..</div>
-                        <div class="tab-pane fade" id="product-reviews-pane" role="tabpanel" aria-labelledby="product-reviews-tab">.4..</div>
-                        <div class="tab-pane fade" id="product-online-pane" role="tabpanel" aria-labelledby="product-online-tab">.5..</div>
+                        <div class="tab-pane fade" id="product-description-pane" role="tabpanel" aria-labelledby="product-description-tab">
+                            <div class="product-description-block">
+                                <p>Замок — механическое, электронное или комбинированное устройство фиксации. Применяется для запирания дверей, крышек, ёмкостей и пр., а также для обеспечения блокировки предметов с целью предотвращения их похищения и/или ограничения доступа. В зависимости от принципа действия привода различают замки механические и электронные. В зависимости от крепления различают замки навесные, накладные, врезные (встроенные) и другие (например, для ювелирных изделий).</p>
+                                <p>Замки были изобретены с переходом людей к оседлости, строительством стационарных жилищ с прочной дверью и имущественным расслоением. В местах, где плотность населения мала, проживают близкородственные или религиозные группы, замки не получили широкого распространения.</p>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="product-specifications-pane" role="tabpanel" aria-labelledby="product-specifications-tab">
+                            <div class="product-specifications-container row">
+                                <div class="product-specifications-block col-xl-6">
+                                    <h6 class="product-specifications-title">Основные характеристики</h6>
+
+                                    <ul class="product-specifications-list list-unstyled">
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Назначение</span>
+                                                <span class="product-specification-value">Для входных дверей</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Тип замка</span>
+                                                <span class="product-specification-value">Врезной</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Тип механизма </span>
+                                                <span class="product-specification-value">Цилиндровый</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Толщина полотна двери</span>
+                                                <span class="product-specification-value">40-50 мм</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Вылет ригелей</span>
+                                                <span class="product-specification-value">25,4 мм</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Бренд / Страна регистрации бренда</span>
+                                                <span class="product-specification-value">Cisa / Израиль</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="product-specifications-block col-xl-6">
+                                    <h6 class="product-specifications-title">Дополнительные характеристики</h6>
+                                    
+                                    <ul class="product-specifications-list list-unstyled">
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Бренд</span>
+                                                <span class="product-specification-value">MUL-T-LOCK DEAD</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Материал</span>
+                                                <span class="product-specification-value">Сталь</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Межцентровое расстояние отверстий</span>
+                                                <span class="product-specification-value">63 мм</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Принцип запирания</span>
+                                                <span class="product-specification-value">сувальдный</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="product-specification-item">
+                                            <div class="product-specification d-flex justify-content-between">
+                                                <span class="product-specification-name">Тип запирания</span>
+                                                <span class="product-specification-value">сувальдный</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="product-reviews-pane" role="tabpanel" aria-labelledby="product-reviews-tab">
+                            <div class="swiper-product-reviews-cover swiper-cover">
+                                <div class="swiper-product-reviews swiper-reviews swiper-container">
+                                    <div class="swiper-wrapper row flex-nowrap">
+                                        <div class="swiper-slide col-sm-6">
+                                            <div class="card-review">
+                                                <div class="card-review-header row align-items-center">
+                                                    <div class="card-review-name col text-truncate">Александр Л.</div>
+                                                    
+                                                    <div class="card-review-date col-auto text-muted">17 января 2021</div>
+                                                    
+                                                    <div class="card-review-rating-block col-12 col-xl-auto">
+                                                        <div class="card-review-rating">
+                                                            <i class="icon-star-solid"></i>
+                                                            <i class="icon-star-solid"></i>
+                                                            <i class="icon-star-solid"></i>
+                                                            <i class="icon-star-solid"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-review-content">
+                                                    <dl class="card-review-comments-list">
+                                                        <div class="card-review-comment-item">
+                                                            <dt class="card-review-comment-label card-review-positive-comment-label">Достоинства</dt>
+                                                            <dd class="card-review-comment">Легкая и простая установка, наличие инструкции</dd>
+                                                        </div>
+
+                                                        <div class="card-review-comment-item">
+                                                            <dt class="card-review-comment-label card-review-negative-comment-label">Недостатки</dt>
+                                                            <dd class="card-review-comment">Не выявлены</dd>
+                                                        </div>
+
+                                                        <div class="card-review-comment-item">
+                                                            <dt class="card-review-comment-label">Комментарий</dt>
+                                                            <dd class="card-review-comment">Отличный и качественный замок! Порадовала быстрая доставка, хорошее обслуживание со стороны менеджера.</dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide col-sm-6">
+                                            <div class="card-review">
+                                                <div class="card-review-header row align-items-center">
+                                                    <div class="card-review-name col text-truncate">Сергей П.</div>
+                                                    
+                                                    <div class="card-review-date col-auto text-muted">17 января 2021</div>
+                                                    
+                                                    <div class="card-review-rating-block col-12 col-xl-auto">
+                                                        <div class="card-review-rating">
+                                                            <i class="icon-star-solid"></i>
+                                                            <i class="icon-star-solid"></i>
+                                                            <i class="icon-star-solid"></i>
+                                                            <i class="icon-star-solid"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-review-content">
+                                                    <dl class="card-review-comments-list">
+                                                        <div class="card-review-comment-item">
+                                                            <dt class="card-review-comment-label card-review-positive-comment-label">Достоинства</dt>
+                                                            <dd class="card-review-comment">Легкая и простая установка, наличие инструкции</dd>
+                                                        </div>
+
+                                                        <div class="card-review-comment-item">
+                                                            <dt class="card-review-comment-label card-review-negative-comment-label">Недостатки</dt>
+                                                            <dd class="card-review-comment">Не выявлены</dd>
+                                                        </div>
+
+                                                        <div class="card-review-comment-item">
+                                                            <dt class="card-review-comment-label">Комментарий</dt>
+                                                            <dd class="card-review-comment">Отличный и качественный замок! Порадовала быстрая доставка, хорошее обслуживание со стороны менеджера.</dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide col-sm-6">
+                                            <div class="card-review">
+                                                <div class="card-review-header row align-items-center">
+                                                    <div class="card-review-name col text-truncate">Сергей П.</div>
+                                                    
+                                                    <div class="card-review-date col-auto text-muted">17 января 2021</div>
+                                                    
+                                                    <div class="card-review-rating-block col-12 col-xl-auto">
+                                                        <div class="card-review-rating">
+                                                            <i class="icon-star-solid"></i>
+                                                            <i class="icon-star-solid"></i>
+                                                            <i class="icon-star-solid"></i>
+                                                            <i class="icon-star-solid"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-review-content">
+                                                    <dl class="card-review-comments-list">
+                                                        <div class="card-review-comment-item">
+                                                            <dt class="card-review-comment-label card-review-positive-comment-label">Достоинства</dt>
+                                                            <dd class="card-review-comment">Легкая и простая установка, наличие инструкции</dd>
+                                                        </div>
+
+                                                        <div class="card-review-comment-item">
+                                                            <dt class="card-review-comment-label card-review-negative-comment-label">Недостатки</dt>
+                                                            <dd class="card-review-comment">Не выявлены</dd>
+                                                        </div>
+
+                                                        <div class="card-review-comment-item">
+                                                            <dt class="card-review-comment-label">Комментарий</dt>
+                                                            <dd class="card-review-comment">Отличный и качественный замок! Порадовала быстрая доставка, хорошее обслуживание со стороны менеджера.</dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="swiper-product-reviews-button-prev swiper-button-prev d-none d-md-flex align-items-center justify-content-center">
+                                        <svg class="swiper-button-media" width="16" height="16" >
+                                            <use xlink:href="images/icons/sprite.svg#icon-angle-left" ></use>
+                                        </svg>
+                                    </button>
+
+                                    <button type="button" class="swiper-product-reviews-button-next swiper-button-next d-none d-md-flex align-items-center justify-content-center">
+                                        <svg class="swiper-button-media" width="16" height="16" >
+                                            <use xlink:href="images/icons/sprite.svg#icon-angle-right" ></use>
+                                        </svg>
+                                    </button>
+
+                                    <div class="swiper-product-reviews-pagination-wrapper swiper-pagination-wrapper d-flex d-md-none align-items-center justify-content-center">
+                                        <button type="button" class="swiper-product-reviews-button-prev swiper-long-arrow-button-prev">
+                                            <svg class="swiper-button-media" width="26" height="12" >
+                                                <use xlink:href="images/icons/sprite.svg#icon-long-arrow-left" ></use>
+                                            </svg>
+                                        </button>
+
+                                        <div class="swiper-product-reviews-pagination swiper-pagination"></div>
+
+                                        <button type="button" class="swiper-product-reviews-button-next swiper-long-arrow-button-next">
+                                            <svg class="swiper-button-media" width="26" height="12" >
+                                                <use xlink:href="images/icons/sprite.svg#icon-long-arrow-right" ></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-review-add-block text-center">
+                                <button type="button" class="product-review-add-btn btn" data-toggle="modal" data-target="#modalAddReview" >Оставить отзыв</button>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="product-online-pane" role="tabpanel" aria-labelledby="product-online-tab">
+                            <form action="" class="form-product-online">
+                                <div class="form-message-block form-row">
+                                    <div class="form-message-label-container col-auto">
+                                        <span class="badge badge-danger badge-status">LIVE</span>
+                                    </div>
+
+                                    <div class="form-message-content-container col align-self-center">Мы можем показать вам товар по видеозвонку, для этого укажите способ связи и логин</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="form-label form-label-lg">Укажите способ связи</span>
+
+                                    <div class="form-radio-group">
+                                        <label class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" value="Skype" name="product-online-by" checked >
+                                            <span class="custom-control-content">Skype</span>
+                                        </label>
+
+                                        <label class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" value="Zoom" name="product-online-by" >
+                                            <span class="custom-control-content">Zoom</span>
+                                        </label>
+
+                                        <label class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" value="Whatsapp" name="product-online-by" >
+                                            <span class="custom-control-content">Whatsapp</span>
+                                        </label>
+
+                                        <label class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" value="Telegram" name="product-online-by" >
+                                            <span class="custom-control-content">Telegram</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-product-online-username" class="form-label form-label-lg" >Укажите логин или номер телефона в Skype</label>
+
+                                    <div class="row">
+                                        <div class="col-xl-7">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <input type="text" id="form-product-online-username" class="form-control form-control-sm" required >
+                                                </div>
+
+                                                <div class="col-auto">
+                                                    <button type="submit" class="btn" >Продолжить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </section>
+            </div>
+        </section>
+
+        <section class="section-related-products section-products">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title section-title-sm">С этим товаром покупают</h2>
+                </div>
+
+                <div class="swiper-related-products-cover swiper-cover">
+                    <div class="swiper-related-products swiper-products swiper-container">
+                        <div class="swiper-wrapper row flex-nowrap">
+                            <div class="swiper-slide col-6 col-sm-4 col-lg-3">
+                                <div class="card-product d-flex flex-column">
+                                    <figure class="card-product-thumbnail">
+                                        <a href="product.html" class="card-product-thumbnail-link">
+                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
+                                        </a>
+
+                                        <button type="button" class="card-product-quickview" >
+                                            <svg width="21" height="21">
+                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
+                                            </svg>
+                                        </button>
+                                    </figure>
+
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+
+                                    <div class="card-product-brand">Производитель: CISA</div>
+
+                                    <div class="card-product-rating-block d-flex align-items-center">
+                                        <div class="card-product-rating">
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star" ></i>
+                                        </div>
+
+                                        <div class="card-product-rating-count">1 отзыв</div>
+                                    </div>
+
+                                    <div class="card-product-order-block">
+                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
+                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
+                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
+                                        </div>
+
+                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
+                                            <div class="card-product-quantity-control custom-control custom-number">
+                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
+                                                <button type="button" class="custom-control-button custom-control-plus">
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="custom-control-button custom-control-minus">
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
+                                            <svg class="card-product-buy-media" width="18" height="18" >
+                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                    </div>
+
+                                    <div class="card-product-labels d-flex flex-column align-items-start">
+                                        <span class="card-product-label">Дополнительный ключ</span>
+                                    </div>
+
+                                    <div class="card-product-actions d-flex flex-column align-items-end">
+                                        <button type="button" class="card-product-action card-product-action-compare" >
+                                            <svg width="20" height="20">
+                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide col-6 col-sm-4 col-lg-3">
+                                <div class="card-product d-flex flex-column">
+                                    <figure class="card-product-thumbnail">
+                                        <a href="product.html" class="card-product-thumbnail-link">
+                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
+                                        </a>
+
+                                        <button type="button" class="card-product-quickview" >
+                                            <svg width="21" height="21">
+                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
+                                            </svg>
+                                        </button>
+                                    </figure>
+
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+
+                                    <div class="card-product-brand">Производитель: CISA</div>
+
+                                    <div class="card-product-rating-block d-flex align-items-center">
+                                        <div class="card-product-rating">
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star" ></i>
+                                        </div>
+
+                                        <div class="card-product-rating-count">1 отзыв</div>
+                                    </div>
+
+                                    <div class="card-product-order-block">
+                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
+                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
+                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
+                                        </div>
+
+                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
+                                            <div class="card-product-quantity-control custom-control custom-number">
+                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
+                                                <button type="button" class="custom-control-button custom-control-plus">
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="custom-control-button custom-control-minus">
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
+                                            <svg class="card-product-buy-media" width="18" height="18" >
+                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                    </div>
+
+                                    <div class="card-product-labels d-flex flex-column align-items-start">
+                                        <span class="card-product-label">Дополнительный ключ</span>
+                                    </div>
+
+                                    <div class="card-product-actions d-flex flex-column align-items-end">
+                                        <button type="button" class="card-product-action card-product-action-compare" >
+                                            <svg width="20" height="20">
+                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide col-6 col-sm-4 col-lg-3">
+                                <div class="card-product d-flex flex-column">
+                                    <figure class="card-product-thumbnail">
+                                        <a href="product.html" class="card-product-thumbnail-link">
+                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
+                                        </a>
+
+                                        <button type="button" class="card-product-quickview" >
+                                            <svg width="21" height="21">
+                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
+                                            </svg>
+                                        </button>
+                                    </figure>
+
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+
+                                    <div class="card-product-brand">Производитель: CISA</div>
+
+                                    <div class="card-product-rating-block d-flex align-items-center">
+                                        <div class="card-product-rating">
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star" ></i>
+                                        </div>
+
+                                        <div class="card-product-rating-count">1 отзыв</div>
+                                    </div>
+
+                                    <div class="card-product-order-block">
+                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
+                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
+                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
+                                        </div>
+
+                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
+                                            <div class="card-product-quantity-control custom-control custom-number">
+                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
+                                                <button type="button" class="custom-control-button custom-control-plus">
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="custom-control-button custom-control-minus">
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
+                                            <svg class="card-product-buy-media" width="18" height="18" >
+                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                    </div>
+
+                                    <div class="card-product-labels d-flex flex-column align-items-start">
+                                        <span class="card-product-label">Дополнительный ключ</span>
+                                    </div>
+
+                                    <div class="card-product-actions d-flex flex-column align-items-end">
+                                        <button type="button" class="card-product-action card-product-action-compare" >
+                                            <svg width="20" height="20">
+                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide col-6 col-sm-4 col-lg-3">
+                                <div class="card-product d-flex flex-column">
+                                    <figure class="card-product-thumbnail">
+                                        <a href="product.html" class="card-product-thumbnail-link">
+                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
+                                        </a>
+
+                                        <button type="button" class="card-product-quickview" >
+                                            <svg width="21" height="21">
+                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
+                                            </svg>
+                                        </button>
+                                    </figure>
+
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+
+                                    <div class="card-product-brand">Производитель: CISA</div>
+
+                                    <div class="card-product-rating-block d-flex align-items-center">
+                                        <div class="card-product-rating">
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star" ></i>
+                                        </div>
+
+                                        <div class="card-product-rating-count">1 отзыв</div>
+                                    </div>
+
+                                    <div class="card-product-order-block">
+                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
+                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
+                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
+                                        </div>
+
+                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
+                                            <div class="card-product-quantity-control custom-control custom-number">
+                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
+                                                <button type="button" class="custom-control-button custom-control-plus">
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="custom-control-button custom-control-minus">
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
+                                            <svg class="card-product-buy-media" width="18" height="18" >
+                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                    </div>
+
+                                    <div class="card-product-labels d-flex flex-column align-items-start">
+                                        <span class="card-product-label">Дополнительный ключ</span>
+                                    </div>
+
+                                    <div class="card-product-actions d-flex flex-column align-items-end">
+                                        <button type="button" class="card-product-action card-product-action-compare" >
+                                            <svg width="20" height="20">
+                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide col-6 col-sm-4 col-lg-3">
+                                <div class="card-product d-flex flex-column">
+                                    <figure class="card-product-thumbnail">
+                                        <a href="product.html" class="card-product-thumbnail-link">
+                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
+                                        </a>
+
+                                        <button type="button" class="card-product-quickview" >
+                                            <svg width="21" height="21">
+                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
+                                            </svg>
+                                        </button>
+                                    </figure>
+
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+
+                                    <div class="card-product-brand">Производитель: CISA</div>
+
+                                    <div class="card-product-rating-block d-flex align-items-center">
+                                        <div class="card-product-rating">
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star" ></i>
+                                        </div>
+
+                                        <div class="card-product-rating-count">1 отзыв</div>
+                                    </div>
+
+                                    <div class="card-product-order-block">
+                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
+                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
+                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
+                                        </div>
+
+                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
+                                            <div class="card-product-quantity-control custom-control custom-number">
+                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
+                                                <button type="button" class="custom-control-button custom-control-plus">
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="custom-control-button custom-control-minus">
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
+                                            <svg class="card-product-buy-media" width="18" height="18" >
+                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                    </div>
+
+                                    <div class="card-product-labels d-flex flex-column align-items-start">
+                                        <span class="card-product-label">Дополнительный ключ</span>
+                                    </div>
+
+                                    <div class="card-product-actions d-flex flex-column align-items-end">
+                                        <button type="button" class="card-product-action card-product-action-compare" >
+                                            <svg width="20" height="20">
+                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide col-6 col-sm-4 col-lg-3">
+                                <div class="card-product d-flex flex-column">
+                                    <figure class="card-product-thumbnail">
+                                        <a href="product.html" class="card-product-thumbnail-link">
+                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
+                                        </a>
+
+                                        <button type="button" class="card-product-quickview" >
+                                            <svg width="21" height="21">
+                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
+                                            </svg>
+                                        </button>
+                                    </figure>
+
+                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
+
+                                    <div class="card-product-brand">Производитель: CISA</div>
+
+                                    <div class="card-product-rating-block d-flex align-items-center">
+                                        <div class="card-product-rating">
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star-solid" ></i>
+                                            <i class="icon-star" ></i>
+                                        </div>
+
+                                        <div class="card-product-rating-count">1 отзыв</div>
+                                    </div>
+
+                                    <div class="card-product-order-block">
+                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
+                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
+                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
+                                        </div>
+
+                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
+                                            <div class="card-product-quantity-control custom-control custom-number">
+                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
+                                                <button type="button" class="custom-control-button custom-control-plus">
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="custom-control-button custom-control-minus">
+                                                    <svg class="custom-control-media" width="9" height="9" >
+                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
+                                            <svg class="card-product-buy-media" width="18" height="18" >
+                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                    </div>
+
+                                    <div class="card-product-labels d-flex flex-column align-items-start">
+                                        <span class="card-product-label">Дополнительный ключ</span>
+                                    </div>
+
+                                    <div class="card-product-actions d-flex flex-column align-items-end">
+                                        <button type="button" class="card-product-action card-product-action-compare" >
+                                            <svg width="20" height="20">
+                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="swiper-related-products-button-prev swiper-button-prev d-none d-md-flex align-items-center justify-content-center">
+                            <svg class="swiper-button-media" width="16" height="16" >
+                                <use xlink:href="images/icons/sprite.svg#icon-angle-left" ></use>
+                            </svg>
+                        </button>
+
+                        <button type="button" class="swiper-related-products-button-next swiper-button-next d-none d-md-flex align-items-center justify-content-center">
+                            <svg class="swiper-button-media" width="16" height="16" >
+                                <use xlink:href="images/icons/sprite.svg#icon-angle-right" ></use>
+                            </svg>
+                        </button>
+
+                        <div class="swiper-related-products-pagination-wrapper swiper-pagination-wrapper d-flex d-md-none align-items-center justify-content-center">
+                            <button type="button" class="swiper-related-products-button-prev swiper-long-arrow-button-prev">
+                                <svg class="swiper-button-media" width="26" height="12" >
+                                    <use xlink:href="images/icons/sprite.svg#icon-long-arrow-left" ></use>
+                                </svg>
+                            </button>
+
+                            <div class="swiper-related-products-pagination swiper-pagination"></div>
+
+                            <button type="button" class="swiper-related-products-button-next swiper-long-arrow-button-next">
+                                <svg class="swiper-button-media" width="26" height="12" >
+                                    <use xlink:href="images/icons/sprite.svg#icon-long-arrow-right" ></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -1865,14 +2733,14 @@
                 <div class="modal-body">
                     <div class="card-modal-order form-row">
                         <div class="card-modal-order-thumbnail-container col-3 col-md-2">
-                            <a href="#link" class="card-modal-order-thumbnail">
+                            <a href="product.html" class="card-modal-order-thumbnail">
                                 <img src="uploads/products/product-item-1.jpg" alt="Цилиндр (личинка для замка) FUARO 100 ZA CP (60мм /30x30)" class="card-modal-order-media">
                             </a>
                         </div>
 
                         <div class="card-modal-order-title-container col-9 col-md-10">
                             <div class="card-modal-order-title">
-                                <a href="#link">Цилиндр (личинка для замка) FUARO 100 ZA CP (60мм /30x30)</a>
+                                <a href="product.html">Цилиндр (личинка для замка) FUARO 100 ZA CP (60мм /30x30)</a>
                             </div>
                         </div>
 
@@ -1906,7 +2774,114 @@
                 </div>
 
                 <div class="modal-footer text-center">
-                    <button type="button" class="btn" ><i class="icon-cart" ></i>Добавить в корзину</button>
+                    <button type="button" class="btn" >
+                        <svg class="btn-media" width="18" height="18">
+                            <use xlink:href="images/icons/sprite.svg#icon-shopping-cart"></use>
+                        </svg>
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAddReview" tabindex="-1" aria-labelledby="modalAddReviewLabel" aria-hidden="true">
+        <div class="modal-dialog d-flex d-md-block flex-column">
+            <div class="modal-content d-block flex-grow-1">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalAddReviewLabel">Написать отзыв</h4>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="icon-angle-left d-md-none" ></i>
+                        <i aria-hidden="true" class="icon-close d-none d-md-block" ></i>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="" class="form-modal">
+                        <div class="form-group">
+                            
+                            <div class="custom-control custom-rating d-flex justify-content-between">
+                                <input type="radio" id="custom-rating-value-1" class="custom-control-input" value="1" name="score" >
+                                <label for="custom-rating-value-1" class="custom-control-label" >
+                                    <svg class="custom-control-media" width="19" height="19" >
+                                        <use xlink:href="images/icons/sprite.svg#icon-star-solid" ></use>
+                                    </svg>
+                                    Плохой
+                                </label>
+
+                                <input type="radio" id="custom-rating-value-2" class="custom-control-input" value="2" name="score" >
+                                <label for="custom-rating-value-2" class="custom-control-label" >
+                                    <svg class="custom-control-media" width="19" height="19" >
+                                        <use xlink:href="images/icons/sprite.svg#icon-star-solid" ></use>
+                                    </svg>
+                                    Так себе
+                                </label>
+
+                                <input type="radio" id="custom-rating-value-3" class="custom-control-input" value="3" name="score" >
+                                <label for="custom-rating-value-3" class="custom-control-label" >
+                                    <svg class="custom-control-media" width="19" height="19" >
+                                        <use xlink:href="images/icons/sprite.svg#icon-star-solid" ></use>
+                                    </svg>
+                                    Приемлимо
+                                </label>
+
+                                <input type="radio" id="custom-rating-value-4" class="custom-control-input" value="4" name="score" >
+                                <label for="custom-rating-value-4" class="custom-control-label" >
+                                    <svg class="custom-control-media" width="19" height="19" >
+                                        <use xlink:href="images/icons/sprite.svg#icon-star-solid" ></use>
+                                    </svg>
+                                    Хороший
+                                </label>
+
+                                <input type="radio" id="custom-rating-value-5" class="custom-control-input" value="5" name="score" checked >
+                                <label for="custom-rating-value-5" class="custom-control-label" >
+                                    <svg class="custom-control-media" width="19" height="19" >
+                                        <use xlink:href="images/icons/sprite.svg#icon-star-solid" ></use>
+                                    </svg>
+                                    Отличный
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modal-add-review-comment-positive" class="form-label">Достоинства</label>
+                            <input type="text" id="modal-add-review-comment-positive" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modal-add-review-comment-negative" class="form-label">Недостатки</label>
+                            <input type="text" id="modal-add-review-comment-negative" class="form-control" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modal-add-review-comment" class="form-label">Комментарий</label>
+                            <textarea id="modal-add-review-comment" class="form-control"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modal-add-review-name" class="form-label">Ваше ФИО</label>
+                            <input type="text" id="modal-add-review-name" class="form-control">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="modal-add-review-email" class="form-label">Электронная почта</label>
+                            <input type="email" id="modal-add-review-email" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" required checked >
+                                <span class="custom-control-content">Уведомлять об ответах по электронной почте</span>
+                            </label>
+                        </div>
+
+                        <div class="form-btn-group btn-group d-flex flex-wrap justify-content-end">
+                            <button type="button" class="btn btn-secondary btn-outline" >Отменить</button>
+                            <button type="submit" class="btn" >Оставить отзыв</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -1918,7 +2893,7 @@
 	<script src="vendor/bootstrap-4.6.0/js/dist/tab.js"></script>
 	<script src="vendor/bootstrap-4.6.0/js/dist/dropdown.js"></script>
 	<script src="vendor/bootstrap-4.6.0/js/dist/modal.js"></script>
-    <script src="vendor/swiper-4.5.3/dist/js/swiper.min.js" ></script>
+    <script src="vendor/swiper-5.4.5/package/js/swiper.min.js" ></script>
     <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="vendor/jquery-ui-touch-punch-master/jquery.ui.touch-punch.min.js"></script>
     <script src="vendor/select2/dist/js/select2.min.js" ></script>
@@ -1931,9 +2906,11 @@
     <script src="js/offcanvas.js"></script>
     <script src="js/search.js"></script>
     <script src="js/megamenu.js"></script>
+    <script src="js/sliders.js"></script>
     <script src="js/forms.js"></script>
     <script src="js/filter.js"></script>
     <script src="js/filter_range.js"></script>
+    <script src="js/product.js"></script>
     <script src="js/nested_modals.js"></script>
 </body>
 </html>

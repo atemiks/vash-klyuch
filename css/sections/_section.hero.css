@@ -50,6 +50,8 @@
 .swiper-hero .swiper-hero-button-prev,
 .swiper-hero .swiper-hero-button-next {
     transform: translate(0);
+    color: #ffda3f;
+    fill: #ffda3f;
 }
 
 .swiper-hero .swiper-hero-button-prev {
@@ -58,11 +60,6 @@
 
 .swiper-hero .swiper-hero-button-next {
     right: 0;
-}
-
-.swiper-hero .swiper-hero-button-prev::after,
-.swiper-hero .swiper-hero-button-next::after {
-    color: #ffda3f;
 }
 
 .swiper-hero .swiper-hero-pagination {
