@@ -40,6 +40,10 @@ h6,
     line-height: normal;
 }
 
+p {
+    margin: 0;
+}
+
 a {
     color: #0072f9;
     text-decoration: none;

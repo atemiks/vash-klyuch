@@ -405,7 +405,7 @@
                                 </li>
 
                                 <li class="header-account-item has-dropdown order-2 order-xl-3">
-                                    <a href="#link" class="header-account-link" >
+                                    <a href="cart.html" class="header-account-link" >
                                         <div class="header-account-thumbnail d-flex align-items-center">
                                             <svg class="header-account-media" width="30" height="30">
                                                 <use xlink:href="images/icons/sprite.svg#icon-shopping-cart"></use>
@@ -858,7 +858,7 @@
                     </div>
 
                     <div class="col-auto d-none d-xl-block">
-                        <a href="#link" class="catalog-back-btn btn-link" >
+                        <a href="#link" class="breadcrumb-back-btn btn-link" >
                             <i class="icon-angle-left" ></i>Вернуться назад
                         </a>
                     </div>
@@ -3401,9 +3401,13 @@
 
                         <div class="card-modal-order-content-container col-md-10 offset-md-2">
                             <div class="form-row">
+                                <div class="col-12">
+                                    <div class="card-modal-order-message-block">В комплекте 3 ключа. Если вам нужен дополнительный, то вы можете добавить еще нужное количество ключей.</div>
+                                </div>
+
                                 <div class="col-auto">
                                     <div class="card-modal-order-quantity-block">
-                                        <div class="card-modal-order-subtitle">Дополнительный ключ</div>
+                                        <div class="card-modal-order-subtitle">Дополнительные ключи</div>
                                         
                                         <div class="card-modal-order-quantity-control custom-control custom-number">
                                             <input class="custom-control-input" type="text" value="1" maxlength="5">
@@ -3419,8 +3423,8 @@
 
                                 <div class="col-auto">
                                     <div class="card-modal-order-price-block">
-                                        <div class="card-modal-order-subtitle">Стоимость товара</div>
-                                        <div class="card-modal-order-price">3 450 <span><span class="rur">руб</span><span class="d-none d-md-inline" >/шт</span></span></div>
+                                        <div class="card-modal-order-subtitle">Стоимость <span class="d-none d-md-inline" >товара</span></div>
+                                        <div class="card-modal-order-price">3 450<span><span class="rur">руб</span><span class="d-none d-md-inline" >/шт</span></span></div>
                                     </div>
                                 </div>
                             </div>
@@ -3435,6 +3439,136 @@
                         </svg>
                         Добавить в корзину
                     </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPreOrder" tabindex="-1" aria-labelledby="modalPreOrderLabel" aria-hidden="true">
+        <div class="modal-dialog d-flex d-md-block flex-column">
+            <div class="modal-content d-block flex-grow-1">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title" id="modalPreOrderLabel">Оформление предзаказа</h4>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="icon-angle-left d-md-none" ></i>
+                        <i aria-hidden="true" class="icon-close d-none d-md-block" ></i>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-subtitle text-md-center">Мы перезвоним вам по вашему предзаказу в течении дня</div>
+
+                    <form action="" class="form-modal">
+                        <div class="form-group">
+                            <label for="modal-pre-order-field-phone" class="form-label">Ваш номер телефона</label>
+                            <input type="tel" class="form-control" id="modal-pre-order-field-phone" required>
+                        </div>
+
+                        <button type="submit" class="btn">Оформить предзаказ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAddReview" tabindex="-1" aria-labelledby="modalAddReviewLabel" aria-hidden="true">
+        <div class="modal-dialog d-flex d-md-block flex-column">
+            <div class="modal-content d-block flex-grow-1">
+                <div class="modal-header text-center text-md-left">
+                    <h4 class="modal-title" id="modalAddReviewLabel">Написать отзыв</h4>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="icon-angle-left d-md-none" ></i>
+                        <i aria-hidden="true" class="icon-close d-none d-md-block" ></i>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="" class="form-modal">
+                        <div class="form-group">
+                            
+                            <div class="custom-control custom-rating d-flex justify-content-between">
+                                <input type="radio" id="custom-rating-value-1" class="custom-control-input" value="1" name="score" >
+                                <label for="custom-rating-value-1" class="custom-control-label" >
+                                    <svg class="custom-control-media" width="19" height="19" >
+                                        <use xlink:href="images/icons/sprite.svg#icon-star-solid" ></use>
+                                    </svg>
+                                    Плохой
+                                </label>
+
+                                <input type="radio" id="custom-rating-value-2" class="custom-control-input" value="2" name="score" >
+                                <label for="custom-rating-value-2" class="custom-control-label" >
+                                    <svg class="custom-control-media" width="19" height="19" >
+                                        <use xlink:href="images/icons/sprite.svg#icon-star-solid" ></use>
+                                    </svg>
+                                    Так себе
+                                </label>
+
+                                <input type="radio" id="custom-rating-value-3" class="custom-control-input" value="3" name="score" >
+                                <label for="custom-rating-value-3" class="custom-control-label" >
+                                    <svg class="custom-control-media" width="19" height="19" >
+                                        <use xlink:href="images/icons/sprite.svg#icon-star-solid" ></use>
+                                    </svg>
+                                    Приемлимо
+                                </label>
+
+                                <input type="radio" id="custom-rating-value-4" class="custom-control-input" value="4" name="score" >
+                                <label for="custom-rating-value-4" class="custom-control-label" >
+                                    <svg class="custom-control-media" width="19" height="19" >
+                                        <use xlink:href="images/icons/sprite.svg#icon-star-solid" ></use>
+                                    </svg>
+                                    Хороший
+                                </label>
+
+                                <input type="radio" id="custom-rating-value-5" class="custom-control-input" value="5" name="score" checked >
+                                <label for="custom-rating-value-5" class="custom-control-label" >
+                                    <svg class="custom-control-media" width="19" height="19" >
+                                        <use xlink:href="images/icons/sprite.svg#icon-star-solid" ></use>
+                                    </svg>
+                                    Отличный
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modal-add-review-comment-positive" class="form-label">Достоинства</label>
+                            <input type="text" id="modal-add-review-comment-positive" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modal-add-review-comment-negative" class="form-label">Недостатки</label>
+                            <input type="text" id="modal-add-review-comment-negative" class="form-control" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modal-add-review-comment" class="form-label">Комментарий</label>
+                            <textarea id="modal-add-review-comment" class="form-control"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modal-add-review-name" class="form-label">Ваше ФИО</label>
+                            <input type="text" id="modal-add-review-name" class="form-control">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="modal-add-review-email" class="form-label">Электронная почта</label>
+                            <input type="email" id="modal-add-review-email" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" required checked >
+                                <span class="custom-control-content">Уведомлять об ответах по электронной почте</span>
+                            </label>
+                        </div>
+
+                        <div class="form-btn-group btn-group d-flex flex-wrap justify-content-end">
+                            <button type="button" class="btn btn-secondary btn-outline" >Отменить</button>
+                            <button type="submit" class="btn" >Оставить отзыв</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

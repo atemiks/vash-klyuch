@@ -129,7 +129,6 @@
     margin: 10px 0 0 50px;
     font-size: 14px;
     line-height: normal;
-    letter-spacing: -0.4px;
 }
 
 
@@ -143,7 +142,6 @@
     transition: background-color 300ms ease;
     color: currentColor;
     font-size: 13px;
-    letter-spacing: -0.4px;
     line-height: 43px;
     text-decoration: none;
     text-overflow: ellipsis;

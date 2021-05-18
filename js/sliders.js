@@ -29,7 +29,7 @@ $(function () {
 
             new Swiper(jContainer, {
                 slidesPerView: 4,
-                slidesPerGroup: 4,
+                slidesPerGroup: 1,
                 loop: true,
                 loopAdditionalSlides: 1,
                 watchSlidesProgress: true,
@@ -38,7 +38,6 @@ $(function () {
                 breakpoints: {
                     1200: {
                         slidesPerView: 6,
-                        slidesPerGroup: 6,
                         watchSlidesProgress: true,
                         watchSlidesVisibility: true,
                     },
@@ -65,19 +64,17 @@ $(function () {
 
             new Swiper(jContainer, {
                 slidesPerView: 2,
-                slidesPerGroup: 2,
+                slidesPerGroup: 1,
                 loop: slides.length > 2 ? true : false,
                 breakpointsInverse: true,
                 breakpoints: {
                     576: {
                         slidesPerView: 3,
-                        slidesPerGroup: 3,
                         loop: slides.length > 3 ? true : false,
                     },
 
                     992: {
                         slidesPerView: 4,
-                        slidesPerGroup: 4,
                         loop: slides.length > 4 ? true : false,
                     },
                 },
@@ -129,72 +126,4 @@ $(function () {
             destroyBrandsSwiper();
         }
     });
-
-    // $('.section-portfolio').each(function (_, container) {
-    //     let jContainer = $(container),
-    //         sliderContainer = jContainer.find('.swiper-portfolio'),
-    //         prev = jContainer.find('.swiper-porfolio-button-prev'),
-    //         next = jContainer.find('.swiper-porfolio-button-next'),
-    //         pagination = jContainer.find('.swiper-porfolio-pagination'),
-    //         paginationCurrent = pagination.find('.swiper-porfolio-pagination-current');
-    //         paginationTotal = pagination.find('.swiper-porfolio-pagination-total');
-    //         slides = sliderContainer.find('> .swiper-wrapper > .swiper-slide');
-
-    //     /**
-    //      * Update active slide view.
-    //      * print out number of active slide and so on.
-    //      */
-    //     let updateActiveSlideView = function () {
-    //         if (paginationCurrent.length !== 0) {
-    //             paginationCurrent.text(mainSwiper.realIndex + 1 + ' Ð¸Ð·');
-    //         }
-    //     };
-
-    //     /**
-    //      * Update visible parameters for slider and related elements according to current slider state.
-    //      */
-    //     let updateSliderView = function () {
-    //         if (paginationTotal.length !== 0) {
-    //             paginationTotal.text(slides.length);
-    //         }
-    //         updateActiveSlideView();
-    //     };
-        
-    //     let mainSwiper = new Swiper(sliderContainer, {
-    //         slidesPerView: 'auto',
-    //         loop: slides.length > 1 ? true : false,
-    //         breakpointsInverse: true,
-    //         breakpoints: {
-    //             // when window width is >= 750px
-    //             750: {
-    //                 loop: slides.length > 2 ? true : false,
-    //                 slidesPerGroup: 2,
-    //             },
-    //             // when window width is >= 970px
-    //             970: {
-    //                 loop: slides.length > 2 ? true : false,
-    //                 slidesPerGroup: 2,
-    //             }
-    //         },
-
-    //         on: {
-    //             init: function () {
-    //                 swiperHelpers.initRewindControls(
-    //                     this,
-    //                     prev,
-    //                     next,
-    //                     true
-    //                 );
-    //             },
-    //         },
-    //     });
-
-    //     updateSliderView();
-
-
-    //     // On slide change change update current slide info
-    //     mainSwiper.on('slideChange', function () {
-    //         updateActiveSlideView();
-    //     });
-    // });
 });

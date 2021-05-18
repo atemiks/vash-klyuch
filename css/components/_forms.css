@@ -7,7 +7,6 @@
     margin: 0 0 5px;
     color: rgba(51, 51, 51, .6);
     font-size: 12px;
-    letter-spacing: -0.4px;
 }
 
 .form-label-lg {
@@ -154,7 +153,6 @@ textarea.form-control {
     color: rgba(51, 51, 51, .9);
     font-size: 15px;
     text-align: center;
-    letter-spacing: -0.4px;
 }
 
 .custom-control.custom-number .custom-control-input:focus {
@@ -226,14 +224,14 @@ textarea.form-control {
 .custom-control.custom-rating {
     cursor: pointer;
     color: rgba(51, 51, 51, .9);
-    font-size: 14px;
+    font-size: 11px;
     letter-spacing: -0.6px;
     text-align: center;
 }
 
 .custom-control.custom-rating .custom-control-media {
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto 8px;
     color: #ffda3f;
     fill: #ffda3f;
 }
@@ -282,7 +280,6 @@ textarea.form-control {
         font-size: 16px;
     }
 
-
     /* custom radio */
     .custom-control.custom-radio {
         line-height: 20px;
@@ -304,6 +301,16 @@ textarea.form-control {
 
     .form-radio-group > .custom-control.custom-radio:not(:last-child) {
         margin-bottom: 18px;
+    }
+
+
+    /* custom rating */
+    .custom-control.custom-rating {
+        font-size: 14px;
+    }
+
+    .custom-control.custom-rating .custom-control-media {
+        margin: 0 auto 10px;
     }
 
 

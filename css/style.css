@@ -23,6 +23,7 @@
 @import 'components/cards/_card.product.css';
 @import 'components/cards/_card.video.css';
 @import 'components/cards/_card.review.css';
+@import 'components/cards/_card.order.css';
 
 /* header */
 @import 'layout/header/_header.css';
@@ -79,6 +80,13 @@
 @import 'pages/page-product/_product.online.css';
 
 
+/* page cart */
+@import 'pages/page-cart/_cart.css';
+@import 'pages/page-cart/_cart.order.css';
+@import 'pages/page-cart/_cart.promocode.css';
+@import 'pages/page-cart/_cart.total.css';
+
+
 /* footer */
 @import 'layout/footer/_footer.css';
 @import 'layout/footer/_footer.contact.css';
@@ -90,4 +98,5 @@
 @import 'components/_modal.css';
 @import 'components/_modal.photo.css';
 @import 'components/_modal.cart.css';
+@import 'components/_modal.order.css';
 @import 'components/_modal.review.css';

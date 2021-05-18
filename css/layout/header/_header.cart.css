@@ -83,7 +83,6 @@
     margin: 10px 0;
     font-size: 16px;
     line-height: 22px;
-    letter-spacing: -0.4px;
 }
 
 .card-header-order .card-header-order-title:hover {
@@ -95,10 +94,13 @@
     text-decoration: none;
 }
 
+.card-header-order .card-header-order-title a:hover {
+    color: rgba(51, 51, 51, .6);
+}
+
 .card-header-order .card-header-order-price {
     opacity: 0.9;
     font-size: 22px;
-    letter-spacing: -0.4px;
 }
 
 .card-header-order .card-header-order-price span {
@@ -113,12 +115,10 @@
 .header-cart-total-block .header-cart-total-title {
     margin: 0;
     font-size: 16px;
-    letter-spacing: -0.4px;
 }
 
 .header-cart-total-block .header-cart-total {
     opacity: 0.9;
     margin: 0;
     font-size: 20px;
-    letter-spacing: -0.4px;
 }
