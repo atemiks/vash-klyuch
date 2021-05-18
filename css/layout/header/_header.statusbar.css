@@ -26,9 +26,10 @@
 .header-statusbar-nav .nav-link .nav-media {
     max-width: inherit;
     max-height: inherit;
-    fill: #fff;
+    fill: currentColor;
 }
 
 .header-statusbar-nav .nav-link:hover {
     background-color: #232323;
+    color: #ffda3f;
 }
