@@ -87,6 +87,13 @@
 @import 'pages/page-cart/_cart.total.css';
 
 
+/* page checkout */
+@import 'pages/page-checkout/_checkout.css';
+@import 'pages/page-checkout/_checkout.data.css';
+@import 'pages/page-checkout/_checkout.summary.css';
+@import 'pages/page-checkout/_checkout.actions.css';
+
+
 /* footer */
 @import 'layout/footer/_footer.css';
 @import 'layout/footer/_footer.contact.css';

@@ -43,4 +43,19 @@ $(function () {
 
         return false;
     });
+
+    // custom option
+    $(document).on('change', '.custom-option .custom-control-input', function(e) {
+        let target = $(e.currentTarget),
+            targetContainer = target.closest('.custom-option'),
+            targetDetails = targetContainer.find('.custom-control-details'),
+            optionsContainer = targetContainer.closest('.form-options-group'),
+            optionsChildrenDetails = optionsContainer.find('.custom-control-details');
+
+        optionsChildrenDetails.slideUp();
+        targetDetails.slideDown();
+    });
+
+    // custom input file
+    bsCustomFileInput.init();
 });

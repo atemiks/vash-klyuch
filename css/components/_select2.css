@@ -30,7 +30,7 @@
 
 .select2-container .select2-selection .select2-selection__arrow::before {
     font-family: 'icomoon';
-    font-size: 8px;
+    font-size: 12px;
     content: '\e903';
 }
 

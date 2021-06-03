@@ -16,7 +16,7 @@
 
 	<title>Ваш Ключ</title>
 </head>
-<body class="page-catalog d-flex flex-column" >
+<body class="page-cart d-flex flex-column" >
 	<header class="header-wrapper">
         <div class="header-statusbar-wrapper d-none d-xl-block">
             <div class="container">
@@ -1839,10 +1839,7 @@
                                 <li class="breadcrumb-item">
                                     <a href="home.html">Главная</a>
                                 </li>
-                                <li class="breadcrumb-item">
-                                    <a href="catalog.html">Каталог</a>
-                                </li>
-                                <li class="breadcrumb-item active" aria-current="page">Цилиндры</li>
+                                <li class="breadcrumb-item active" aria-current="page">Корзина</li>
                             </ol>
                         </nav>
                     </div>
@@ -1856,1525 +1853,574 @@
             </div>
         </section>
 
-        <section class="section-catalog">
+        <section class="section-checkout">
             <div class="container">
                 <div class="display-header">
-                    <h1 class="display-title">Цилиндры</h1>
+                    <h1 class="display-title">Оформление заказа</h1>
                 </div>
-
-                <div class="row">
-                    <div class="catalog-filter-container col-12 col-xl-3">
-                        <div class="filter-wrapper">
-                            <div class="filter-inner">
-                                <div class="filter-header text-center d-md-none">
-                                    <div class="filter-title">Фильтры</div>
-                                    
-                                    <button type="button" class="filter-close" aria-label="Close">
-                                        <i aria-hidden="true" class="icon-angle-left"></i>
-                                    </button>
-                                </div>
-
-                                <form action="" class="filter-form">
-                                    <div class="filter-selected-block">
-                                        <div class="filter-selected-header">
-                                            <div class="filter-selected-title">Ваш выбор:</div>
-                                            <div class="filter-selected-subtitle text-muted">Найдено 1254 товаров</div>
-                                        </div>
-
-                                        <div class="filter-selected-group">
-                                            <div class="filter-selected-title">Производитель</div>
-
-                                            <ul class="filter-selected-list d-flex flex-wrap list-unstyled">
-                                                <li class="filter-selected-item">
-                                                    <button type="button" class="filter-selected-button btn btn-sm btn-secondary btn-outline">CISA</button>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="filter-selected-group">
-                                            <div class="filter-selected-title">Страна производитель</div>
-
-                                            <ul class="filter-selected-list d-flex flex-wrap list-unstyled">
-                                                <li class="filter-selected-item">
-                                                    <button type="button" class="filter-selected-button btn btn-sm btn-secondary btn-outline">Китай</button>
-                                                </li>
-
-                                                <li class="filter-selected-item">
-                                                    <button type="button" class="filter-selected-button btn btn-sm btn-secondary btn-outline">Корея</button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        
-                                        <button type="reset" class="filter-selected-reset btn btn-danger btn-outline" >Сбросить фильтры</button>
-                                    </div>
-
-                                    <div class="filter-options-block">
-                                        <div class="filter-categories-group filter-group">
-                                            <div class="filter-group-header">
-                                                <div class="filter-group-title">Цилиндры</div>
-                                            </div>
-
-                                            <div class="filter-group-body">
-                                                <ul class="filter-categories-list list-unstyled">
-                                                    <li class="filter-category-item">
-                                                        <label class="filter-category-checkbox custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input">
-                                                            <span class="custom-control-content d-flex no-gutters">
-                                                                <span class="custom-control-thumbnail col-auto">
-                                                                    <img src="images/catalog/icon-tsilindr-dvukhstoronniy.png" alt="Двухсторонний"  class="custom-control-media" >
-                                                                </span>
-
-                                                                <span class="custom-control-text align-self-center col">Двухсторонний</span>
-                                                            </span>
-                                                        </label>
-                                                    </li>
-                                                    
-                                                    <li class="filter-category-item">
-                                                        <label class="filter-category-checkbox custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input">
-                                                            <span class="custom-control-content d-flex no-gutters">
-                                                                <span class="custom-control-thumbnail col-auto">
-                                                                    <img src="images/catalog/icon-tsilindr-s-shesteronkoy.png" alt="С шестерёнкой"  class="custom-control-media" >
-                                                                </span>
-
-                                                                <span class="custom-control-text align-self-center col">С шестерёнкой</span>
-                                                            </span>
-                                                        </label>
-                                                    </li>
-
-                                                    <li class="filter-category-item">
-                                                        <label class="filter-category-checkbox custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input">
-                                                            <span class="custom-control-content d-flex no-gutters">
-                                                                <span class="custom-control-thumbnail col-auto">
-                                                                    <img src="images/catalog/icon-tsilindr-odnostoronniy.png" alt="Односторонний"  class="custom-control-media" >
-                                                                </span>
-
-                                                                <span class="custom-control-text align-self-center col">Односторонний</span>
-                                                            </span>
-                                                        </label>
-                                                    </li>
-
-                                                    <li class="filter-category-item">
-                                                        <label class="filter-category-checkbox custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input">
-                                                            <span class="custom-control-content d-flex no-gutters">
-                                                                <span class="custom-control-thumbnail col-auto">
-                                                                    <img src="images/catalog/icon-dlya-nakladnogo-zamka.png" alt="Для накладного замка"  class="custom-control-media" >
-                                                                </span>
-
-                                                                <span class="custom-control-text align-self-center col">Для накладного замка</span>
-                                                            </span>
-                                                        </label>
-                                                    </li>
-
-                                                    <li class="filter-category-item">
-                                                        <label class="filter-category-checkbox custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input">
-                                                            <span class="custom-control-content d-flex no-gutters">
-                                                                <span class="custom-control-thumbnail col-auto">
-                                                                    <img src="images/catalog/icon-komplekty-klyuchey.png" alt="Комплекты ключей"  class="custom-control-media" >
-                                                                </span>
-
-                                                                <span class="custom-control-text align-self-center col">Комплекты ключей</span>
-                                                            </span>
-                                                        </label>
-                                                    </li>
-
-                                                    <li class="filter-category-item">
-                                                        <label class="filter-category-checkbox custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input">
-                                                            <span class="custom-control-content d-flex no-gutters">
-                                                                <span class="custom-control-thumbnail col-auto">
-                                                                    <img src="images/catalog/icon-nukleo.png" alt="Нуклео"  class="custom-control-media" >
-                                                                </span>
-
-                                                                <span class="custom-control-text align-self-center col">Нуклео</span>
-                                                            </span>
-                                                        </label>
-                                                    </li>
-
-                                                    <li class="filter-category-item">
-                                                        <label class="filter-category-checkbox custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input">
-                                                            <span class="custom-control-content d-flex no-gutters">
-                                                                <span class="custom-control-thumbnail col-auto">
-                                                                    <img src="images/catalog/icon-krestovoy-klyuch.png" alt="Крестовой ключ"  class="custom-control-media" >
-                                                                </span>
-
-                                                                <span class="custom-control-text align-self-center col">Крестовой ключ</span>
-                                                            </span>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-group">
-                                            <div class="filter-group-header">
-                                                <button type="button" class="filter-group-toggle">Размеры</button>
-                                            </div>
-
-                                            <div class="filter-group-body">
-                                                <div class="filter-variants-block">
-                                                    <div class="filter-variants-title">Тип цилиндра</div>
-                                                    
-                                                    <ul class="filter-variants-list list-unstyled">
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input">
-                                                                <span class="custom-control-content">Любой</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" checked >
-                                                                <span class="custom-control-content">С вертушкой</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input">
-                                                                <span class="custom-control-content">Без вертушки</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Половинчатый</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input">
-                                                                <span class="custom-control-content">Со штоком</span>
-                                                            </label>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                                <div class="filter-scheme-block">
-                                                    <figure class="filter-scheme-figure">
-                                                        <a href="images/schemes/scheme-tsilindr-type-2.svg" data-fancybox="filter-scheme-gallery" class="filter-scheme-thumbnail">
-                                                            <img src="images/schemes/scheme-tsilindr-type-2.svg" alt="Схема цилиндра" class="filter-scheme-media">
-                                                        </a>
-                                                    </figure>
-                                                </div>
-
-                                                <div class="filter-parameters-block">
-                                                    <ul class="filter-parameters-list list-unstyled">
-                                                        <li class="filter-parameter-item d-flex align-items-center">
-                                                            <label for="filter-parameter-a" class="filter-parameter-label" >A</label>
-
-                                                            <select name="" id="filter-parameter-a" class="filter-parameter-select custom-select" >
-                                                                <option value="all">Все</option>
-                                                                <option value="23.5">23.5</option>
-                                                                <option value="34.5">34.5</option>
-                                                                <option value="59.6">59.6</option>
-                                                                <option value="65.2">65.2</option>
-                                                            </select>
-                                                        </li>
-
-                                                        <li class="filter-parameter-item d-flex align-items-center">
-                                                            <label for="filter-parameter-b" class="filter-parameter-label" >B</label>
-
-                                                            <select name="" id="filter-parameter-b" class="filter-parameter-select custom-select" >
-                                                                <option value="all">Все</option>
-                                                                <option value="23.5">23.5</option>
-                                                                <option value="34.5">34.5</option>
-                                                                <option value="59.6">59.6</option>
-                                                                <option value="65.2">65.2</option>
-                                                            </select>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-group">
-                                            <div class="filter-group-header">
-                                                <button type="button" class="filter-group-toggle">Цена</button>
-                                            </div>
-
-                                            <div class="filter-group-body">
-                                                <div class="filter-range-fields-block row no-gutters">
-                                                    <div class="col-6">
-                                                        <input type="number" id="filter-range-price-from" class="filter-range-field form-control" step="any" data-border="100" value="100" >
-                                                    </div>
-
-                                                    <div class="col-6">
-                                                        <input type="number" id="filter-range-price-to" class="filter-range-field form-control" step="any" data-border="5800" value="5800" >
-                                                    </div>
-                                                </div>
-
-                                                <div class="filter-range-slider-block">
-                                                    <div class="filter-range-slider" data-decimals="0" data-from="#filter-range-price-from" data-to="#filter-range-price-to" ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-group">
-                                            <div class="filter-group-header">
-                                                <button type="button" class="filter-group-toggle">Производитель</button>
-                                            </div>
-
-                                            <div class="filter-group-body">
-                                                <div class="filter-variants-block">
-                                                    <ul class="filter-variants-list list-unstyled">
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" checked >
-                                                                <span class="custom-control-content">Cisa</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Kale Kit</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Abby</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Border</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Muttura</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Apecs</span>
-                                                            </label>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-group">
-                                            <div class="filter-group-header">
-                                                <button type="button" class="filter-group-toggle">Страна производитель</button>
-                                            </div>
-
-                                            <div class="filter-group-body">
-                                                <div class="filter-variants-block">
-                                                    <ul class="filter-variants-list list-unstyled">
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Китай</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Корея</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Россия</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Беларусь</span>
-                                                            </label>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-group">
-                                            <div class="filter-group-header">
-                                                <button type="button" class="filter-group-toggle">Материал</button>
-                                            </div>
-
-                                            <div class="filter-group-body">
-                                                <div class="filter-variants-block">
-                                                    <ul class="filter-variants-list list-unstyled">
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Алюминий</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Латунь</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Оцинкованая сталь</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">ПВХ</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Сталь</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item filter-variant-secondary-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Латунь</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item filter-variant-secondary-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Оцинкованая сталь</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item filter-variant-secondary-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">ПВХ</span>
-                                                            </label>
-                                                        </li>
-                                                    </ul>
-
-                                                    <div class="filter-variants-controls">
-                                                        <button type="button" class="filter-variants-toggle btn btn-secondary btn-outline" data-expended="false" >Показать еще</button>
-                                                        <button type="button" class="filter-variants-toggle btn btn-secondary btn-outline d-none" data-expended="true" >Свернуть</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-group">
-                                            <div class="filter-group-header">
-                                                <button type="button" class="filter-group-toggle">Цвет</button>
-                                            </div>
-
-                                            <div class="filter-group-body">
-                                                <div class="filter-variants-block">
-                                                    <ul class="filter-variants-list list-unstyled">
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Антик бронза</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Античная бронза</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Без покрытия</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Бриллиант</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Бронза</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item filter-variant-secondary-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Античная бронза</span>
-                                                            </label>
-                                                        </li>
-
-                                                        <li class="filter-variant-item filter-variant-secondary-item">
-                                                            <label class="filter-variant-checkbox custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" >
-                                                                <span class="custom-control-content">Без покрытия</span>
-                                                            </label>
-                                                        </li>
-                                                    </ul>
-
-                                                    <div class="filter-variants-controls">
-                                                        <button type="button" class="filter-variants-toggle btn btn-secondary btn-outline" data-expended="false" >Показать еще</button>
-                                                        <button type="button" class="filter-variants-toggle btn btn-secondary btn-outline d-none" data-expended="true" >Свернуть</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="filter-bg bg"></div>
+            </div>
+
+            <form action="" class="checkout-form">
+                <fieldset class="checkout-group" >
+                    <div class="checkout-group-header">
+                        <div class="container">
+                            <div class="checkout-group-title">Выберите тип плательщика</div>
                         </div>
                     </div>
 
-                    <div class="catalog-content-container col-12 col-xl-9 d-flex flex-column">
-                        <div class="catalog-banner-block order-9 order-xl-0">
-                            <div class="card-banner">
-                                <div class="card-banner-inner">
-                                    <div class="form-row">
-                                        <div class="card-banner-typography-container col-6 col-xl-7 align-self-center">
-                                            <div class="card-banner-title">Замена и установка цилиндра бесплатно!</div>
-                                            <div class="card-banner-description d-none d-md-block">В пределах МКАД (г.Москва). При стоимости цилиндра от 10 000 руб.</div>
-                                        </div>
+                    <div class="checkout-group-content container">
+                        <div class="form-group">
+                            <label class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" value="Физическое лицо" name="checkout-customer-type" data-toggle="collapse" data-target=".checkout-group-content-collapse" aria-expanded="false" aria-controls="checkout-individual-info-collapse checkout-entity-info-collapse checkout-individual-payment-collapse checkout-entity-payment-collapse" checked="">
+                                <span class="custom-control-content">Физическое лицо</span>
+                            </label>
 
-                                        <div class="card-banner-media-container col-6 col-xl-5 d-flex">
-                                            <figure class="card-banner-thumbnail">
-                                                <img src="uploads/banners/banner-item-1.jpg" alt="Замена и установка цилиндра бесплатно!" class="card-banner-media">
-                                            </figure>
-                                        </div>
+                            <label class="custom-control custom-radio custom-control-inline" data-toggle="collapse" data-target=".checkout-group-content-collapse" aria-expanded="false" aria-controls="checkout-individual-info-collapse checkout-entity-info-collapse checkout-individual-payment-collapse checkout-entity-payment-collapse" >
+                                <input type="radio" class="custom-control-input" value="Юридическое лицо" name="checkout-customer-type">
+                                <span class="custom-control-content">Юридическое лицо</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="checkout-group" >
+                    <div class="checkout-group-header">
+                        <div class="container">
+                            <div class="checkout-group-title">Контактная информация</div>
+                        </div>
+                    </div>
+
+                    <div id="checkout-individual-info-collapse" class="checkout-group-content checkout-group-content-collapse collapse show">
+                        <div class="container">
+                            <div class="row">
+                                <div class="form-group col-sm-6 col-xl-4">
+                                    <label for="checkout-individual-name" class="form-label">ФИО <sup class="text-danger" >*</sup></label>
+                                    <input type="text" id="checkout-individual-name" class="form-control" required >
+                                </div>
+
+                                <div class="form-group col-sm-6 col-xl-4">
+                                    <label for="checkout-individual-phone" class="form-label">Телефон <sup class="text-danger" >*</sup></label>
+                                    <input type="tel" id="checkout-individual-phone" class="form-control" required >
+                                </div>
+
+                                <div class="form-group col-sm-6 col-xl-4">
+                                    <label for="checkout-individual-email" class="form-label float-left">E-mail <sup class="text-danger" >*</sup></label>
+                                    <span class="form-text float-right">Для получения номера заказа</span>
+                                    <input type="email" id="checkout-individual-email" class="form-control" required >
+                                </div>
+
+                                <div class="form-group col-sm-6 col-xl-8">
+                                    <label for="checkout-individual-address" class="form-label">Адрес</label>
+                                    <input type="text" id="checkout-individual-address" class="form-control" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="checkout-entity-info-collapse" class="checkout-group-content checkout-group-content-collapse collapse">
+                        <div class="container">
+                            <div class="row">
+                                <div class="form-group col-sm-6 col-xl-4">
+                                    <label for="checkout-entity-name" class="form-label">Контактное лицо <sup class="text-danger" >*</sup></label>
+                                    <input type="text" id="checkout-entity-name" class="form-control" required >
+                                </div>
+
+                                <div class="form-group col-sm-6 col-xl-4">
+                                    <label for="checkout-entity-phone" class="form-label">Телефон <sup class="text-danger" >*</sup></label>
+                                    <input type="tel" id="checkout-entity-phone" class="form-control" required >
+                                </div>
+
+                                <div class="form-group col-sm-6 col-xl-4">
+                                    <label for="checkout-entity-email" class="form-label float-left">E-mail <sup class="text-danger" >*</sup></label>
+                                    <span class="float-right text-muted text-right">Для получения номера заказа</span>
+                                    <input type="email" id="checkout-entity-email" class="form-control" required >
+                                </div>
+
+                                <div class="form-group col-sm-6 col-xl-4">
+                                    <label for="checkout-entity-company" class="form-label">Название компании <sup class="text-danger" >*</sup></label>
+                                    <input type="text" id="checkout-entity-company" class="form-control" required >
+                                </div>
+
+                                <div class="form-group col-sm-6 col-xl-4">
+                                    <label for="checkout-entity-INN" class="form-label">ИНН <sup class="text-danger" >*</sup></label>
+                                    <input type="text" id="checkout-entity-INN" class="form-control" required >
+                                </div>
+
+                                <div class="form-group col-sm-6 col-xl-4 align-self-end">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-label btn" for="customFile">Прикрепить карточку предприятия</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="checkout-group">
+                    <div class="checkout-group-header">
+                        <div class="container">
+                            <div class="checkout-group-title">Выберите метод доставки</div>
+                        </div>
+                    </div>
+
+                    <div class="checkout-group-content">
+                        <div class="container">
+                            <div class="form-options-group row">
+                                <div class="col-xl-6">
+                                    <div class="form-group">
+                                        <label class="custom-control custom-option custom-option-with-dropdown">
+                                            <input type="radio" class="custom-control-input" name="checkout-delivery-method" >
+                                            
+                                            <div class="custom-control-content">
+                                                <div class="custom-control-header d-flex align-items-center">
+                                                    <div class="custom-control-thumbnail d-flex align-items-center justify-content-start">
+                                                        <img src="images/figures/shop.svg" width="30" height="30" alt="Самовывоз" class="custom-control-media">
+                                                    </div>
+
+                                                    <div class="custom-control-title">Самовывоз м.Люблино</div>
+                                                </div>
+
+                                                <div class="custom-control-details">
+                                                    <ul class="custom-control-contact-list list-unstyled">
+                                                        <li class="custom-control-contact-item">
+                                                            <div class="custom-control-contact-block d-flex no-gutters">
+                                                                <div class="custom-control-contact-thumbnail col-auto">
+                                                                    <svg class="custom-control-contact-media" width="16" height="20">
+                                                                        <use xlink:href="images/icons/sprite.svg#icon-location-solid"></use>
+                                                                    </svg>
+                                                                </div>
+
+                                                                <div class="custom-control-contact-content col align-self-center">Тихорецкий б-р. 1, стр.70, ТЦ «Люблинское поле», корпус B, павильон B109А</div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="custom-control-contact-item">
+                                                            <div class="custom-control-contact-block d-flex no-gutters">
+                                                                <div class="custom-control-contact-thumbnail col-auto">
+                                                                    <svg class="custom-control-contact-media" width="18" height="18">
+                                                                        <use xlink:href="images/icons/sprite.svg#icon-clock-solid"></use>
+                                                                    </svg>
+                                                                </div>
+
+                                                                <div class="custom-control-contact-content col align-self-center">Пн-Вс с 9:00-19:00</div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="custom-control-contact-item">
+                                                            <div class="custom-control-contact-block d-flex no-gutters">
+                                                                <div class="custom-control-contact-thumbnail col-auto">
+                                                                    <svg class="custom-control-contact-media" width="18" height="18">
+                                                                        <use xlink:href="images/icons/sprite.svg#icon-phone-solid"></use>
+                                                                    </svg>
+                                                                </div>
+
+                                                                <div class="custom-control-contact-content col align-self-center">
+                                                                    <a href="tel:89099079839">8 909 907-98-39</a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="custom-control custom-option custom-option-with-dropdown">
+                                            <input type="radio" class="custom-control-input" name="checkout-delivery-method" >
+                                            
+                                            <div class="custom-control-content">
+                                                <div class="custom-control-header d-flex align-items-center">
+                                                    <div class="custom-control-thumbnail d-flex align-items-center justify-content-start">
+                                                        <img src="images/figures/shop.svg" width="30" height="30" alt="Самовывоз" class="custom-control-media">
+                                                    </div>
+
+                                                    <div class="custom-control-title">Самовывоз на м.Новокосино</div>
+                                                </div>
+
+                                                <div class="custom-control-details">
+                                                    <ul class="custom-control-contact-list list-unstyled">
+                                                        <li class="custom-control-contact-item">
+                                                            <div class="custom-control-contact-block d-flex no-gutters">
+                                                                <div class="custom-control-contact-thumbnail col-auto">
+                                                                    <svg class="custom-control-contact-media" width="16" height="20">
+                                                                        <use xlink:href="images/icons/sprite.svg#icon-location-solid"></use>
+                                                                    </svg>
+                                                                </div>
+
+                                                                <div class="custom-control-contact-content col align-self-center">Носовихинское ш., вл. 4, строительный рынок «Никольский ТВЦ», 11 линия, 13 павильон.</div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="custom-control-contact-item">
+                                                            <div class="custom-control-contact-block d-flex no-gutters">
+                                                                <div class="custom-control-contact-thumbnail col-auto">
+                                                                    <svg class="custom-control-contact-media" width="18" height="18">
+                                                                        <use xlink:href="images/icons/sprite.svg#icon-clock-solid"></use>
+                                                                    </svg>
+                                                                </div>
+
+                                                                <div class="custom-control-contact-content col align-self-center">Пн-Вс с 9:00-18:00</div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="custom-control-contact-item">
+                                                            <div class="custom-control-contact-block d-flex no-gutters">
+                                                                <div class="custom-control-contact-thumbnail col-auto">
+                                                                    <svg class="custom-control-contact-media" width="18" height="18">
+                                                                        <use xlink:href="images/icons/sprite.svg#icon-phone-solid"></use>
+                                                                    </svg>
+                                                                </div>
+
+                                                                <div class="custom-control-contact-content col align-self-center">
+                                                                    <a href="tel:89859644222">8 985 964-42-22</a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="custom-control custom-option">
+                                            <input type="radio" class="custom-control-input" name="checkout-delivery-method" >
+                                            
+                                            <div class="custom-control-content">
+                                                <div class="custom-control-header d-flex align-items-center">
+                                                    <div class="custom-control-thumbnail d-flex align-items-center justify-content-start">
+                                                        <img src="images/figures/courier.svg" width="35" height="35" alt="Курьер" class="custom-control-media">
+                                                    </div>
+
+                                                    <div class="custom-control-title">Курьер</div>
+                                                </div>
+                                            </div>
+                                        </label>
                                     </div>
                                 </div>
 
-                                <div class="card-banner-description text-center d-md-none">В пределах МКАД (г.Москва). При стоимости цилиндра от 10 000 руб.</div>
+                                <div class="col-xl-6">
+                                    <div class="form-group">
+                                        <label class="custom-control custom-option custom-option-with-dropdown">
+                                            <input type="radio" class="custom-control-input" name="checkout-delivery-method" >
+                                            
+                                            <div class="custom-control-content">
+                                                <div class="custom-control-header d-flex align-items-center">
+                                                    <div class="custom-control-thumbnail d-flex align-items-center justify-content-start">
+                                                        <img src="images/brands/brand-cdek.jpg" width="88" height="29" alt="CDEK" class="custom-control-media">
+                                                    </div>
+
+                                                    <div class="custom-control-title">Пункты самовывоза CDEK</div>
+                                                </div>
+
+                                                <div class="custom-control-details">
+                                                    <ul class="custom-control-details-list list-unstyled">
+                                                        <li class="custom-control-detail-item">
+                                                            <label for="checkout-delivery-by-cdek" class="custom-control-detail-title">Выберите пункт самовывоза CDEK</label>
+                                                            
+                                                            <div class="custom-control-detail-content">
+                                                                <select name="" id="checkout-delivery-by-cdek" class="custom-select" style="width: 100%;" >
+                                                                    <option value="1905 года ул. Анатолия Живова, 6 (125 руб)">1905 года ул. Анатолия Живова, 6 (125 руб)</option>
+                                                                </select>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="custom-control-detail-item">
+                                                            <div class="custom-control-detail-title">Стоимость доставки:</div>
+                                                            <div class="custom-control-detail-content">
+                                                                <span class="text-lead">125 руб.</span>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="custom-control-detail-item">
+                                                            <div class="custom-control-detail-title">Адрес отделения:</div>
+                                                            <div class="custom-control-detail-content">Москва, ул. Анатолия Живова, 6</div>
+                                                        </li>
+
+                                                        <li class="custom-control-detail-item">
+                                                            <div class="custom-control-detail-title">Время работы отделения:</div>
+                                                            <div class="custom-control-detail-content">Пн-Пт 10:00 - 20:00, Сб-Вс 10:00 - 18:00</div>
+                                                        </li>
+
+                                                        <li class="custom-control-detail-item">
+                                                            <div class="custom-control-detail-title">Приблизительное время доставки:</div>
+                                                            <div class="custom-control-detail-content">22 января 2021 года</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="custom-control custom-option custom-option-with-dropdown">
+                                            <input type="radio" class="custom-control-input" name="checkout-delivery-method" >
+                                            
+                                            <div class="custom-control-content">
+                                                <div class="custom-control-header d-flex align-items-center">
+                                                    <div class="custom-control-thumbnail d-flex align-items-center justify-content-start">
+                                                        <img src="images/brands/brand-post-russian.png" width="65" height="32" alt="Почта России" class="custom-control-media">
+                                                    </div>
+
+                                                    <div class="custom-control-title">Отделение почты России</div>
+                                                </div>
+
+                                                <div class="custom-control-details">
+                                                    <ul class="custom-control-details-list list-unstyled">
+                                                        <li class="custom-control-detail-item">
+                                                            <label for="checkout-delivery-by-post-office-russian" class="custom-control-detail-title">Выберите отделение Почты России</label>
+                                                            
+                                                            <div class="custom-control-detail-content">
+                                                                <select name="" id="checkout-delivery-by-post-office-russian" class="custom-select" style="width: 100%;" >
+                                                                    <option value="ул. Тверская, 10 (225 руб)">ул. Тверская, 10 (225 руб)</option>
+                                                                </select>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="custom-control-detail-item">
+                                                            <div class="custom-control-detail-title">Стоимость доставки:</div>
+                                                            <div class="custom-control-detail-content">
+                                                                <span class="text-lead">225 руб.</span>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="custom-control-detail-item">
+                                                            <div class="custom-control-detail-title">Адрес отделения:</div>
+                                                            <div class="custom-control-detail-content">Москва, ул. Тверская, 10</div>
+                                                        </li>
+
+                                                        <li class="custom-control-detail-item">
+                                                            <div class="custom-control-detail-title">Время работы отделения:</div>
+                                                            <div class="custom-control-detail-content">Пн-Пт 10:00 - 20:00, Сб-Вс 10:00 - 18:00</div>
+                                                        </li>
+
+                                                        <li class="custom-control-detail-item">
+                                                            <div class="custom-control-detail-title">Приблизительное время доставки:</div>
+                                                            <div class="custom-control-detail-content">22 января 2021 года</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="custom-control custom-option custom-option-with-dropdown">
+                                            <input type="radio" class="custom-control-input" name="checkout-delivery-method" >
+                                            
+                                            <div class="custom-control-content">
+                                                <div class="custom-control-header d-flex align-items-center">
+                                                    <div class="custom-control-thumbnail d-flex align-items-center justify-content-start">
+                                                        <img src="images/brands/brand-post-russian.png" width="65" height="32" alt="Почта России" class="custom-control-media">
+                                                    </div>
+
+                                                    <div class="custom-control-title">Курьерская доставка почты России</div>
+                                                </div>
+
+                                                <div class="custom-control-details">
+                                                    <ul class="custom-control-details-list list-unstyled">
+                                                        <li class="custom-control-detail-item">
+                                                            <div class="custom-control-detail-title">Стоимость доставки:</div>
+                                                            <div class="custom-control-detail-content">
+                                                                <span class="text-lead">225 руб.</span>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="custom-control-detail-item">
+                                                            <div class="custom-control-detail-title">Приблизительное время доставки:</div>
+                                                            <div class="custom-control-detail-content">22 января 2021 года</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </fieldset>
 
-                        <div class="catalog-controls-block catalog-mobile-controls d-xl-none">
-                            <div class="form-row align-items-center">
-                                <div class="col-auto">
-                                    <button type="button" class="catalog-filter-toggle filter-toggle btn" >Фильтры</button>
-                                </div>
+                <fieldset class="checkout-group">
+                    <div class="checkout-group-header">
+                        <div class="container">
+                            <div class="checkout-group-title">Выберите способ оплаты</div>
+                        </div>
+                    </div>
 
-                                <div class="col-auto">
-                                    <button type="button" class="btn btn-secondary btn-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Сортировка</button>
-                                    
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="javascript:void(0);">
-                                            <svg width="12" height="12" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-ascending" ></use>
-                                            </svg>
-                                            От меньшей к большей
-                                        </a>
+                    <div id="checkout-individual-payment-collapse" class="checkout-group-content checkout-group-content-collapse collapse show">
+                        <div class="container">
+                            <div class="form-options-group row">
+                                <div class="form-group col-xl-6">
+                                    <label class="custom-control custom-option">
+                                        <input type="radio" class="custom-control-input" name="checkout-payment-method" >
                                         
-                                        <a class="dropdown-item" href="javascript:void(0);">
-                                            <svg width="12" height="12" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-descending" ></use>
-                                            </svg>
-                                            От большей к меньшей
-                                        </a>
+                                        <div class="custom-control-content">
+                                            <div class="custom-control-header d-flex align-items-center">
+                                                <div class="custom-control-thumbnail d-flex align-items-center justify-content-start">
+                                                    <img src="images/figures/wallet.svg" width="30" height="30" alt="Оплата при получении товара" class="custom-control-media">
+                                                </div>
+
+                                                <div class="custom-control-title">Оплата при получении товара</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="form-group col-xl-6">
+                                    <label class="custom-control custom-option">
+                                        <input type="radio" class="custom-control-input" name="checkout-payment-method" >
+                                        
+                                        <div class="custom-control-content">
+                                            <div class="custom-control-header d-flex align-items-center">
+                                                <div class="custom-control-thumbnail d-flex align-items-center justify-content-start">
+                                                    <img src="images/figures/credit-card.svg" width="30" height="30" alt="Картой на сайте" class="custom-control-media">
+                                                </div>
+
+                                                <div class="custom-control-title">Картой на сайте</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="form-group col-xl-6">
+                                    <label class="custom-control custom-option">
+                                        <input type="radio" class="custom-control-input" name="checkout-payment-method" >
+                                        
+                                        <div class="custom-control-content">
+                                            <div class="custom-control-header d-flex align-items-center">
+                                                <div class="custom-control-thumbnail d-flex align-items-center justify-content-start">
+                                                    <img src="images/figures/pos-terminal.svg" width="30" height="30" alt="Картой в магазине" class="custom-control-media">
+                                                </div>
+
+                                                <div class="custom-control-title">Картой в магазине</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="checkout-entity-payment-collapse" class="checkout-group-content checkout-group-content-collapse collapse">
+                        <div class="container">
+                            <div class="form-options-group row">
+                                <div class="form-group col-xl-6">
+                                    <label class="custom-control custom-option">
+                                        <input type="radio" class="custom-control-input" name="checkout-payment-method" >
+                                        
+                                        <div class="custom-control-content">
+                                            <div class="custom-control-header d-flex align-items-center">
+                                                <div class="custom-control-thumbnail d-flex align-items-center justify-content-start">
+                                                    <img src="images/figures/wallet.svg" width="30" height="30" alt="Оплата при получении товара" class="custom-control-media">
+                                                </div>
+
+                                                <div class="custom-control-title">Оплата при получении товара</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="form-group col-xl-6">
+                                    <label class="custom-control custom-option">
+                                        <input type="radio" class="custom-control-input" name="checkout-payment-method" >
+                                        
+                                        <div class="custom-control-content">
+                                            <div class="custom-control-header d-flex align-items-center">
+                                                <div class="custom-control-thumbnail d-flex align-items-center justify-content-start">
+                                                    <img src="images/figures/pos-terminal.svg" width="30" height="30" alt="Картой в магазине" class="custom-control-media">
+                                                </div>
+
+                                                <div class="custom-control-title">Картой в магазине</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="form-group col-xl-6">
+                                    <label class="custom-control custom-option" data-toggle="collapse" data-target="#checkout-payment-entity-account-number-collapse" aria-expanded="false" aria-controls="checkout-payment-entity-account-number-collapse" >
+                                        <input type="radio" class="custom-control-input" name="checkout-payment-method" >
+                                        
+                                        <div class="custom-control-content">
+                                            <div class="custom-control-header d-flex align-items-center">
+                                                <div class="custom-control-thumbnail d-flex align-items-center justify-content-start">
+                                                    <img src="images/figures/cashless.svg" width="30" height="30" alt="Безналичный расчет" class="custom-control-media">
+                                                </div>
+
+                                                <div class="custom-control-title">Безналичный расчет</div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <div id="checkout-payment-entity-account-number-collapse" class="collapse">
+                                        <div class="form-group">
+                                            <label for="checkout-payment-entity-account-number-field" class="form-label">Номер банковского счета <sup class="text-danger" >*</sup></label>
+                                            <input type="text" id="checkout-payment-entity-account-number-field" class="form-control" required >
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </fieldset>
 
-                        <div class="catalog-controls-block catalog-desktop-controls d-none d-xl-block">
-                            <div class="row align-items-center">
-                                <div class="col-auto">
-                                    <div class="catalog-sort-block d-flex align-items-center">
-                                        <span class="catalog-control-label">Сортировать:</span>
 
-                                        <button type="button" class="catalog-sort-button" >
-                                            <svg width="12" height="12" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-descending" ></use>
-                                            </svg>
-                                            По цене
-                                        </button>
+                <fieldset class="checkout-summary-group checkout-group">
+                    <div class="checkout-group-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="checkout-comment-container col-xl-6">
+                                    <div class="checkout-comment-block">
+                                        <div class="form-group m-0">
+                                            <label for="checkout-comment-field" class="form-label form-label-lg">Ваши комментарии к заказу</label>
+                                            <textarea id="checkout-comment-field" class="form-control"></textarea>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="col-auto d-none d-md-block">
-                                    <div class="catalog-view-block d-flex align-items-center">
-                                        <label for="catalog-view-select" class="catalog-control-label">Показать по:</label>
+                                <div class="checkout-summary-container col-xl-6">
+                                    <div class="checkout-summary-block">
+                                        <div class="checkout-summary-title">Ваш заказ:</div>
 
-                                        <select name="" id="catalog-view-select" class="custom-select custom-select-link" width="auto" >
-                                            <option value="12">12</option>
-                                            <option value="24">24</option>
-                                            <option value="48">48</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-auto ml-auto d-none d-md-block">
-                                    <div class="catalog-layout-block d-flex align-items-center">
-                                        <span class="catalog-control-label">Вид:</span>
-
-                                        <ul class="catalog-layout-list d-inline-flex list-unstyled">
-                                            <li class="catalog-layout-item" >
-                                                <a href="catalog.html" class="catalog-layout-link active" >
-                                                    <svg width="17" height="17">
-                                                        <use xlink:href="images/icons/sprite.svg#icon-layout-grid"></use>
-                                                    </svg>
-                                                </a>
+                                        <ul class="checkout-summary-list list-unstyled">
+                                            <li class="checkout-summary-item d-flex justify-content-between">
+                                                <span class="checkout-summary-label">Товары:</span>
+                                                <span class="checkout-summary-value">6500 рублей</span>
                                             </li>
 
-                                            <li class="catalog-layout-item" >
-                                                <a href="catalog-list.html" class="catalog-layout-link" >
-                                                    <svg width="18" height="17">
-                                                        <use xlink:href="images/icons/sprite.svg#icon-layout-list"></use>
-                                                    </svg>
-                                                </a>
+                                            <li class="checkout-summary-item d-flex justify-content-between">
+                                                <span class="checkout-summary-label">Скидка:</span>
+                                                <span class="checkout-summary-value">500 рублей</span>
+                                            </li>
+
+                                            <li class="checkout-summary-item d-flex justify-content-between">
+                                                <span class="checkout-summary-label">Итого:</span>
+                                                <span class="checkout-summary-value">6000 рублей</span>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </fieldset>
 
-                        <div class="catalog-grid row">
-                            <div class="catalog-item col-6 col-sm-4 d-flex">
-                                <div class="card-product d-flex flex-column">
-                                    <figure class="card-product-thumbnail">
-                                        <a href="product.html" class="card-product-thumbnail-link">
-                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
-                                        </a>
-
-                                        <button type="button" class="card-product-quickview" >
-                                            <svg width="21" height="21">
-                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                    </figure>
-
-                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
-
-                                    <div class="card-product-brand">Производитель: CISA</div>
-
-                                    <div class="card-product-rating-block d-flex align-items-center">
-                                        <div class="card-product-rating">
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star" ></i>
-                                        </div>
-
-                                        <div class="card-product-rating-count">1 отзыв</div>
-                                    </div>
-
-                                    <div class="card-product-order-block">
-                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
-                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
-                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
-                                        </div>
-
-                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
-                                            <div class="card-product-quantity-control custom-control custom-number">
-                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
-                                                <button type="button" class="custom-control-button custom-control-plus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="custom-control-button custom-control-minus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
-                                            <svg class="card-product-buy-media" width="18" height="18" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                    </div>
-
-                                    <div class="card-product-labels d-flex flex-column align-items-start">
-                                        <span class="card-product-label">Дополнительный ключ</span>
-                                    </div>
-
-                                    <div class="card-product-actions d-flex flex-column align-items-end">
-                                        <button type="button" class="card-product-action card-product-action-compare" >
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
+                <div class="checkout-actions-block">
+                    <div class="container">
+                        <div class="form-row justify-content-lg-end">
+                            <div class="col-12 col-md-auto order-lg-1">
+                                <button type="submit" class="checkout-action-btn btn btn-lg btn-block" >Оформить заказ</button>
                             </div>
 
-                            <div class="catalog-item col-6 col-sm-4 d-flex">
-                                <div class="card-product d-flex flex-column">
-                                    <figure class="card-product-thumbnail">
-                                        <a href="product.html" class="card-product-thumbnail-link">
-                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
-                                        </a>
-
-                                        <button type="button" class="card-product-quickview" >
-                                            <svg width="21" height="21">
-                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                    </figure>
-
-                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
-
-                                    <div class="card-product-brand">Производитель: CISA</div>
-
-                                    <div class="card-product-rating-block d-flex align-items-center">
-                                        <div class="card-product-rating">
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star" ></i>
-                                        </div>
-
-                                        <div class="card-product-rating-count">1 отзыв</div>
-                                    </div>
-
-                                    <div class="card-product-order-block">
-                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
-                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
-                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
-                                        </div>
-
-                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
-                                            <div class="card-product-quantity-control custom-control custom-number">
-                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
-                                                <button type="button" class="custom-control-button custom-control-plus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="custom-control-button custom-control-minus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
-                                            <svg class="card-product-buy-media" width="18" height="18" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                    </div>
-
-                                    <div class="card-product-labels d-flex flex-column align-items-start">
-                                        <span class="card-product-label">Дополнительный ключ</span>
-                                    </div>
-
-                                    <div class="card-product-actions d-flex flex-column align-items-end">
-                                        <button type="button" class="card-product-action card-product-action-compare" >
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="catalog-item col-6 col-sm-4 d-flex">
-                                <div class="card-product d-flex flex-column">
-                                    <figure class="card-product-thumbnail">
-                                        <a href="product.html" class="card-product-thumbnail-link">
-                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
-                                        </a>
-
-                                        <button type="button" class="card-product-quickview" >
-                                            <svg width="21" height="21">
-                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                    </figure>
-
-                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
-
-                                    <div class="card-product-brand">Производитель: CISA</div>
-
-                                    <div class="card-product-rating-block d-flex align-items-center">
-                                        <div class="card-product-rating">
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star" ></i>
-                                        </div>
-
-                                        <div class="card-product-rating-count">1 отзыв</div>
-                                    </div>
-
-                                    <div class="card-product-order-block">
-                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
-                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
-                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
-                                        </div>
-
-                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
-                                            <div class="card-product-quantity-control custom-control custom-number">
-                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
-                                                <button type="button" class="custom-control-button custom-control-plus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="custom-control-button custom-control-minus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
-                                            <svg class="card-product-buy-media" width="18" height="18" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                    </div>
-
-                                    <div class="card-product-labels d-flex flex-column align-items-start">
-                                        <span class="card-product-label">Дополнительный ключ</span>
-                                    </div>
-
-                                    <div class="card-product-actions d-flex flex-column align-items-end">
-                                        <button type="button" class="card-product-action card-product-action-compare" >
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="catalog-item col-6 col-sm-4 d-flex">
-                                <div class="card-product d-flex flex-column">
-                                    <figure class="card-product-thumbnail">
-                                        <a href="product.html" class="card-product-thumbnail-link">
-                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
-                                        </a>
-
-                                        <button type="button" class="card-product-quickview" >
-                                            <svg width="21" height="21">
-                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                    </figure>
-
-                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
-
-                                    <div class="card-product-brand">Производитель: CISA</div>
-
-                                    <div class="card-product-rating-block d-flex align-items-center">
-                                        <div class="card-product-rating">
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star" ></i>
-                                        </div>
-
-                                        <div class="card-product-rating-count">1 отзыв</div>
-                                    </div>
-
-                                    <div class="card-product-order-block">
-                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
-                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
-                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
-                                        </div>
-
-                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
-                                            <div class="card-product-quantity-control custom-control custom-number">
-                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
-                                                <button type="button" class="custom-control-button custom-control-plus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="custom-control-button custom-control-minus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
-                                            <svg class="card-product-buy-media" width="18" height="18" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                    </div>
-
-                                    <div class="card-product-labels d-flex flex-column align-items-start">
-                                        <span class="card-product-label">Дополнительный ключ</span>
-                                    </div>
-
-                                    <div class="card-product-actions d-flex flex-column align-items-end">
-                                        <button type="button" class="card-product-action card-product-action-compare" >
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="catalog-item col-6 col-sm-4 d-flex">
-                                <div class="card-product d-flex flex-column">
-                                    <figure class="card-product-thumbnail">
-                                        <a href="product.html" class="card-product-thumbnail-link">
-                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
-                                        </a>
-
-                                        <button type="button" class="card-product-quickview" >
-                                            <svg width="21" height="21">
-                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                    </figure>
-
-                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
-
-                                    <div class="card-product-brand">Производитель: CISA</div>
-
-                                    <div class="card-product-rating-block d-flex align-items-center">
-                                        <div class="card-product-rating">
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star" ></i>
-                                        </div>
-
-                                        <div class="card-product-rating-count">1 отзыв</div>
-                                    </div>
-
-                                    <div class="card-product-order-block">
-                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
-                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
-                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
-                                        </div>
-
-                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
-                                            <div class="card-product-quantity-control custom-control custom-number">
-                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
-                                                <button type="button" class="custom-control-button custom-control-plus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="custom-control-button custom-control-minus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
-                                            <svg class="card-product-buy-media" width="18" height="18" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                    </div>
-
-                                    <div class="card-product-labels d-flex flex-column align-items-start">
-                                        <span class="card-product-label">Дополнительный ключ</span>
-                                    </div>
-
-                                    <div class="card-product-actions d-flex flex-column align-items-end">
-                                        <button type="button" class="card-product-action card-product-action-compare" >
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="catalog-item col-6 col-sm-4 d-flex">
-                                <div class="card-product d-flex flex-column">
-                                    <figure class="card-product-thumbnail">
-                                        <a href="product.html" class="card-product-thumbnail-link">
-                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
-                                        </a>
-
-                                        <button type="button" class="card-product-quickview" >
-                                            <svg width="21" height="21">
-                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                    </figure>
-
-                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
-
-                                    <div class="card-product-brand">Производитель: CISA</div>
-
-                                    <div class="card-product-rating-block d-flex align-items-center">
-                                        <div class="card-product-rating">
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star" ></i>
-                                        </div>
-
-                                        <div class="card-product-rating-count">1 отзыв</div>
-                                    </div>
-
-                                    <div class="card-product-order-block">
-                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
-                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
-                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
-                                        </div>
-
-                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
-                                            <div class="card-product-quantity-control custom-control custom-number">
-                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
-                                                <button type="button" class="custom-control-button custom-control-plus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="custom-control-button custom-control-minus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
-                                            <svg class="card-product-buy-media" width="18" height="18" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                    </div>
-
-                                    <div class="card-product-labels d-flex flex-column align-items-start">
-                                        <span class="card-product-label">Дополнительный ключ</span>
-                                    </div>
-
-                                    <div class="card-product-actions d-flex flex-column align-items-end">
-                                        <button type="button" class="card-product-action card-product-action-compare" >
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="catalog-item col-6 col-sm-4 d-flex">
-                                <div class="card-product d-flex flex-column">
-                                    <figure class="card-product-thumbnail">
-                                        <a href="product.html" class="card-product-thumbnail-link">
-                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
-                                        </a>
-
-                                        <button type="button" class="card-product-quickview" >
-                                            <svg width="21" height="21">
-                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                    </figure>
-
-                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
-
-                                    <div class="card-product-brand">Производитель: CISA</div>
-
-                                    <div class="card-product-rating-block d-flex align-items-center">
-                                        <div class="card-product-rating">
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star" ></i>
-                                        </div>
-
-                                        <div class="card-product-rating-count">1 отзыв</div>
-                                    </div>
-
-                                    <div class="card-product-order-block">
-                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
-                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
-                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
-                                        </div>
-
-                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
-                                            <div class="card-product-quantity-control custom-control custom-number">
-                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
-                                                <button type="button" class="custom-control-button custom-control-plus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="custom-control-button custom-control-minus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
-                                            <svg class="card-product-buy-media" width="18" height="18" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                    </div>
-
-                                    <div class="card-product-labels d-flex flex-column align-items-start">
-                                        <span class="card-product-label">Дополнительный ключ</span>
-                                    </div>
-
-                                    <div class="card-product-actions d-flex flex-column align-items-end">
-                                        <button type="button" class="card-product-action card-product-action-compare" >
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="catalog-item col-6 col-sm-4 d-flex">
-                                <div class="card-product d-flex flex-column">
-                                    <figure class="card-product-thumbnail">
-                                        <a href="product.html" class="card-product-thumbnail-link">
-                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
-                                        </a>
-
-                                        <button type="button" class="card-product-quickview" >
-                                            <svg width="21" height="21">
-                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                    </figure>
-
-                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
-
-                                    <div class="card-product-brand">Производитель: CISA</div>
-
-                                    <div class="card-product-rating-block d-flex align-items-center">
-                                        <div class="card-product-rating">
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star" ></i>
-                                        </div>
-
-                                        <div class="card-product-rating-count">1 отзыв</div>
-                                    </div>
-
-                                    <div class="card-product-order-block">
-                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
-                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
-                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
-                                        </div>
-
-                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
-                                            <div class="card-product-quantity-control custom-control custom-number">
-                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
-                                                <button type="button" class="custom-control-button custom-control-plus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="custom-control-button custom-control-minus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
-                                            <svg class="card-product-buy-media" width="18" height="18" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                    </div>
-
-                                    <div class="card-product-labels d-flex flex-column align-items-start">
-                                        <span class="card-product-label">Дополнительный ключ</span>
-                                    </div>
-
-                                    <div class="card-product-actions d-flex flex-column align-items-end">
-                                        <button type="button" class="card-product-action card-product-action-compare" >
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="catalog-item catalog-service-item col-6 col-sm-4 d-flex">
-                                <div class="card-catalog-service d-flex flex-column">
-                                    <div class="card-catalog-service-thumbnail">
-                                        <img src="uploads/catalog/service-find-by-photo.jpg" alt="" class="card-catalog-service-media">
-                                    </div>
-
-                                    <div class="card-catalog-service-content d-flex flex-column flex-grow-1">
-                                        <div class="card-catalog-service-title">Мы поможем вам подобрать замок по фото!</div>
-                                        <div class="card-catalog-service-description">Просто загрузите фото вашего замка на сайт</div>
-                                        <button type="button" class="card-catalog-service-cta btn btn-block mt-auto" data-toggle="modal" data-target="#modalPhotoUploadRoot" >Загрузить фото <span class="d-none d-md-inline" >замка</span></button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="catalog-item col-6 col-sm-4 d-flex">
-                                <div class="card-product d-flex flex-column">
-                                    <figure class="card-product-thumbnail">
-                                        <a href="product.html" class="card-product-thumbnail-link">
-                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
-                                        </a>
-
-                                        <button type="button" class="card-product-quickview" >
-                                            <svg width="21" height="21">
-                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                    </figure>
-
-                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
-
-                                    <div class="card-product-brand">Производитель: CISA</div>
-
-                                    <div class="card-product-rating-block d-flex align-items-center">
-                                        <div class="card-product-rating">
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star" ></i>
-                                        </div>
-
-                                        <div class="card-product-rating-count">1 отзыв</div>
-                                    </div>
-
-                                    <div class="card-product-order-block">
-                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
-                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
-                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
-                                        </div>
-
-                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
-                                            <div class="card-product-quantity-control custom-control custom-number">
-                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
-                                                <button type="button" class="custom-control-button custom-control-plus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="custom-control-button custom-control-minus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
-                                            <svg class="card-product-buy-media" width="18" height="18" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                    </div>
-
-                                    <div class="card-product-labels d-flex flex-column align-items-start">
-                                        <span class="card-product-label">Дополнительный ключ</span>
-                                    </div>
-
-                                    <div class="card-product-actions d-flex flex-column align-items-end">
-                                        <button type="button" class="card-product-action card-product-action-compare" >
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="catalog-item col-6 col-sm-4 d-flex">
-                                <div class="card-product d-flex flex-column">
-                                    <figure class="card-product-thumbnail">
-                                        <a href="product.html" class="card-product-thumbnail-link">
-                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
-                                        </a>
-
-                                        <button type="button" class="card-product-quickview" >
-                                            <svg width="21" height="21">
-                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                    </figure>
-
-                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
-
-                                    <div class="card-product-brand">Производитель: CISA</div>
-
-                                    <div class="card-product-rating-block d-flex align-items-center">
-                                        <div class="card-product-rating">
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star" ></i>
-                                        </div>
-
-                                        <div class="card-product-rating-count">1 отзыв</div>
-                                    </div>
-
-                                    <div class="card-product-order-block">
-                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
-                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
-                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
-                                        </div>
-
-                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
-                                            <div class="card-product-quantity-control custom-control custom-number">
-                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
-                                                <button type="button" class="custom-control-button custom-control-plus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="custom-control-button custom-control-minus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
-                                            <svg class="card-product-buy-media" width="18" height="18" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                    </div>
-
-                                    <div class="card-product-labels d-flex flex-column align-items-start">
-                                        <span class="card-product-label">Дополнительный ключ</span>
-                                    </div>
-
-                                    <div class="card-product-actions d-flex flex-column align-items-end">
-                                        <button type="button" class="card-product-action card-product-action-compare" >
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="catalog-item col-6 col-sm-4 d-flex">
-                                <div class="card-product d-flex flex-column">
-                                    <figure class="card-product-thumbnail">
-                                        <a href="product.html" class="card-product-thumbnail-link">
-                                            <img src="uploads/products/product-item-4.png" alt="Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром" class="card-product-media">
-                                        </a>
-
-                                        <button type="button" class="card-product-quickview" >
-                                            <svg width="21" height="21">
-                                                <use xlink:href="images/icons/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                    </figure>
-
-                                    <a href="product.html" class="card-product-title" >Цилиндр Adria 2018 60 (30х30) мм ключ/ключ хром</a>
-
-                                    <div class="card-product-brand">Производитель: CISA</div>
-
-                                    <div class="card-product-rating-block d-flex align-items-center">
-                                        <div class="card-product-rating">
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star-solid" ></i>
-                                            <i class="icon-star" ></i>
-                                        </div>
-
-                                        <div class="card-product-rating-count">1 отзыв</div>
-                                    </div>
-
-                                    <div class="card-product-order-block">
-                                        <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
-                                            <div class="card-product-price">12 954 <span><span class="rur">руб</span>/шт</span></div>
-                                            <div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>
-                                        </div>
-
-                                        <div class="card-product-quantity-block d-none d-xl-block float-left">
-                                            <div class="card-product-quantity-control custom-control custom-number">
-                                                <input class="custom-control-input" type="text" value="1" maxlength="5">
-                                                <button type="button" class="custom-control-button custom-control-plus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-plus" ></use>
-                                                    </svg>
-                                                </button>
-                                                <button type="button" class="custom-control-button custom-control-minus">
-                                                    <svg class="custom-control-media" width="9" height="9" >
-                                                        <use xlink:href="images/icons/sprite.svg#icon-minus" ></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="card-product-buy btn" data-toggle="modal" data-target="#modalAddToCart" >
-                                            <svg class="card-product-buy-media" width="18" height="18" >
-                                                <use xlink:href="images/icons/sprite.svg#icon-shopping-cart" ></use>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                    </div>
-
-                                    <div class="card-product-labels d-flex flex-column align-items-start">
-                                        <span class="card-product-label">Дополнительный ключ</span>
-                                    </div>
-
-                                    <div class="card-product-actions d-flex flex-column align-items-end">
-                                        <button type="button" class="card-product-action card-product-action-compare" >
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/icons/sprite.svg#icon-balance"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="catalog-item col-12 d-none d-xl-block">
-                                <button type="button" class="catalog-show-more-button" >
-                                    <svg class="catalog-show-more-icon" width="38" height="34" >
-                                        <use xlink:href="images/icons/sprite.svg#icon-load" ></use>
-                                    </svg>
-                                    Показать больше товаров
-                                </button>
+                            <div class="col-12 col-md-auto">
+                                <a href="catalog.html" class="checkout-action-btn btn btn-secondary btn-outline btn-lg btn-block" >Отменить</a>
                             </div>
                         </div>
-
-                        <nav class="pagination-nivagation d-none d-xl-block" aria-label="pagination" >
-                            <ul class="pagination d-flex flex-wrap align-items-center justify-content-center">
-                                <li class="page-item page-prev-item disabled">
-                                    <a class="page-link" href="#link" tabindex="-1" aria-label="Previous" aria-disabled="true"><i class="icon-angle-left" ></i></a>
-                                </li>
-
-                                <li class="page-item active" aria-current="page" >
-                                    <a class="page-link" href="#link">1</a>
-                                </li>
-                                
-                                <li class="page-item">
-                                    <a class="page-link" href="#link">2</a>
-                                </li>
-
-                                <li class="page-item">
-                                    <a class="page-link" href="#link">3</a>
-                                </li>
-
-                                <li class="page-item">
-                                    <a class="page-link" href="#link">4</a>
-                                </li>
-
-                                <li class="page-item">
-                                    <a class="page-link" href="#link">5</a>
-                                </li>
-
-                                <li class="page-item">
-                                    <a class="page-link" href="#link">6</a>
-                                </li>
-
-                                <li class="page-item">
-                                    <a class="page-link" href="#link">7</a>
-                                </li>
-
-                                <li class="page-item">
-                                    <span class="page-link">...</span>
-                                </li>
-
-                                <li class="page-item">
-                                    <a class="page-link" href="#link">32</a>
-                                </li>
-
-                                <li class="page-item page-next-item">
-                                    <a class="page-link" href="#link" aria-label="Next" ><i class="icon-angle-right" ></i></a>
-                                </li>
-                            </ul>
-                        </nav>
-
-                        <ul class="catalog-tags-list form-row list-unstyled d-none d-xl-flex">
-                            <li class="catalog-tag-item col-auto">
-                                <a href="#link" class="catalog-tag-link btn btn-sm btn-secondary btn-outline">Врезные замки огромный выбор</a>
-                            </li>
-
-                            <li class="catalog-tag-item col-auto">
-                                <a href="#link" class="catalog-tag-link btn btn-sm btn-secondary btn-outline">Врезные замки Москва</a>
-                            </li>
-
-                            <li class="catalog-tag-item col-auto">
-                                <a href="#link" class="catalog-tag-link btn btn-sm btn-secondary btn-outline">Доступные замки на дверь Москве</a>
-                            </li>
-
-                            <li class="catalog-tag-item col-auto">
-                                <a href="#link" class="catalog-tag-link btn btn-sm btn-secondary btn-outline">Замки CISA</a>
-                            </li>
-
-                            <li class="catalog-tag-item col-auto">
-                                <a href="#link" class="catalog-tag-link btn btn-sm btn-secondary btn-outline">Врезные замки для дверей с ручкой</a>
-                            </li>
-
-                            <li class="catalog-tag-item col-auto">
-                                <a href="#link" class="catalog-tag-link btn btn-sm btn-secondary btn-outline">Врезные замки для стальных дверей</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
-            </div>
+            </form>
         </section>
     </main>
 
