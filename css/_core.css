@@ -1,3 +1,7 @@
+:root {
+    --c-secondary: #ffda3f;
+}
+
 html,
 body {
     min-width: 320px;

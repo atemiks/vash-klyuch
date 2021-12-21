@@ -24,6 +24,7 @@
 @import 'components/cards/_card.video.css';
 @import 'components/cards/_card.review.css';
 @import 'components/cards/_card.order.css';
+@import 'components/cards/_card.compare.css';
 
 /* header */
 @import 'layout/header/_header.css';
@@ -47,6 +48,7 @@
 @import 'sections/_section.steps.css';
 @import 'sections/_section.find-by-photo.css';
 @import 'sections/_section.contact.css';
+@import 'sections/_section.compare-categories.css';
 
 
 /* page home */
@@ -92,6 +94,13 @@
 @import 'pages/page-checkout/_checkout.data.css';
 @import 'pages/page-checkout/_checkout.summary.css';
 @import 'pages/page-checkout/_checkout.actions.css';
+
+
+/* page compare */
+@import 'pages/page-compare/_compare.actions.css';
+@import 'pages/page-compare/_compare.controls.css';
+@import 'pages/page-compare/_compare.sort.css';
+@import 'pages/page-compare/_compare.grid.css';
 
 
 /* footer */
